@@ -227,7 +227,7 @@ ul.thin li {
 }
 
 #wrapper {
-    background: #fff;
+    background: #efefef;
     min-width: 1000px;
     width: 100%;
     height: auto!important;
@@ -600,7 +600,7 @@ p.min_padding {
 
 .box {
     font-size: 8pt;
-    background-color: #fff;
+    background-color: #bebebe;
     border: 1px solid #ccc;
     margin-bottom: 10px
 }
