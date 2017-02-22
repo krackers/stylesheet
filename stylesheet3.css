@@ -1339,7 +1339,7 @@ p.min_padding {
 
 .pad {
   /*padding:0;*/
-  padding: 0.3em .5em .15em; 
+  padding: 1em .5em 1em; 
 }
 
 .sidebar .pad {
@@ -2552,7 +2552,6 @@ ul .invitetree {
 }
 
 input[type="button"],input[type="submit"] {
-  background:#111 url(https://brokenstones.club/static/styles/phoenix_neue/images/alert-overlay.png) repeat-x;
   display:inline-block;
   padding:3px 6px 4px;
   margin:3px;
@@ -2597,11 +2596,9 @@ input[type="button"]:active,input[type="button"]:focus,input[type="submit"]:acti
 }
 
 input[type="text"],input[type="email"],input[type="password"],input[type="search"] {
-  background:#111 url(https://brokenstones.club/static/styles/phoenix_neue/images/alert-overlay.png) repeat-x;
   display:inline-block;
   padding:3px;
   margin:3px;
-  color:#fff;
   text-decoration:none;
   border-top:1px solid #777;
   border-left:1px solid #777;
@@ -2609,17 +2606,11 @@ input[type="text"],input[type="email"],input[type="password"],input[type="search
   border-bottom:1px solid #333
 }
 
-input[type="text"]:hover,input[type="text"]:focus,input[type="email"]:hover,input[type="email"]:focus,input[type="search"]:hover,input[type="search"]:focus,input[type="password"]:hover,input[type="password"]:focus {
-  background-color:#000;
-  color:#FFF
-}
-
 input[type="text"]:active,input[type="email"]:active,input[type="search"]:active,input[type="password"]:active {
   top:1px
 }
 
 input[disabled="disabled"] {
-  background:#4F4F4F url(https://brokenstones.club/static/styles/phoenix_neue/images/alert-overlay.png) repeat-x;
   color:#333
 }
 
@@ -2643,15 +2634,6 @@ select[disabled=disabled]:hover,select[disabled=disabled]:focus,select[disabled=
   color:#333
 }
 
-select,select:active,select:focus {
-  background:#111 repeat-x;
-  display:inline-block;
-  margin:3px;
-  color:#fff;
-  text-decoration:none;
-  border:0;
-  font-family: "Fira Sans", "Lato", Helvetica,Arial,sans-serif
-}
 
 option,option:active,option:focus {
   background:#111;
