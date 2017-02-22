@@ -321,77 +321,77 @@ a.permission_27, .permission_27 {
 }
 
 .cats_macosapps {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/categories/MacOSX.png)
+  background-image:url(images/categories/MacOSX.png)
 }
 
 .cats_macosgames {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/categories/MacOSXfamilygames.png)
+  background-image:url(images/categories/MacOSXfamilygames.png)
 }
 
 .cats_iosapps {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/categories/iphone.png)
+  background-image:url(images/categories/iphone.png)
 }
 
 .cats_iosgames {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/categories/iphone.png)
+  background-image:url(images/categories/iphone.png)
 }
 
 .cats_graphics {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/categories/graphicsclipart.png)
+  background-image:url(images/categories/graphicsclipart.png)
 }
 
 .cats_audio {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/categories/audiomisc.png)
+  background-image:url(images/categories/audiomisc.png)
 }
 
 .cats_tutorials {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/categories/tutorials.png)
+  background-image:url(images/categories/tutorials.png)
 }
 
 .cats_other {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/categories/misc.png)
+  background-image:url(images/categories/misc.png)
 }
 
 /*
-.cats_nothing { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/nothing.png'); }
-.cats_ios { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/ios.png'); }
-.cats_graphics { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/graphics.png'); }
-.cats_audio { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/audio.png'); }
-.cats_misc { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/misc.png'); }
-.cats_applications { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/apps.png'); }
-.cats_audiobooks { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/audiobook.png'); }
-.cats_comedy { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/comedy.png'); }
-.cats_comics { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/comics.png'); }
-.cats_ebooks { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/ebook.png'); }
-.cats_elearningvideos { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/elearning.png'); }
-.cats_music { background-image: url('https://brokenstones.club/static/styles/phoenix_neue/images/music.png'); }
+.cats_nothing { background-image: url('images/nothing.png'); }
+.cats_ios { background-image: url('images/ios.png'); }
+.cats_graphics { background-image: url('images/graphics.png'); }
+.cats_audio { background-image: url('images/audio.png'); }
+.cats_misc { background-image: url('images/misc.png'); }
+.cats_applications { background-image: url('images/apps.png'); }
+.cats_audiobooks { background-image: url('images/audiobook.png'); }
+.cats_comedy { background-image: url('images/comedy.png'); }
+.cats_comics { background-image: url('images/comics.png'); }
+.cats_ebooks { background-image: url('images/ebook.png'); }
+.cats_elearningvideos { background-image: url('images/elearning.png'); }
+.cats_music { background-image: url('images/music.png'); }
 */
 
 .tags_game {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/ios.png)
+  background-image:url(images/ios.png)
 }
 
 .cats_macosapps.tags_game {
-  background-image:url(https://brokenstones.club/static/styles/phoenix_neue/images/macos.png)
+  background-image:url(images/macos.png)
 }
 
 
 /* Global */
 /*@font-face {
 font-family:Akzidenz;
-src:url(https://brokenstones.club/static/styles/phoenix_neue/images/Akzidenz.otf)
+src:url(images/Akzidenz.otf)
 }
 @font-face {
 font-family:Officina;
-src:url(https://brokenstones.club/static/styles/phoenix_neue/images/Officina.otf)
+src:url(images/Officina.otf)
 }
 @font-face {
 font-family:Corpid;
-src:url(https://brokenstones.club/static/styles/phoenix_neue/images/CorpidOffice.ttf)
+src:url(images/CorpidOffice.ttf)
 }
 @font-face {
 font-family:Avant;
-src:url(https://brokenstones.club/static/styles/phoenix_neue/images/Avant.otf)
+src:url(images/Avant.otf)
 }
 */
 
@@ -487,7 +487,7 @@ a[onclick]:focus {
 
 a[onclick]:active {
   outline:0;
-  /*background: url(https://brokenstones.club/static/styles/phoenix_neue/images/load.gif) 100% 4px no-repeat; */
+  /*background: url(images/load.gif) 100% 4px no-repeat; */
 }
 
 a[onclick^="AddArtistField"]:focus,a[onclick^="AddArtistField"]:active {
@@ -498,27 +498,27 @@ a[onclick^="AddArtistField"]:focus,a[onclick^="AddArtistField"]:active {
 
 .main_column a[href^="http"],.main_column a[href^="https"] {
   padding:0 10px 0 0;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/external.png) 100% 4px no-repeat
+  background:url(images/external.png) 100% 4px no-repeat
 }
 
 .main_column a[href^="http"]:hover,.main_column a[href^="https"]:hover {
   padding:0 10px 0 0;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/external.png) 100% 4px no-repeat!important
+  background:url(images/external.png) 100% 4px no-repeat!important
 }
 
 .forum_post a[href^="http"],.forum_post a[href^="https"] {
   padding:0 10px 0 0;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/external.png) 100% 4px no-repeat
+  background:url(images/external.png) 100% 4px no-repeat
 }
 
 .forum_post a[href^="http"]:hover,.forum_post a[href^="https"]:hover {
   padding:0 10px 0 0;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/external.png) 100% 4px no-repeat
+  background:url(images/external.png) 100% 4px no-repeat
 }
 
 .head a[href^="http"]:hover,.head a[href^="https"]:hover,.colhead a[href^="http"]:hover,.colhead a[href^="https"]:hover,.colhead_dark a[href^="http"]:hover,.colhead_dark a[href^="https"]:hover {
   padding:0 10px 0 0;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/external.png) 100% 4px no-repeat
+  background:url(images/external.png) 100% 4px no-repeat
 }
 
 .forum_post a[href^="http"] img,.forum_post a[href^="https"] img {
@@ -649,7 +649,7 @@ ul.thin li {
   margin:0 auto;
   height:220px;
   padding:0;
-  /*background: url('https://brokenstones.club/static/styles/phoenix_neue/images/bg_header.png') 11px 65px no-repeat;*/
+  /*background: url('images/bg_header.png') 11px 65px no-repeat;*/
 }
 
 #content {
@@ -664,7 +664,7 @@ ul.thin li {
 }
 
 #alerts {
-  /*background: transparent url('https://brokenstones.club/static/styles/phoenix_neue/images/content.png');*/
+  /*background: transparent url('images/content.png');*/
   padding:0;
   /*padding:4px 9px;*/
   /*margin:-19px auto 0;*/
@@ -673,7 +673,7 @@ ul.thin li {
 }
 
 #footer {
-  /*background: transparent url('https://brokenstones.club/static/styles/phoenix_neue/images/bg_footer.png');*/
+  /*background: transparent url('images/bg_footer.png');*/
   margin-top:20px;
   width:100%;
   text-align:center;
@@ -691,7 +691,7 @@ ul.thin li {
 }
 
 #footer:after {
-  /*content:url('https://brokenstones.club/static/styles/phoenix_neue/images/gazelle.png')*/
+  /*content:url('images/gazelle.png')*/
 }
 
 #footer p:first-of-type:before {
@@ -719,7 +719,7 @@ ul.thin li {
 #logo {
   width:600px;
   height:100px;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/logo.png) no-repeat top left;
+  background:url(images/logo.png) no-repeat top left;
   margin:0 0 0 -50px;
   position:absolute;
   z-index:2
@@ -1126,7 +1126,7 @@ li#stats_ratio .stat .r10
   padding:0 2px 0 10px;
   font-family: "Fira Sans", "Lato", Helvetica,Arial,sans-serif;
   height:22px;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/content_light.png) transparent;
+  background:url(images/content_light.png) transparent;
   color:#FFF;
   -webkit-border-radius:2px;
   -moz-border-radius:2px;
@@ -1137,13 +1137,13 @@ li#stats_ratio .stat .r10
 }
 
 #autocomplete {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/content.png);
+  background:url(images/content.png);
   border:1px solid #EEE;
   list-style:none
 }
 
 #searchbars input:active,#searchbars input:focus {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/content.png);
+  background:url(images/content.png);
   border:1px solid #EEE
 }
 
@@ -1175,7 +1175,7 @@ li#stats_ratio .stat .r10
   left:0;
   z-index:1000;
   border:1px solid #EEE;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/content.png);
+  background:url(images/content.png);
   width:12em;
   margin-top:12px
 }
@@ -1263,7 +1263,7 @@ table.grouping>tbody>tr.torrent>td:first-child+td+td,table.no_grouping>tbody>tr.
   /*width:17px;*/
   height:15px;
   /*height:17px;*/
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/go_last_read.png) no-repeat center center;
+  background:url(images/go_last_read.png) no-repeat center center;
   /*background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxNiAxNiI+PHN0eWxlPi5hcnJvdy1yaWdodHtmaWxsOiM1NzkzZmY7fTwvc3R5bGU+PHBhdGggY2xhc3M9ImFycm93LXJpZ2h0IiBkPSJNMjQgMEMxMC43NDYgMCAwIDEwLjc0NiAwIDI0czEwLjc0NiAyNCAyNCAyNCAyNC0xMC43NDYgMjQtMjRTMzcuMjU0IDAgMjQgMHptMCA2YzkuOTQgMCAxOCA4LjA2IDE4IDE4cy04LjA2IDE4LTE4IDE4UzYgMzMuOTQgNiAyNCAxNC4wNiA2IDI0IDZ6bTExLjEyNCAxNS44OGMuNTg1LjU4NC44OCAxLjM1Mi44OCAyLjEycy0uMjk1IDEuNTM2LS44OCAyLjEybC02IDZjLS44NTguODYtMi4xNSAxLjExNC0zLjI3My42NTJDMjQuNzM0IDMyLjMxIDI0IDMxLjIxMiAyNCAzMHYtM2gtOWMtMS42NiAwLTMtMS4zNC0zLTNzMS4zNC0zIDMtM2g5di0zYzAtMS4yMTIuNzMyLTIuMzEgMS44NS0yLjc3MiAxLjEyNi0uNDYyIDIuNDE2LS4yMDQgMy4yNzQuNjVsNiA2eiIvPjwvc3ZnPg==) no-repeat center center;*/
   
   /*background:url('svg/arrow-right.svg') no-repeat center center;*/
@@ -1474,7 +1474,7 @@ td,th {
 
 .colhead,.colhead_dark,.head {
   padding:4px;
-  /*background:#000 url(https://brokenstones.club/static/styles/phoenix_neue/images/table_header_dark.png) repeat-x;*/
+  /*background:#000 url(images/table_header_dark.png) repeat-x;*/
   background-color: #323944;
 /*background-image: -webkit-gradient(linear, left top, left bottom, from(#323944), to(#222222));
 background-image: -webkit-linear-gradient(top, #323944, #222222);
@@ -1637,7 +1637,7 @@ ul.poll li.graph {
 .show_torrents {
   width:28px;
   height:28px;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/show.png) no-repeat center center;
+  background:url(images/show.png) no-repeat center center;
   -moz-opacity:.5;
   opacity:.5;
   filter:alpha(opacity=50)
@@ -1646,7 +1646,7 @@ ul.poll li.graph {
 .hide_torrents {
   width:28px;
   height:28px;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/hide.png) no-repeat center center;
+  background:url(images/hide.png) no-repeat center center;
   -moz-opacity:.5;
   opacity:.5;
   filter:alpha(opacity=50)
@@ -2209,11 +2209,11 @@ a > .tl_free.tl_neutral:focus {
   width: 650px;
 }
 
-ul.collage_https://brokenstones.club/static/styles/phoenix_neue/images {
+ul.collage_images {
   width:650px;
 
 }
-ul.collage_https://brokenstones.club/static/styles/phoenix_neue/images li {
+ul.collage_images li {
   width: 130px;
   height: 130px;
 }
@@ -2221,35 +2221,35 @@ ul.collage_https://brokenstones.club/static/styles/phoenix_neue/images li {
 /* Layout (Forums) */
 
 .unread_locked_sticky {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/locked_sticky_unread.png) no-repeat center center
+  background:url(images/locked_sticky_unread.png) no-repeat center center
 }
 
 .read_locked_sticky {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/locked_sticky_read.png) no-repeat center center
+  background:url(images/locked_sticky_read.png) no-repeat center center
 }
 
 .read_sticky {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/sticky_read.png) no-repeat center center
+  background:url(images/sticky_read.png) no-repeat center center
 }
 
 .unread_sticky {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/sticky_unread.png) no-repeat center center
+  background:url(images/sticky_unread.png) no-repeat center center
 }
 
 .unread_locked {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/locked_unread.png) no-repeat center center
+  background:url(images/locked_unread.png) no-repeat center center
 }
 
 .read_locked {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/locked_read.png) no-repeat center center
+  background:url(images/locked_read.png) no-repeat center center
 }
 
 .unread {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/unread.png) no-repeat center center
+  background:url(images/unread.png) no-repeat center center
 }
 
 .read {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/read.png) no-repeat center center
+  background:url(images/read.png) no-repeat center center
 }
 
 #forums table.forum_post {
@@ -2426,7 +2426,7 @@ tr.unreadpm {
 
 
 /* Layout (collages) */
-.collage_https://brokenstones.club/static/styles/phoenix_neue/images li {
+.collage_images li {
   background-color:#F7F6F2;
   vertical-align:middle
 }
@@ -2506,16 +2506,16 @@ ul .invitetree {
 
 .poll .graph .left_poll {
   width:9px;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/poll_left.png) top left no-repeat
+  background:url(images/poll_left.png) top left no-repeat
 }
 
 .poll .graph .center_poll {
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/poll_middle.png) top left repeat-x
+  background:url(images/poll_middle.png) top left repeat-x
 }
 
 .poll .graph .right_poll {
   width:11px;
-  background:url(https://brokenstones.club/static/styles/phoenix_neue/images/poll_right.png) top left no-repeat
+  background:url(images/poll_right.png) top left no-repeat
 }
 
 .curtain {
@@ -2577,7 +2577,7 @@ input[type="button"]:active,input[type="submit"]:active {
 }
 
 input[type="button"]:active,input[type="button"]:focus,input[type="submit"]:active,input[type="submit"]:focus {
-  /*  background: #262626 url(https://brokenstones.club/static/styles/phoenix_neue/images/load.gif) no-repeat center center; */
+  /*  background: #262626 url(images/load.gif) no-repeat center center; */
   display:inline-block;
   padding:3px 6px 4px;
   margin:3px;
@@ -2988,7 +2988,7 @@ fortunately all this isn't necessary...
 
 /* broken apple shadow */
 #logo {
-  background:url('https://brokenstones.club/static/styles/phoenix_neue/images/brokenapple.png') no-repeat top left;
+  background:url('images/brokenapple.png') no-repeat top left;
 }
 
 @media only screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -2997,7 +2997,7 @@ fortunately all this isn't necessary...
        only screen and (min-devicepixel-ratio: 1.5),
        only screen and (min-resolution: 1.5dppx) {
   #logo {
-    background:url('https://brokenstones.club/static/styles/phoenix_neue/images/brokenapple@2x.png') no-repeat top left;
+    background:url('images/brokenapple@2x.png') no-repeat top left;
     background-size: 600px 100px;
   }
 }
