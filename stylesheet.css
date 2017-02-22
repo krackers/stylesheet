@@ -238,7 +238,7 @@ ul.thin li {
 #header {
     width: 100%;
     margin: 0;
-    background: #D7FAC8;
+    background: rgba(224, 249, 201, 0.68);
     height: 220px;
     padding: 10px 0
 }
@@ -341,7 +341,7 @@ logo a:focus {
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    border-bottom: 3px solid #a4d18f;
+    border-bottom: 3px solid rgb(164, 209, 143);
     width: 91px;
     display: inline-block
 }
@@ -413,9 +413,9 @@ logo a:focus {
     padding: 0 2px 0 10px;
     font-family: Helvetica, Arial, sans-serif;
     height: 30px;
-    background: #c1e8b0;
-    color: #a2d28d;
-    border: 3px solid #a2d28d;
+    background: rgba(193, 232, 176, 0.55);
+    color: rgba(129, 173, 79, 0.85);
+    border: 3px solid rgba(162, 210, 141, 0);
     font-size: 14px;
     -webkit-appearance: none;
     border-radius: 0
@@ -600,7 +600,7 @@ p.min_padding {
 
 .box {
     font-size: 8pt;
-    background-color: #bebebe;
+    background-color: rgba(190, 190, 190, 0.43);
     border: 1px solid #ccc;
     margin-bottom: 10px
 }
