@@ -1693,7 +1693,6 @@ ul.poll li.graph {
 }
 .torrent_table tr.group,
 .torrent_table tr.torrent {
-  border-top: 4px solid #222;
 }
 
 .group_torrent td:nth-child(2),
