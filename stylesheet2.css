@@ -86,8 +86,6 @@ padding: 0px !important;
 min-width: 960px !important;
 }
 
-
-
 @font-face{
     font-family: 'Fira Sans';
     src: url('fonts/eot/FiraSans-Regular.eot');
@@ -941,7 +939,7 @@ li#stats_leeching a{
   /*display:none;*/ /* hides text */
 }
 li#stats_seeding span:after {
-  content: "â†‘";
+  content: "↑";
   font-weight: 600;
   margin-left: 0.15em;
   vertical-align: bottom;
@@ -950,7 +948,7 @@ li#stats_seeding span:after {
   line-height: 20px;
 }
 li#stats_leeching span:after {
-  content: "â†“";
+  content: "↓";
   font-weight: 600;
   margin-left: 0.15em;
   vertical-align: bottom;
