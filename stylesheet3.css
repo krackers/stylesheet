@@ -2635,17 +2635,12 @@ select[disabled=disabled]:hover,select[disabled=disabled]:focus,select[disabled=
 
 
 option,option:active,option:focus {
-  background:#111;
   padding:1px;
   margin:0;
   color:#fff;
   text-decoration:none;
   border:0;
   font-family: "Fira Sans", "Lato", Helvetica,Arial,sans-serif
-}
-
-select:hover,option:hover {
-  background:#3F3F3F
 }
 
 #logchecker .thin,#logchecker h3,.log_outer,.log_outer h3 {
