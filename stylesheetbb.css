@@ -133,7 +133,7 @@ textarea {
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 960px;
   margin-bottom: 24px;
 }
 
@@ -255,7 +255,7 @@ color:#74C42E !important;
 /* Layout Styles */
 
 body {
-  max-width: 1280px;
+  max-width: 960px;
   min-width: 960px;
   padding: 0 24px;
   margin: 48px auto;
