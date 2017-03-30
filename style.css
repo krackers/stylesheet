@@ -1,0 +1,1334 @@
+/*	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Theme_        BH5 2 Years BDay
+	Design/Code_  NK572
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* We're going to opt for the category icon method for now, tags_* is also available */
+.cats_applications { width: 28px; height: 28px; background: url('https://mac-torrents.me/static/styles/revival/images/apps.png') no-repeat center center; }
+.cats_audiobooks { width: 28px; height: 28px; background: url('https://mac-torrents.me/static/styles/revival/images/audiobook.png') no-repeat center center; }
+.cats_comedy { width: 28px; height: 28px; background: url('https://mac-torrents.me/static/styles/revival/images/comedy.png') no-repeat center center; }
+.cats_comics { width: 28px; height: 28px; background: url('https://mac-torrents.me/static/styles/revival/images/comics.png') no-repeat center center; }
+.cats_ebooks { width: 28px; height: 28px; background: url('https://mac-torrents.me/static/styles/revival/images/ebook.png') no-repeat center center; }
+.cats_elearningvideos { width: 28px; height: 28px; background: url('https://mac-torrents.me/static/styles/revival/images/elearning.png') no-repeat center center; }
+
+/* .cats_music { width: 28px; height: 28px; background: url('https://mac-torrents.me/static/styles/revival/images/music.png') no-repeat center center; } */
+
+
+/*  new icons ... */
+.cats_music { width: 28px; height: 28px; background: url('https://mac-torrents.me/newicons/music.png') no-repeat center center; }
+.cats_macosapps { width: 28px; height: 28px; background: url('https://mac-torrents.me/newicons/MacOsapps.png') no-repeat center center; }
+.cats_macosgames { width: 28px; height: 28px; background: url('https://mac-torrents.me/newicons/MacOSgames.png') no-repeat center center; }
+.cats_other { width: 28px; height: 28px; background: url('https://mac-torrents.me/newicons/other.png') no-repeat center center; }
+.cats_iphoneipod { width: 28px; height: 28px; background: url('https://mac-torrents.me/newicons/iphone.png') no-repeat center center; }
+.cats_ipad { width: 28px; height: 28px; background: url('https://mac-torrents.me/newicons/ipad.png') no-repeat center center; }
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	width: 100%;
+}
+
+body {
+	background: #5AC5E9 url('https://mac-torrents.me/static/styles/revival/images/bg.jpg');
+	font-size: 10pt;
+	height: 100%;
+}
+
+.forum_post pre {
+	max-width: 660px;
+	max-height: 500px;
+	overflow: auto;
+}
+
+table tbody, .main_column, .sidebar, .box, .thin, .pad, #threadpoll, #poll {
+	color: #555c66;
+}
+
+a {
+	text-decoration: none;
+	border: none;
+	color: #A08569;
+}
+
+table tbody a, .main_column a, .sidebar a, .box a {
+	color: #A08569;
+}
+
+table tbody a:hover, .main_column a:hover, .sidebar a:hover, .box a:hover {
+	color: #6B5D47;
+}
+
+a[onclick]:focus {
+	outline: 0;
+	background: transparent;
+}
+
+a[onclick]:active {
+	outline: 0;
+}
+
+a[onclick^="AddArtistField"]:focus, a[onclick^="AddArtistField"]:active {
+	outline: 0;
+	background: transparent !important;
+	padding: 0 !important;
+}
+
+h1, h3 {
+	margin: 5px 0;
+	color: #555c66;
+	font-family: Calibri, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-size: 20px;
+}
+
+h5 {
+        text-align: center;
+        font-size: 10pt;
+        color: #888;
+        text-shadow: 1px 0px #cccccc;
+}
+
+
+hr {
+        border-color: #222;
+        color: #222;
+        height: 1px;
+        background-color: #222;
+        border: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+	color: #A08569;
+}
+
+.size3, .size4, .size5, .size6, .size7 {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+li {
+	margin: 10px;
+}
+
+input {
+	padding: 2px 3px;
+	background: #bebebe;
+	border: none;
+}
+
+textarea {
+/*	padding: 2px 3px;*/
+	background: #bebebe;
+	border: none;
+	color: #555c66;
+}
+
+img {
+	border: none;
+}
+
+span.size1 { font-size: 0.75em; }
+span.size2 { font-size: 1em; }
+span.size3 { font-size: 1.25em; }
+span.size4 { font-size: 1.5em; }
+span.size5 { font-size: 1.75em; }
+span.size6 { font-size: 2em; }
+span.size7 { font-size: 2.25em; }
+span.size8 { font-size: 2.5em; }
+span.size9 { font-size: 2.75em; }
+span.size10 { font-size: 3em; }
+
+ul.thin { margin: 0 0 0 25px; padding: 0; }
+ul.thin li { margin: 0 0; padding: 0; }
+
+#wrapper {
+	background: url('https://mac-torrents.me/static/styles/revival/images/header.png');
+	background-repeat: no-repeat; background-size: 100%;
+	padding: 0;
+}
+
+#header {
+	width: 90%;
+	height: 270px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#content {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	color: #555c66;
+	background: #efefef; 
+	padding: 26px 0;
+	overflow: hidden;
+	opacity: 0.98;
+}
+
+#content p {
+	margin: 6px 0;
+}
+
+#footer {
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+	color: #D5D5D5;
+	background: #3B1D1C;
+	font-size: 8pt;
+}
+#logo {
+	width: 278px;
+	height: 57px;
+	background: url('https://mac-torrents.me/static/styles/revival/images/logo.png') no-repeat top left;
+	margin: 51px 0 0 72.5%;
+	position: absolute;
+	z-index: 4;
+}
+
+#logo a {
+	border: none;
+	width: 278px;
+	height: 77px;
+	display: block;
+}
+
+#donation-outer {
+	position: fixed;
+	top: 3px;
+	right: 1%;
+	background: #D5D5D5;
+	height: 15px;
+	width: 150px;
+	padding: 3px;
+	z-index: 12;
+}
+#donation-inner {
+	background: #A08569;
+	height: 100%;
+}
+
+#donation-link {
+	position: fixed;
+	top: 3px;
+	right: 1%;
+	height: 21px;
+	width: 156px;
+	padding: 2px 0 0;
+	text-align: center;
+	z-index: 12;
+}
+#donation-link a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#header a:active, #header a:focus, #logo a:hover, #logo a:active, logo a:focus {
+	border: none;
+	outline: none;
+}
+
+#menu {
+	position: relative;
+	background-color: #e1e1e1;
+	color: #00aaff;
+	font-size: 9pt;
+	height: 40px;
+	text-align: justify;
+	width: 100%;
+	top: 230px;
+	text-transform: uppercase;
+}
+
+#menu * {
+	display: inline;
+	text-decoration: none;
+	transition: all 0.1s ease-in-out 0s;
+	-moz-transition: all 0.1s ease-in-out 0s;
+	-webkit-transition: all 0.1s ease-in-out 0s;
+	-o-transition: all 0.1s ease-in-out 0s;
+}
+
+#menu li {
+	position: relative;
+	display: inline-block;
+	margin: 8px 0 auto 0;
+}
+
+#menu li a {
+	padding: 0.55rem 1.2rem;
+	color: #00aaff;
+	font-size: 1rem;
+}
+
+#menu li.active a {
+	background-color: #3B1D1C;
+}
+
+#menu li a:hover {
+	background-color: #3B1D1C;
+	color: #fff;
+}
+
+#menu span {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 0;
+}
+
+#index #nav_index a, #torrents #nav_torrents a, #labels #nav_labels a, #collage #nav_collages a, #requests #nav_requests a, #forums #nav_forums a, #chat #nav_irc a, #top10 #nav_top10 a, #rules #nav_rules a, #wiki #nav_wiki a, #staff #nav_staff a, #recruit #nav_recruit a {
+	color: #efefef;
+}
+
+#userinfo {
+	position: absolute;
+	color: #fff;
+	width: 950px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+#userinfo_username {
+	position: fixed;
+	top: 5px;
+	left: 1%;
+	width: 210px;
+	z-index: 12;
+}
+
+#userinfo_username #nav_userinfo {
+	margin: 0 0.1em;
+	vertical-align: middle;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+#userinfo_username #nav_useredit, #userinfo_username #nav_logout {
+	position: relative;
+	top: 4px;
+	display: inline;
+	float: none;
+}
+
+#nav_useredit a {
+	text-indent: -9999px;
+	display: inline-block;
+	background: url('https://mac-torrents.me/static/styles/revival/images/edit.png') no-repeat;
+	width: 11px;
+	height: 11px;
+}
+
+#nav_logout a {
+	text-indent: -9999px;
+	display: inline-block;
+	background: url('https://mac-torrents.me/static/styles/revival/images/logout.png') no-repeat;
+	width: 11px;
+	height: 11px;
+}
+
+#alerts {
+	position: relative;
+	display: table;
+	top: 60px;
+	left: 40%;
+	max-width: 360px;
+	margin: 0 auto;
+	background-color: #e1e1e1;
+	padding: 6px 10px;
+	z-index: 1;
+}
+
+#alerts .alertbar {
+	position: relative;
+	display: table-row;
+	text-align: center;
+	background-color: #e1e1e1;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#modbar {
+	position: absolute;
+	background-image: url('https://mac-torrents.me/static/styles/revival/images/alrt.png');
+	background-repeat: no-repeat;
+	background-size: 11px;
+	width: 11px;
+	height: 11px;
+	overflow: hidden;
+	text-align: center;
+	color: transparent;
+	top: 96px;
+	margin-left: 27px;
+	transition: all 0.5s ease-in-out 0s;
+	z-index: 10;
+}
+
+#modbar:hover {
+	padding: 10px 7px 0 0;
+	height: auto;
+	min-height: 26px;
+	width: 205px;
+	background-size: 0%;
+	background-color: #e1e1e1;
+	color: #A08569;
+}
+
+#modbar .alertbar { min-width: 200px; }
+#modbar .alertbar a { color: inherit; }
+#modbar .alertbar a:hover { color: #A08569; }
+#modbar .alertbar:nth-child(2n+1) { float: right; }
+
+#modbar_m { position: relative; top: 13px; min-width: 240px; float: right; margin-right: 38px; z-index: 2; }
+#modbar_m .alertbar { text-align: center; background-color: #e1e1e1; padding: 6px; color: #A08569; }
+
+#userinfo_stats {
+	overflow: hidden;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 0%;
+	width: 270px;
+	min-width: 270px;
+	height: 130px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: #004C99;
+	z-index: 2;
+}
+
+#userinfo_stats li { display: block !important; position: absolute; width: 140px; }
+#userinfo_stats li a { color: #004C99; }
+#userinfo_stats li:nth-child(even) { border: none !important; }
+#fl_tokens span a { position:relative; }
+#stats_ratio, #fl_tokens { top: 9px; }
+#stats_tracker, #stats_irc, #bonus_points, #fl_tokens { left: 160px; }
+#stats_tracker, #stats_leeching { top:108px; }
+#stats_irc, #stats_seeding { top:75px; }
+#bonus_points, #stats_required { top:42px; }
+
+.r00 { color: #ff0000; }
+.r01 { color: #ff1300; }
+.r02 { color: #ff1300; }
+.r03 { color: #ff2600; }
+.r04 { color: #ff4c00; }
+.r05 { color: #ff5e00; }
+.r06 { color: #ff5e00; }
+.r07 { color: #ff7100; }
+.r08 { color: #ff9700; }
+.r09 { color: #ffaa00; }
+.r10 { color: #74c42e; }
+.r20 { color: #418b00; }
+.r50 { color: #16b149; }
+.r99 { color: #418b00; }
+
+#nav_userinfo a {
+	max-width: 176px;
+	height: 60px;
+	display: block;
+}
+
+#userinfo img {
+	margin-top: -5px;
+}
+
+#userinfo ul li {	
+	margin: 0;
+	vertical-align: middle;
+	padding: 0;
+	float: left;
+	list-style-type: none;
+}
+
+.username {
+	color: #A08569 !important;
+	font-weight: bold;
+}
+
+#userinfo a {
+	color: #FFFFFF;
+}
+
+#userinfo b a {
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+#userinfo_minor, #userinfo #userinfo_major {
+	position: fixed;
+	right: 40%;
+	margin-right: -369px;
+	background-color: #efefef;
+	color: #555c66;
+	height: 28px;
+	overflow: hidden;
+	text-transform: none;
+	z-index: 13;
+}
+
+#userinfo_minor:hover, #userinfo #userinfo_major:hover {
+	height: auto;
+}
+
+#userinfo #userinfo_major {
+	margin-right: -494px;
+	width: 125px;
+}
+
+#userinfo #userinfo_minor li, #userinfo #userinfo_major li {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	width: 135px;
+	clear: right;
+	float: right;
+	transition: all 0.1s ease-in-out 0s;
+	-moz-transition: all 0.1s ease-in-out 0s;
+	-webkit-transition: all 0.1s ease-in-out 0s;
+	-o-transition: all 0.1s ease-in-out 0s;
+}
+
+#userinfo #userinfo_minor li a, #userinfo #userinfo_major li a, .userclass {
+	display: inline-block;
+	padding: 5.5px;
+	margin-left: 25px;
+	color: #555c66;
+}
+
+#userinfo #userinfo_minor #nav_inbox { position:absolute; background-image: url('https://mac-torrents.me/static/styles/revival/images/pm.png'); }
+#userinfo #userinfo_minor #nav_staffinbox { background-image: url('https://mac-torrents.me/static/styles/revival/images/staffpm.png'); }
+#userinfo #userinfo_minor #nav_uploaded { margin-top: 28px; background-image: url('https://mac-torrents.me/static/styles/revival/images/uploads.png'); }
+#userinfo #userinfo_minor #nav_bookmarks { background-image: url('https://mac-torrents.me/static/styles/revival/images/bookmarks.png'); }
+#userinfo #userinfo_minor #nav_notifications { background-image: url('https://mac-torrents.me/static/styles/revival/images/noti.png'); }
+#userinfo #userinfo_minor #nav_subscriptions { background-image: url('https://mac-torrents.me/static/styles/revival/images/sub.png'); }
+#userinfo #userinfo_minor #nav_friends { background-image: url('https://mac-torrents.me/static/styles/revival/images/friends.png'); }
+#userinfo #userinfo_minor #nav_comments { background-image: url('https://mac-torrents.me/static/styles/revival/images/comments.png'); }
+
+#userinfo #userinfo_major #nav_upload { background-image: url('https://mac-torrents.me/static/styles/revival/images/upload.png'); }
+#userinfo #userinfo_major #nav_better { background-image: url('https://mac-torrents.me/static/styles/revival/images/better.png'); }
+#userinfo #userinfo_major #nav_invite { background-image: url('https://mac-torrents.me/static/styles/revival/images/invites.png'); }
+#userinfo #userinfo_major #nav_bonus { width: 153px; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; }
+#userinfo #userinfo_major #nav_beta { background-image: url('https://mac-torrents.me/static/styles/revival/images/down.png'); background-size: 15px 15px; }
+#userinfo #userinfo_major #nav_hnr { margin-right: -4px; padding-left: 4px; width: 125px; overflow: hidden; }
+#nav_hnr a { margin-left: 0 ! important; }
+
+#userinfo #userinfo_minor li:hover, #userinfo #userinfo_major li:hover { background-color: rgba(59, 29, 28, 0.05); }
+
+#searchbars {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background: #efefef;
+	padding: 5px 0;
+	box-shadow: 0 1px 5px rgba(29,29,29,0.1);
+	z-index: 11;
+}
+
+#searchbars input {
+	width: 88px;
+	padding: 0 0 0 4px;
+	font-family: Calibri, Arial, sans-serif;
+	height: 18px;
+	background: #d5d5d5;
+	color: #7e827a;
+	text-transform: lowercase;
+	font-size: 12px;
+	text-indent: 2px;
+}
+
+#searchbars ul {
+	position: relative;
+	width: 1094px;
+	text-align: center;
+	margin: 0 auto;
+	list-style: none;
+	display: block;
+	align: center;
+	left: 13%;
+}
+
+.breadcrumbs {
+	text-align: center !important;
+}
+
+#searchbars ul li {
+	position: relative;
+	display: inline;
+	float: left;
+	margin: 0;
+	padding-right: 10px;
+	list-style: none;
+}
+
+#searchbars ul li ul {
+	position: absolute;
+	display: block;
+	top: 1em;
+	left: 0;
+	z-index: 7;
+	border: 1px solid #eee;
+	width: 16em;
+	margin-top: 12px;
+}
+
+#searchbars ul li ul li {
+	margin: 1px 0 1px 4px;
+	padding: 0;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+#searchbars ul li ul li.highlight {
+	color: #86b2c2;
+}
+
+#searchbars ul li form {
+	display: inline;
+	margin: 0;
+}
+
+#cat-selector ul {
+	width: 100%;
+}
+
+#cat-selector ul li {
+	display: inline;
+	width: 12em;
+	height: 1em;
+	float: left;
+}
+
+#debug_report pre {
+	width: 890px;
+	overflow: auto;
+}
+
+td.cats_col, td.center.cats_col { border-right: none; }
+table.grouping>tbody>tr.torrent>td:first-child+td+td, table.no_grouping>tbody>tr.torrent>td:first-child+td, table.grouping>tbody>tr.group>td:first-child+td+td, table.grouping>tbody>tr.colhead>td:first-child+td+td, table.no_grouping>tbody>tr.group>td:first-child+td, table.no_grouping>tbody>tr.colhead>td:first-child+td { border-left: none; }
+.last_read {width: 15px; height: 15px; background: url('https://mac-torrents.me/static/styles/revival/images/go_last_read.png') no-repeat center center; margin-left: 5px;}
+.last_read a { border: none; width: 100%; height: 100%; display: block; }
+.last_read a:hover { border: none; }
+.last_read a:active, .last_read a:focus { outline: 0; }
+
+.hidden {
+	position: absolute;
+	left: -10000px;
+	display: none !important;
+}
+
+input.hidden {
+	position: absolute;
+	display: none;
+}
+
+.thin {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.linkbox {
+	text-align: center;
+	padding: 10px;
+}
+
+.linkbox a:hover {
+	color: #A08569
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.min_padding {
+	padding: 0;
+	margin: 0 0;
+}
+
+p.min_padding {
+	margin: 2px 0;
+}
+
+.pad {
+	padding: 1em;
+}
+
+.sidebar .pad {
+	padding: 10px;
+}
+
+.sidebar .box {
+	padding-bottom: 1px;
+}
+
+.vertical_space {
+	margin-bottom: 10px;
+}
+
+.box {
+	background: #d5d5d5;
+	margin-bottom: 16px;
+}
+
+.box2 {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.pad h3, .pad h4, .padbox h3, .padbox h4 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.sidebar {
+	float: right;
+	width: 240px;
+}
+
+.body {
+	padding: 10px;
+	width: 98%;
+	word-wrap: break-word;
+}
+
+.main_column {
+	width: 680px;
+}
+
+.main_column table {
+	margin-bottom: 16px;
+	width: 100%;
+}
+
+.main_column .box .body {
+	font-size: 11px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.tags {
+	padding: 0 0 0 20px;
+	font-style: italic;
+}
+
+.tags a {
+	color: #8F8986;
+}
+
+.tags a:hover {
+	color: #AA9C97;
+}
+
+.noborder {
+	border: none;
+}
+
+ul.nobullet {
+	list-style-type: none;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+}
+
+tr {
+	border: none;
+	background-color: #d5d5d5;
+}
+
+tr.rowa {
+	background-color: #d5d5d5;
+}
+
+tr.rowb {
+	background-color: #e1e1e1;
+}
+
+td, th {
+	border: none;
+	padding: 6px;
+	text-align: left;
+}
+
+.torrent_table .colhead_dark,.torrent_table .colhead{
+	background-color: #A08569;
+}
+
+.colhead, .colhead_dark, .head {
+	background: #A08569;
+	color: #f1f1f1;
+	padding: 2px 6px;
+	font-size: 12px;
+}
+
+.comment .head {
+	text-align: left !important;
+	text-transform: none;
+}
+
+.box .head .time {
+	font-size: 11px;
+}
+
+.colhead a, .colhead_dark a, .head a {
+	color: #f1f1f1;
+}
+
+.colhead_dark a img:active, .colhead_dark a img:focus {
+	outline: 0;
+}
+
+td.colhead, .colhead td, .colhead th {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.colhead .sign, .colhead_dark .sign {
+	padding: 0 8px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 14px;
+}
+
+td.label {
+	text-align: right;
+	width: 180px;
+}
+
+table.slice {
+	margin-top: -1px;
+}
+
+tr.peer_list {
+	font-size: 12px;
+}
+
+tr.peer_list td {
+	padding: 2px 0 2px 2px;
+}
+
+.error_message {
+	border: 1px solid #666;
+	padding: 3px 0;
+	background-color: #af2525;
+	text-align: center;
+	color: white;
+}
+
+.save_message {
+	border: 1px solid #666;
+	padding: 3px 0;
+	background-color: #f4e649;
+	text-align: center;
+	color: #492802;
+}
+
+.elem_error {
+	border: 3px solid #b00d0d;
+}
+
+.hide {
+	display: none;
+}
+
+.show_torrents {
+	width: 28px;
+	height: 28px;
+	background: url('https://mac-torrents.me/static/styles/revival/images/show.png') no-repeat center center;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity=50);
+}
+
+.hide_torrents {
+	width: 28px;
+	height: 28px;
+	background: url('https://mac-torrents.me/static/styles/revival/images/hide.png') no-repeat center center;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity=50);
+}
+
+.show_torrents_link {
+	border: none;
+	width: 28px;
+	height: 28px;
+	display: block;
+}
+
+.torrent_table a:active img, .torrent_table a:focus img {
+	background-color: transparent !important;
+}
+
+.filter_torrents {
+	width: 750px;
+	margin: auto;
+}
+
+.filter_torrents .submit {
+	text-align: right;
+	padding-top: 5px;
+}
+
+#content form.search_form + .torrent_table {
+	margin-top: 20px;
+}
+
+#requests .cat_list tr td {
+	border: none;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.torrent_table tr {
+	vertical-align: top;
+}
+
+.torrent_table tr.group {
+	background-color: #252525;
+}
+.torrent_table tr.group_torrent {
+	border-bottom: 1px solid #DBDBDB;
+}
+
+#torrent_table tr.group, #torrents_album  tr.group, #discog_table  tr.group {
+	background-color: #e1e1e1;
+}
+#torrent_table tr.group_torrent, #torrents_album tr.group_torrent, #discog_table tr.group_torrent {
+	background-color: #d5d5d5;
+}
+
+tr.group_torrent td, tr.group td, tr.torrent td { color: #646464; }
+
+.torrent_table div.tags {
+	font-weight: normal;
+}
+
+.torrent_table tr .center {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.group_torrent span {
+	float: right;
+}
+
+.torrent span {
+	font-weight: normal;
+	float: right;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+
+.unread_locked_sticky { background: url('https://mac-torrents.me/static/styles/revival/images/locked_sticky_unread.png') no-repeat center center; }
+.read_locked_sticky { background: url('https://mac-torrents.me/static/styles/revival/images/locked_sticky.png') no-repeat center center; }
+.read_sticky { background: url('https://mac-torrents.me/static/styles/revival/images/sticky_read.png') no-repeat center center; }
+.unread_sticky { background: url('https://mac-torrents.me/static/styles/revival/images/sticky_unread.png') no-repeat center center; }
+.unread_locked { background: url('https://mac-torrents.me/static/styles/revival/images/locked_unread.png') no-repeat center center; }
+.read_locked { background: url('https://mac-torrents.me/static/styles/revival/images/locked_read.png') no-repeat center center; }
+.unread { background: url('https://mac-torrents.me/static/styles/revival/images/unread.png') no-repeat center center; }
+.read { background: url('https://mac-torrents.me/static/styles/revival/images/read.png') no-repeat center center; }
+
+td.avatar {
+	border-right: 1px solid #e1e1e1;
+}
+
+table.forum_unread {
+	border: 2px solid #A08569;
+}
+
+td.avatar {
+	width: 150px;
+	padding: 0;
+}
+
+#quickreplypreview .forum_post {
+	padding: 5px;
+}
+
+strong.quoteheader{
+	color: #444;
+}
+
+blockquote {
+	margin: 10px;
+	padding: 10px;
+	border: 1px dashed #646464;
+	background: rgba(255,255,255,0.3);
+}
+
+tr.unreadpm {
+	background-color: #f5f5f5;
+}
+
+.collage_images li {
+	vertical-align: middle;
+}
+
+.permission_head {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.permissions {
+	width: 930px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.permission_container {
+	float: left;
+	width: 300px;
+	padding: 5px;
+}
+.permission_container input {
+	margin: 0 3px 5px 0;
+	vertical-align: top;
+}
+
+.submit_container {
+	clear: both;
+	text-align: right;
+}
+
+ul .invitetree {
+	margin: 0 0 0 25px;
+}
+
+.invitetree li {
+	list-style: none;
+	margin: 10px 2px;
+}
+
+.head a:hover, .colhead a:hover, .colhead_dark a:hover, .head a:focus, .colhead a:focus, .colhead_dark a:focus {
+	color: #fff;
+}
+
+.user_options .options_list li {
+	margin: 0;
+}
+
+.poll { padding: 10px; }
+.poll li { margin-top: 0; clear: both; }
+.poll .graph span { display: block; height: 12px; float: left; }
+.poll .graph .left_poll, .poll .graph .center_poll, .poll .graph .right_poll { background: #A08569; }
+
+.curtain {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=80);
+	z-index: 12;
+}
+
+.lightbox {
+	position: fixed;
+	text-align: center;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	padding: 0;
+	overflow: auto;
+	z-index: 13;
+}
+
+.lightbox img {
+	max-width: 100%;
+	max-height: 100%;
+	background-color: transparent;
+	z-index: 14;
+}
+
+input[type=button], input[type=submit] {
+	background: #bebebe;
+	display: inline-block;
+	padding: 3px 6px 4px;
+	margin: 3px;
+	color: #A08569;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=text], input[type="password"] {
+	display: inline-block;
+	padding: 3px;
+	margin-left: 3px;
+	text-decoration: none;
+	border: none;
+	color: #555c66;
+}
+
+#quickpost input[type=text], .box_search input[type=text], #AddArtists input[type=text], .add_torrent_container input[type=text], .add_torrent_container input[type=text], .box_addtag input[type=text], .pad .search_form input[type=text], .edit_form input[type=text], .rename_form input[type=text], .merge_form  input[type=text], #compose input[type=text], .add_form input[type=text]{
+	background: #bebebe;
+	color: #555c66;
+}
+
+input[type=text]:active, input[type="search"]:active, input[type="password"]:active { top: 1px; }
+
+input[disabled=disabled], select[disabled=disabled], textarea[disabled=disabled] { background: #d5d5d5; color: #A08569; }
+
+select { background: #bebebe; display: inline-block; margin-left: 3px; color: #555c66; text-decoration: none; border: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  }
+option { background: #bebebe; padding: 1px; margin: 0; color: #555c66; text-decoration: none; border: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+
+#AddArtists {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#logchecker .thin, #logchecker h3, .log_outer, .log_outer h3 {
+	color: #444;
+}
+
+.spellcheck {
+	margin: 10px 0;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+ul, ol{
+	list-style-position: inside;
+}
+
+tr.torrent .bookmark a:before, tr.torrent .bookmark a:after {
+	color: #646054;
+}
+
+#requests .forum_post textarea {
+	max-width: 409px;
+}
+
+.field_div {
+	margin-bottom: 10px;
+}
+
+.edit_changelog textarea {
+	width: 600px;
+}
+
+.autocomplete-suggestions {
+	background: #bebebe;
+	color: #555c66 !important;
+	border: none;
+}
+
+.autocomplete-selected {
+	background: rgba(225,225,225,0.4);
+	color: #A08569 !important;
+}
+
+.autocomplete-suggestions strong {
+	font-weight: normal;
+	color: #A08569 !important;
+}
+
+div[class~=tooltipster-base] {
+	background-color: #eaeaea;
+	border: none;
+	color: #444;
+}
+
+div[class~=tooltipster-content] a {
+	color: #A08569;
+}
+
+#settings_sections #submit, #settings_sections #settings_search {
+	margin: 3px 0;
+}
+
+.vote_tag_down, .vote_artist_down, .vote_album_down, .small_downvote, .small_downvoted {
+	color: indianred !important;
+}
+
+div.sidebar #event_div {
+	margin-left: -50px;
+}
+
+form textarea, form input {
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 12px;
+	max-width: 100%;
+	color: #555c66;
+}
+
+#staffnotes {
+	width: 100%;
+	font-size: 11px;
+}
+
+ul.collage_images {
+	width: 100%;
+}
+
+ul.collage_images li, ul.collage_images img {
+	width: 136px;
+	height: 136px;
+}
+
+ul.collage_images li a {
+	height: 136px;
+}
+
+input[type="checkbox"] { position: relative; display: inline-block; padding: 6px; border: 1px solid #b1b1b1; -webkit-appearance: none; }
+input[type="checkbox"]:checked:after { position: absolute; top: -1px; left: 1px; color: #A08569; content: '\2714'; font-size: 12px; }
+input[type="radio"] { position: relative; top: 3px; display: inline-block; padding: 6px; border: 1px solid #b1b1b1; border-radius: 50px; -webkit-appearance: none; }
+input[type="radio"]:checked:after { position: absolute; top: 3px; left: 3px; width: 6px; height: 6px; border-radius: 50px; background: #A08569; content: ' '; }
+
+#release_list td label, #format_list td label, #bitrate_list td label, #media_list td label {
+	padding-left: 2px;
+	padding-right: 14px;
+}
+
+.label_info:hover {
+	background: #ddd;
+}
+
+.eventTitle {
+	color: #A08569;
+	text-align: center;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+.typeOfTorrentsAffected {
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.eventHR {
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+	background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+	background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+
+.affectedByEventList {
+	list-style-type: none;
+	text-align: center;
+}
+
+.affectedByEventList ul {
+	display: none;
+}
+
+.affectedByEventList li {
+	font-size: 1.2em;
+}
+
+.affectedByEventList li ul li {
+	font-size: 0.9em;
+	text-align: left;
+}
+
+.affectedByEventList li:hover ul {
+	display: block;
+}
+
+.eventBonusList {
+	list-style-type: none;
+	text-align: center;
+}
+
+.eventBonusItem {
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+.eventTime {
+	text-align: center;
+}
+
+.countdown_row {
+	clear: both;
+	width: 100%;
+	padding: 0 2px;
+	text-align: center;
+}
+
+.countdown_show3 .countdown_section {
+	width: 32.5%;
+}
+
+.countdown_show4 .countdown_section {
+	width: 24.5%;
+}
+
+.countdown_section {
+	display: block;
+	float: left;
+	font-size: 100%;
+	text-align: center;
+}
+
+.countdown_amount {
+	color: #A08569;
+	font-size: 200%;
+}
+
+#content, #searchbars input, .box, .box2, .colhead, .colhead_dark, .head, #userinfo_stats, #menu, #menu *, #alerts .alertbar, #modbar_m .alertbar, #modbar, select { -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+table tr:first-child td:first-child { border-top-left-radius: 2px; border-bottom-left-radius: 2px; -webkit-border-top-left-radius: 2px; -webkit-border-bottom-left-radius: 2px; -moz-border-radius-topleft: 2px; -moz-border-radius-bottomleft: 2px; }
+table tr:first-child td:last-child { border-top-right-radius: 2px; border-bottom-right-radius: 2px; -webkit-border-top-right-radius: 2px; -webkit-border-bottom-right-radius: 2px; -moz-border-radius-topright: 2px; -moz-border-radius-bottomright: 2px; }
+table tr:last-child td:first-child { border-bottom-left-radius: 2px; -webkit-border-bottom-left-radius: 2px; -moz-border-radius-bottomleft: 2px; }
+table tr:last-child td:last-child { border-bottom-right-radius: 2px; -webkit-border-bottom-right-radius: 2px; -moz-border-radius-bottomright: 2px; }
+#paster, button, input[type=button], input[type=submit] { -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+
+#noty_bottomRight_layout_container li { background-image: none !important; background-color: #A08569 !important; border: none !important; bottom: 20px; right: 20px; position: fixed; list-style-type: none; z-index: 15; }
+.noty_buttons { border: none !important; }
+#disclaimer_container { color: #D5D5D5; }
+#content #tags p a, #content #labels p a, #content #artists p a { margin-left: 10px; color: #555c66; }
+#purchase_history table, #torrent_details table { width: 100%; }
+td.edition_info a { color: #B39B83; }
+td.edition_info a:hover { color: #B8A795; }
+code { color: grey; }
+#paster { background: #bebebe; display: inline-block; padding: 3px 6px 4px; color: #A08569; text-decoration: none; border: none; cursor: pointer; }
+button { background: #bebebe; display: inline-block; margin-bottom: 3px; padding: 0 4px 1px 3px; color: #A08569; text-decoration: none; border: none; cursor: pointer; }
+.box_tags .brackets:before, .box_tags .brackets:after { content: '\00a0' }
+.news_post img { max-width: 600px; }
+.sidebar .box.pad { padding: 0.5em; }
+#rules .box { margin: 0; }
+#l_a_box td { border: none !important; }
+div.box.center { padding: 3px 0; margin-bottom: 10px; }
+.sidebar div:nth-child(1) .pad { text-align: center; }
+#users_thank { display: inline-block; padding: 0 14px; }
+#settings_sections.fixed { position: fixed; top: 50px; }
+.box_image.box_image_avatar { padding: 0; }
+#concertsbody { padding-bottom: 1px; }
+#upload_table table.thin { margin-top: auto !important; table-layout: auto !important; width: 100% !important; }
+#upload .thin p { margin: 10px 0 12px 0;}
+#torrents .box.pad { margin-top: 22px; }
+.header, #torrents form.search_form, #requests form.search_form { margin-bottom: 22px; }
+.head { height: 17px !important; }
+.box2, #rules .sidebar .box { margin-bottom: 16px; }
+::-webkit-input-placeholder { color: #777; }
+:-moz-placeholder { color: #777; }
+::-moz-placeholder { color: #777; }
+
