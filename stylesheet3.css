@@ -2569,8 +2569,8 @@ input[type="button"],input[type="submit"] {
 }
 
 input[type="button"]:hover,input[type="submit"]:hover {
-  background-color:#000;
-  color:rgba(0,0,0,0.4)
+  background-color:rgba(0,0,0,0.4);
+  color:#FFF
 }
 
 input[type="button"]:active,input[type="submit"]:active {
