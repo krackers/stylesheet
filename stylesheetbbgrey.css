@@ -957,3 +957,12 @@ padding:0;
 .mediainfo_hidden {
     display: none;
 }
+
+div.body{
+    padding:20px;
+}
+
+td.body{
+    padding:20px;
+}
+
