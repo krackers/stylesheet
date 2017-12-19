@@ -2438,6 +2438,10 @@ ul.poll li.graph {
     background: URL("https://gazellegames.net/static/styles/layer_cake/images/icons/ign.png") no-repeat transparent;
 }
 
+.ratings.gamespot {
+    background: URL('images/gamespot.png') no-repeat transparent;
+}
+
 .ratings.cnet {
     background: URL("https://gazellegames.net/static/styles/layer_cake/images/icons/cnet.png") no-repeat transparent;
 }
