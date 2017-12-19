@@ -10,44 +10,6 @@ sbook/* Layout (Torrents page) */
 
 .cats_music { width: 28px; height: 28px; background: url('https://gazellegames.net/static/styles/layer_cake/images/music.png') no-repeat center center; }
 
-
-/* Removes borders. */
-table, tr, td{
- border:0px;
-}
- 
-/* Fixes whitespace to make things look nicer. */
-#content {
-  margin-top: 102px;
-}
- 
-/* Reformats filter box. */
-.filter_torrents h3 {
-  display:none;
-}
-div.box.pad {
-  background: #eee;
-}
-div.box.pad table{
-  border:solid #666;
-  border-width: 1px 0px
-}
- 
-/* Recolours torrent table to look nicer. */
-.colhead, .colhead a {
-  background: #888;
-  color: #eee;
-}
-.torrent_table tr.group {
-  background-color: #cfcfcf;
-}    
-.torrent_table tr.group_torrent {
- 
-}
-   
-td.edition_info, torrent {
-  background: #e7e7e7;
-}
  
 
 /* Global */
@@ -2803,6 +2765,45 @@ marquee {max-width: 60%;}
 	text-overflow: ellipsis;
 	margin-left: 5px;}
 .sidebar #freeleech .group_torrent span {float: none;}
+
+
+/* Removes borders. */
+table, tr, td{
+ border:0px;
+}
+ 
+/* Fixes whitespace to make things look nicer. */
+#content {
+  margin-top: 102px;
+}
+ 
+/* Reformats filter box. */
+.filter_torrents h3 {
+  display:none;
+}
+div.box.pad {
+  background: #eee;
+}
+div.box.pad table{
+  border:solid #666;
+  border-width: 1px 0px
+}
+ 
+/* Recolours torrent table to look nicer. */
+.colhead, .colhead a {
+  background: #888;
+  color: #eee;
+}
+.torrent_table tr.group {
+  background-color: #cfcfcf;
+}    
+.torrent_table tr.group_torrent {
+ 
+}
+   
+td.edition_info, torrent {
+  background: #e7e7e7;
+}
 
 
 #rules .required_ratio td {
