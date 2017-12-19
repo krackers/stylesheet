@@ -1406,7 +1406,7 @@ ul.thin li {
 
 #content {
     margin: auto;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     width: 80%;
     overflow: hidden;
     background-color: #f8f8f8;
@@ -1425,8 +1425,8 @@ div.sidebar #event_div {
 }
 
 #logo {
-    width: 400px;
-    height: 200px;
+    /* width: 400px; */
+    /* height: 200px; */
     background: url('images/gglogo.png') no-repeat top left;
     background-size: 223px;
     margin: 0 auto;
@@ -1435,8 +1435,8 @@ div.sidebar #event_div {
 
 #logo a {
     border: none;
-    width: 330px;
-    height: 197px;
+    /* width: 330px; */
+    /* height: 197px; */
     display: block;
 }
 
@@ -1604,6 +1604,7 @@ input.hidden {
 div.linkbox {
     text-align: center;
     padding: 5px;
+    padding-bottom: 10px;
     clear: both;
 }
 
@@ -1771,10 +1772,6 @@ td.colhead, .colhead td {
     color: #eee;
 }
 
-/* Reformats filter box. */
-.filter_torrents h3 {
-    display: none;
-}
 
 div.box.pad {
     background: #eee;
@@ -1906,6 +1903,7 @@ ul.poll li.graph {
 .filter_torrents {
     width: 750px;
     margin: auto;
+    padding-bottom: 10px;
 }
 
 .filter_torrents .submit {
@@ -2093,99 +2091,99 @@ ul.poll li.graph {
 }
 
 .Amazon {
-    background-image: url("images/weblinks/Amazon.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Amazon.png");
 }
 
 .BoardGameGeek {
-    background-image: url("images/weblinks/BoardGameGeek.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/BoardGameGeek.png");
 }
 
 .DriveThruRPG {
-    background-image: url("images/weblinks/DriveThruRPG.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/DriveThruRPG.png");
 }
 
 .GameFAQs {
-    background-image: url("images/weblinks/GameFAQs.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/GameFAQs.png");
 }
 
 .GamesWebsite {
-    background-image: url("images/weblinks/GamesWebsite.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/GamesWebsite.png");
 }
 
 .Giantbomb {
-    background-image: url("images/weblinks/Giantbomb.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Giantbomb.png");
 }
 
 .GOG {
-    background-image: url("images/weblinks/GOG.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/GOG.png");
 }
 
 .GooglePlay {
-    background-image: url("images/weblinks/GooglePlay.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/GooglePlay.png");
 }
 
 .HowLongToBeat {
-    background-image: url("images/weblinks/HowLongToBeat.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/HowLongToBeat.png");
 }
 
 .HumbleBundle {
-    background-image: url("images/weblinks/HumbleBundle.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/HumbleBundle.png");
 }
 
 .Itch {
-    background-image: url("images/weblinks/Itch.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Itch.png");
 }
 
 .iTunes {
-    background-image: url("images/weblinks/iTunes.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/iTunes.png");
 }
 
 .MobyGames {
-    background-image: url("images/weblinks/MobyGames.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/MobyGames.png");
 }
 
 .NexusMods {
-    background-image: url("images/weblinks/NexusMods.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/NexusMods.png");
 }
 
 .Origin {
-    background-image: url("images/weblinks/Origin.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Origin.png");
 }
 
 .Ouya {
-    background-image: url("images/weblinks/Ouya.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Ouya.png");
 }
 
 .PCGamingWiki {
-    background-image: url("images/weblinks/PCGamingWiki.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/PCGamingWiki.png");
 }
 
 .PSN {
-    background-image: url("images/weblinks/PSN.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/PSN.png");
 }
 
 .RPGGeek {
-    background-image: url("images/weblinks/RPGGeek.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/RPGGeek.png");
 }
 
 .RPGnet {
-    background-image: url("images/weblinks/RPGnet.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/RPGnet.png");
 }
 
 .Steam {
-    background-image: url("images/weblinks/Steam.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Steam.png");
 }
 
 .VNDB {
-    background-image: url("images/weblinks/VNDB.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/VNDB.png");
 }
 
 .Wikipedia {
-    background-image: url("images/weblinks/Wikipedia.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Wikipedia.png");
 }
 
 .XboxStore {
-    background-image: url("images/weblinks/XboxStore.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/XboxStore.png");
 }
 
 /* User Ratings and Reviews */
@@ -2433,15 +2431,15 @@ ul.poll li.graph {
 }
 
 .ratings.meta {
-    background: URL("images/icons/metacritic.png") no-repeat transparent;
+    background: URL("https://gazellegames.net/static/styles/layer_cake/images/icons/metacritic.png") no-repeat transparent;
 }
 
 .ratings.ign {
-    background: URL("images/icons/ign.png") no-repeat transparent;
+    background: URL("https://gazellegames.net/static/styles/layer_cake/images/icons/ign.png") no-repeat transparent;
 }
 
 .ratings.cnet {
-    background: URL("images/icons/cnet.png") no-repeat transparent;
+    background: URL("https://gazellegames.net/static/styles/layer_cake/images/icons/cnet.png") no-repeat transparent;
 }
 
 .ratings .green {
@@ -2643,91 +2641,91 @@ blockquote {
 }
 
 #bb_bold {
-    background-image: URL('images/icons/text_bold.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_bold.png');
 }
 
 #bb_und {
-    background-image: URL('images/icons/text_underline.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_underline.png');
 }
 
 #bb_ita {
-    background-image: URL('images/icons/text_italic.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_italic.png');
 }
 
 #bb_img {
-    background-image: URL('images/icons/images.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/images.png');
 }
 
 #bb_link {
-    background-image: URL('images/icons/link.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/link.png');
 }
 
 #bb_strk {
-    background-image: URL('images/icons/text_strikethrough.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_strikethrough.png');
 }
 
 #bb_h1 {
-    background-image: URL('images/icons/text_heading_1.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_1.png');
 }
 
 #bb_h2 {
-    background-image: URL('images/icons/text_heading_2.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_2.png');
 }
 
 #bb_h3 {
-    background-image: URL('images/icons/text_heading_3.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_3.png');
 }
 
 #bb_h4 {
-    background-image: URL('images/icons/text_heading_4.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_4.png');
 }
 
 #bb_h5 {
-    background-image: URL('images/icons/text_heading_5.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_5.png');
 }
 
 #bb_h6 {
-    background-image: URL('images/icons/text_heading_6.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_6.png');
 }
 
 #bb_color {
-    background-image: URL('images/icons/color_wheel.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/color_wheel.png');
 }
 
 #bb_tex {
-    background-image: URL('images/icons/font.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/font.png');
 }
 
 #bb_quote {
-    background-image: URL('images/icons/user_comment.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/user_comment.png');
 }
 
 #bb_list {
-    background-image: URL('images/icons/text_list_bullets.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_list_bullets.png');
 }
 
 #bb_spoil {
-    background-image: URL('images/icons/eye.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/eye.png');
 }
 
 #bb_cent {
-    background-image: URL('images/icons/text_align_center.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_align_center.png');
 }
 
 #bb_lef {
-    background-image: URL('images/icons/text_align_left.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_align_left.png');
 }
 
 #bb_righ {
-    background-image: URL('images/icons/text_align_right.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_align_right.png');
 }
 
 #bb_pre {
-    background-image: URL('images/icons/page_white_text.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/page_white_text.png');
 }
 
 #bb_youtube {
-    background-image: URL('images/icons/monitor.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/monitor.png');
 }
 
 .bbbutt {
@@ -2804,7 +2802,7 @@ ul .invitetree {
 #left_poll {
     width: 2px;
     height: 9px;
-    background: url('images/bar_left.gif') no-repeat center center;
+    background: url('https://gazellegames.net/static/styles/layer_cake/images/bar_left.gif') no-repeat center center;
     float: left;
     margin: 0px;
     padding: 0px;
@@ -2812,7 +2810,7 @@ ul .invitetree {
 
 #center_poll {
     height: 9px;
-    background: url('images/bar.gif') repeat;
+    background: url('https://gazellegames.net/static/styles/layer_cake/images/bar.gif') repeat;
     float: left;
     margin: 0px;
     padding: 0px;
@@ -2821,7 +2819,7 @@ ul .invitetree {
 #right_poll {
     width: 2px;
     height: 9px;
-    background: url('images/bar_right.gif') no-repeat center center;
+    background: url('https://gazellegames.net/static/styles/layer_cake/images/bar_right.gif') no-repeat center center;
     float: left;
     margin: 0px;
     padding: 0px;
@@ -2894,7 +2892,7 @@ ul .invitetree {
 #achievements td .levelcont .bubble {
     display: inline-block;
     vertical-align: top;
-    background-image: URL('images/userbubble.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/userbubble.png');
     background-repeat: none;
     height: 15px;
     width: 15px;
@@ -2916,7 +2914,7 @@ ul .invitetree {
 #achievements td .levelcont .complete {
     display: inline-block;
     vertical-align: top;
-    background-image: URL('images/usercheck.png');
+    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/usercheck.png');
     background-repeat: none;
     height: 15px;
     width: 15px;
@@ -3020,7 +3018,7 @@ h3#irc, h3#general, h3#jump, h3#forums {
 /* NEWS UNREAD ICON */
 #markread {
     /*Code to mark new news items as read*/
-    background-image: url("images/newscheckbox.png");
+    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/newscheckbox.png");
     background-repeat: no-repeat;
     border-bottom: medium none;
     float: left;
@@ -4415,19 +4413,19 @@ h3#irc, h3#general, h3#jump, h3#forums {
 }
 
 #crafting_panel li#forge {
-    background: url('images/icons/forge.png') no-repeat left;
+    background: url('https://gazellegames.net/static/styles/layer_cake/images/icons/forge.png') no-repeat left;
 }
 
 #crafting_panel li#forge.active {
-    background: url('images/icons/forge_activated.png') no-repeat left;
+    background: url('https://gazellegames.net/static/styles/layer_cake/images/icons/forge_activated.png') no-repeat left;
 }
 
 #crafting_panel li#enchanting {
-    background: url('images/icons/enchant.png') no-repeat left;
+    background: url('https://gazellegames.net/static/styles/layer_cake/images/icons/enchant.png') no-repeat left;
 }
 
 #crafting_panel li#enchanting.active {
-    background-image: url('images/icons/enchant_activated.png');
+    background-image: url('https://gazellegames.net/static/styles/layer_cake/images/icons/enchant_activated.png');
 }
 
 /***Out of Stock Items**/
@@ -4436,7 +4434,7 @@ h3#irc, h3#general, h3#jump, h3#forums {
     opacity: 1;
     position: relative;
     top: -102px;
-    background: url(images/soldout.png) no-repeat;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/soldout.png) no-repeat;
     background-size: contain;
     padding: 10px;
     height: 130px;
@@ -4458,7 +4456,7 @@ h3#irc, h3#general, h3#jump, h3#forums {
     opacity: 1;
     position: relative;
     top: -102px;
-    background: url(images/soldout.png) no-repeat;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/soldout.png) no-repeat;
     background-size: contain;
     padding: 10px;
     height: 130px;
@@ -4477,7 +4475,7 @@ h3#irc, h3#general, h3#jump, h3#forums {
 
 .sticky #groupplatform:before {
     content: "";
-    background-image: url(images/icons/sticky2.png);
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/sticky2.png);
     background-size: cover;
     height: 20px;
     width: 20px;
@@ -4505,7 +4503,7 @@ marquee {
 /* Stickies */
 .sticky #groupplatform:before {
     content: "";
-    background-image: url(images/icons/sticky1.png);
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/sticky1.png);
     background-size: cover;
     height: 14px;
     width: 15px;
@@ -4961,52 +4959,4 @@ td.cats_col {
     width: 28px;
     padding: 3px;
     /* padding-right: 31px; */
-}
-
-/*Platform linking cleanup*/
-#grouplinks {
-    margin-top: 10px;
-    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
-    z-index: 2;
-    position: relative;}
-
-#grouplinks td {
-    float: left;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 18px;
-    min-height: 15px;
-}
-
-#linkedgroup:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    filter: grayscale(0%);
-    -webkit-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -moz-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -ms-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -o-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-}
-
-#curlinkedgroup {
-    margin-left: -14px;
-}
-
-#linkedgroup {
-    opacity: 0.4;
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    filter: grayscale(50%);
-    margin-left: -14px;
-    /*-webkit-filter: drop-shadow(2px 2px 15px black);
-    -moz-filter: drop-shadow(2px 2px 15px black);
-    -ms-filter: drop-shadow(2px 2px 15px black);
-    -o-filter: drop-shadow(2px 2px 15px black);
-    filter: drop-shadow(2px 2px 15px black);*/
 }
