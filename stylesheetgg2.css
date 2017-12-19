@@ -880,12 +880,10 @@ ul.thin {
 
 #menu ul {
     /* max-width:350px; */
-    margin-left: 150px;
+    margin-left: 71px;
 }
 
-#nav_index {
-    display: none !important;
-}
+
 
 #nav_irc {
     display: none !important;
@@ -1429,9 +1427,10 @@ div.sidebar #event_div {
 #logo {
     width: 400px;
     height: 200px;
-    background: url('https://gitcdn.xyz/cdn/trustless-zz/elephant/93e81f1b3ff26d9e699bb456372b4b588eda8525/logo/logotextsmall.png') no-repeat top left;
-    background-size: 130px;
+    background: url('images/gglogo.png') no-repeat top left;
+    background-size: 223px;
     margin: 0 auto;
+    margin-left: 20px;
 }
 
 #logo a {
