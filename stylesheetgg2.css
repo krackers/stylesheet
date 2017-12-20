@@ -5013,3 +5013,46 @@ td.cats_col {
     -o-filter: drop-shadow(2px 2px 15px black);
     filter: drop-shadow(2px 2px 15px black);*/
 }
+
+
+#torrentscomplete {
+	position: absolute;
+	width: 130px;
+	left: 50%;
+	margin-top: 10px;
+	margin-left: -350px;
+	border: 1px solid #e5e5e5;
+	background-color: white;
+	z-index: 999999999999999;
+	-webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
+	-ms-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
+	-o-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
+	padding-left: 0px;
+}
+
+#torrentscomplete li {
+    display: block !important;
+	text-align: center;
+	font-family: whitney, sans-serif !important;
+	height: 23px;
+	clear: both;
+	width: 100%;
+	padding-top: 7px;
+	padding-bottom: 4px;
+	font-weight: normal;
+}
+
+#torrentscomplete li:nth-child(even) {
+	background-color: white;
+}
+
+#torrentscomplete li:nth-child(odd) {
+	background-color: #e7e7e7;
+}
+
+#torrentscomplete .highlight {
+	background-color: #ef5165 !important;
+	cursor: pointer;
+}
