@@ -697,7 +697,7 @@ div.sidebar #event_div {
 
 #logo {
     width: 400px;
-    height: 200px;
+    height: 100px;
     background: url('images/gglogo.png') no-repeat top left;
     background-size: 300px;
     margin: 0 auto;
@@ -1425,8 +1425,8 @@ div.sidebar #event_div {
 }
 
 #logo {
-    /* width: 400px; */
-    /* height: 200px; */
+    width: 400px;
+    height: 100px;
     background: url('images/gglogo.png') no-repeat top left;
     background-size: 223px;
     margin: 0 auto;
