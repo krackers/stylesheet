@@ -4964,3 +4964,52 @@ td.cats_col {
     padding: 3px;
     /* padding-right: 31px; */
 }
+
+
+/*Platform linking cleanup*/
+#grouplinks {
+    margin-top: 10px;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+    z-index: 2;
+    position: relative;}
+
+#grouplinks td {
+    float: left;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 18px;
+    min-height: 15px;
+}
+
+#linkedgroup:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0%);
+    -webkit-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+    -moz-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+    -ms-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+    -o-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+    filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+}
+
+#curlinkedgroup {
+    margin-left: -14px;
+}
+
+#linkedgroup {
+    opacity: 0.4;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
+    filter: grayscale(50%);
+    margin-left: -14px;
+    /*-webkit-filter: drop-shadow(2px 2px 15px black);
+    -moz-filter: drop-shadow(2px 2px 15px black);
+    -ms-filter: drop-shadow(2px 2px 15px black);
+    -o-filter: drop-shadow(2px 2px 15px black);
+    filter: drop-shadow(2px 2px 15px black);*/
+}
