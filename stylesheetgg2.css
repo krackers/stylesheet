@@ -3806,7 +3806,7 @@ h3#irc, h3#general, h3#jump, h3#forums {
 #shop #footer {
     position: relative;
 }
-}
+
 
 /**********************************
 ************INVENTORY**************
@@ -4885,7 +4885,7 @@ marquee {
     background-position: 0 -1885px;
 }
 
-# .ex-bgfullsets {
+.ex-bgfullsets {
     background-position: 0 -1968px;
 }
 
