@@ -1,61 +1,111 @@
+@keyframes expandWidth {
+    0% {
+        width: 0
+    }
+}
+
+a,body {
+    color: #444
+}
+
 body {
     height: 100%;
     background-color: #383838;
-    color: #444;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial,Helvetica,sans-serif;
     font-size: 11px;
     border-left: 1px solid #222;
     border-right: 1px solid #222;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #222
 }
 
 a {
-    border: 0 none;
-    color: #111;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #444;
-}
-
-h1,h2,h3,h4 {
-    margin: 5px 0 10px;
-}
-
-h3 {
-    margin-top: 8px;
-}
-
-h4 {
-    font-size: 8pt;
+    text-decoration: none!important;
+    border: 0
 }
 
 p {
-    margin: 10px 5px;
+    margin: 10px 5px
 }
 
 li {
-    margin: 5px 15px;
+    margin: 5px 15px
 }
 
-textarea, input {
-    padding: 2px 3px;
+ul.thin {
+    margin: 0 0 0 25px;
+    padding: 0
 }
 
-textarea:hover,input[type="text"]:hover,input[type="password"]:hover {
-    border: 1px solid #7CA7ED;
+#menu ul {
+    max-width: 300px
 }
 
-textarea:focus,input[type="text"]:focus,input[type="password"]:focus {
-    border: 1px solid #eee;
-    outline: 1px solid #7CA7ED;
+#menu ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 2px 5px;
+    padding: .6em 1.1%;
+    color: #ccc
 }
 
-textarea,input[type="text"],input[type="password"] {
-    font-family: Arial, Helvetica, sans-serif;
+#searchbars form {
+    display: inline
+}
+
+#searchbars input {
+    background-color: #fff;
     border: 1px solid #ccc;
-    background-color: #fefefe;
+    color: #222;
+    font-size: .9em;
+    width: 90px
+}
+
+li.searchbars {
+    float: left;
+    font-size: 11px;
+    margin: 16px 0 12px 25px
+}
+
+.alertbar a:hover {
+    color: #777;
+    text-decoration: none
+}
+
+#vanityhouse td {
+    text-align: center
+}
+
+tbody tr.rowa,tr.torrent:nth-child(2n) {
+    background-color: #e0e0e0
+}
+
+#userinfo_major .invites.enabled {
+    color: #0c0
+}
+
+sbook .cats_applications {
+    width: 28px;
+    height: 28px;
+    background: url(images/apps.png) no-repeat center center
+}
+
+input {
+    padding: 2px 3px
+}
+
+input[type=password]:hover,input[type=text]:hover,textarea:hover {
+    border: 1px solid #7ca7ed
+}
+
+input[type=password]:focus,input[type=text]:focus,textarea:focus {
+    border: 1px solid #eee;
+    outline: 1px solid #7ca7ed
+}
+
+input[type=password],input[type=text],textarea {
+    font-family: Arial,Helvetica,sans-serif;
+    border: 1px solid #ccc;
+    background-color: #fefefe
 }
 
 textarea {
@@ -63,128 +113,65 @@ textarea {
     max-width: 95%;
     width: 95%;
     margin: 10px 0;
+    padding: 2px 3px
 }
 
-span.size1 {
-    font-size: .75em;
-}
-
-span.size2 {
-    font-size: 1em;
-}
-
-span.size3 {
-    font-size: 1.25em;
-}
-
-span.size4 {
-    font-size: 1.5em;
-}
-
-span.size5 {
-    font-size: 1.75em;
-}
-
-span.size6 {
-    font-size: 2em;
-}
-
-span.size7 {
-    font-size: 2.25em;
-}
-
-span.size8 {
-    font-size: 2.5em;
-}
-
-span.size9 {
-    font-size: 2.75em;
-}
-
-span.size10 {
-    font-size: 3em;
-}
-
-ul.thin {
-    margin: 0 0 0 25px;
-    padding: 0;
-}
-
-#header {
-    margin: 0 auto;
-    padding: 0;
-}
-
-#content {
-    margin: auto;
-    margin-top: 100px;
-    width: 90%;
-    overflow: hidden;
+#header,.alertbar {
+    margin: 0 auto
 }
 
 #footer {
     background-color: #171717;
-    color: #555;
-    margin-top: 30px;
-    text-align: center;
-    padding: 5px 10px 10px;
+    color: #555
 }
 
 #footer a:hover {
     border-bottom: 1px dotted #ddd;
-    color: #ddd;
+    color: #ddd
 }
 
 #footer a {
-    color: #a0a0a0;
+    color: #a0a0a0
 }
 
 #logo {
-    background: url(images/gglogo.png) no-repeat scroll left top transparent;
-    position: absolute;
-    margin: 5px 0 0 7px;
+    background: url(images/gglogo.png) no-repeat left top;
+    position: absolute
 }
 
 #logo a {
-    border: medium none;
-    display: block;
     height: 58px;
     margin-left: 11px;
     margin-top: 6px;
-    width: 245px;
+    width: 245px
 }
 
 #menu {
-    background: none repeat scroll 0 0 #171717;
+    background: 0 0 #171717;
     font-size: 12px;
     font-weight: 700;
     height: 40px;
-    padding: 70px 0 0 10px;
+    padding: 70px 0 0 10px
 }
 
 #menu ul {
-    max-width: 300px;
+    margin-left: 71px
+}
+
+#nav_irc,#nav_staff {
+    display: none!important
 }
 
 #menu ul li {
-    display: inline;
-    margin: .8em 0 0;
-}
-
-#menu ul li a {
-    color: #FEFEFE;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 2px 5px;
+    margin: .8em 0 0
 }
 
 #menu ul li a:hover {
-    text-decoration: underline;
-    color: #FF9A4A;
+    color: #ff9a4a
 }
 
 #menu ul li a:active {
-    outline: medium none;
+    outline: medium
 }
 
 #userinfo {
@@ -192,15 +179,15 @@ ul.thin {
     float: right;
     right: 0;
     text-align: right;
-    padding: 5px 10px 6px 0;
+    padding: 5px 10px 6px 0
 }
 
-#userinfo_stats {
-    color: #fff;
+#userinfo a:hover,#userinfo_stats {
+    color: #fff
 }
 
 #userinfo img {
-    margin-top: -5px;
+    margin-top: -5px
 }
 
 #userinfo ul li {
@@ -208,116 +195,62 @@ ul.thin {
     line-height: 16px;
     position: relative;
     margin: 0 .1em;
-    padding: 0;
+    padding: 0
 }
 
 #userinfo_username {
-    margin-bottom: 29px;
+    margin-bottom: 29px
 }
 
 #userinfo_major {
     clear: right;
-    display: inline;
-}
-
-#userinfo a:hover {
-    color: #fff;
-}
-
-.r00 {
-    color: red;
-}
-
-.r03 {
-    color: #FF2600;
-}
-
-.r04 {
-    color: #FF4C00;
-}
-
-.r07 {
-    color: #FF7100;
-}
-
-.r08 {
-    color: #FF9700;
-}
-
-.r09 {
-    color: #FA0;
-}
-
-.r10 {
-    color: #74C42E;
+    display: inline
 }
 
 #searchbars {
-    background-color: #F0F0F0;
-    border-right: 1px solid #DDD;
-    border-left: 1px solid #DDD;
-    border-bottom: 1px solid #DDD;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     text-align: center;
     width: 620px;
     margin: 0 auto;
-    padding: 5px 0 3px;
-}
-
-#searchbars form {
-    display: inline;
-}
-
-#searchbars input {
-    background-color: #FFF;
-    border: 1px solid #ccc;
-    color: #222;
-    font-size: .9em;
-    width: 90px;
+    padding: 5px 0 3px
 }
 
 #searchbars ul li {
     display: inline;
-    margin: 0;
+    margin: 0
 }
 
 #discog_table {
-    margin-top: 1px;
-}
-
-li.searchbars {
-    float: left;
-    font-size: 11px;
-    margin: 16px 0 12px 25px;
+    margin-top: 1px
 }
 
 #wrapper {
-    background-color: #f8f8f8;
+    background-color: #383838
 }
 
 #alerts {
     margin-top: 85px;
     margin-bottom: -85px;
     background: #e2e2e2;
-    padding: 10px 0px;
+    padding: 10px 0
 }
 
-#cat-selector ul {
-    width: 100%;
+#cat-selector ul,html {
+    width: 100%
 }
 
 #cat-selector ul li {
     display: inline;
     width: 12em;
     height: 1em;
-    float: left;
-}
-
-#vanityhouse td {
-    text-align: center;
+    float: left
 }
 
 #vanityhouse img {
-    max-width: 130px;
+    max-width: 130px
 }
 
 .alertbar {
@@ -325,1247 +258,360 @@ li.searchbars {
     background-color: #d7d7d7;
     text-align: center;
     color: #444;
-    font-weight: bold;
-    font-size: 0.95em;
+    font-weight: 700;
+    font-size: .95em;
     width: 350px;
-    margin: 0px auto 0px auto;
-    padding: 10px;
+    padding: 10px
 }
 
-.alertbar a {
-    color: #555;
-    text-decoration: underline;
-}
-
-.alertbar a:hover {
-    color: #777;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none !important
-}
-
-*,ul.thin li,.min_padding {
-    margin: 0;
-    padding: 0;
-}
-
-h2,.center {
-    text-align: center;
-}
-
-img,#logo a:hover,.noborder,.cat_list tr td,.torrent_table a img {
-    border: medium none;
+.torrent_table a img {
+    border: medium
 }
 
 .select_container {
-    margin: 5px;
+    margin: 5px
 }
 
 #userinfo_minor a {
-    margin-left: 7px;
-}
-
-tbody tr.rowa, tr.torrent:nth-child(2n) {
-    background-color: #e0e0e0;
+    margin-left: 7px
 }
 
 .username {
     font-weight: 700;
     font-size: 12px;
-    color: #FF9A4A !important;
+    color: #ff9a4a!important
 }
 
 #userinfo a,#userinfo a:visited,#userinfo_major a,#userinfo_major a:visited,#userinfo_minor a,#userinfo_minor a:visited {
-    color: #ddd;
-}
-
-.r01,.r02 {
-    color: #FF1300;
-}
-
-.r05,.r06 {
-    color: #FF5E00;
-}
-
-.r20,.r50,.r99 {
-    color: #418B00;
-}
-
-#userinfo_username .brackets:before,#userinfo_major .brackets:before {
-    content: "";
-}
-
-#userinfo_username .brackets:after,#userinfo_major .brackets:after {
-    content: "";
+    color: #ddd
 }
 
 #userinfo_major .invites a {
-    color: inherit;
-}
-
-#userinfo_major .invites.enabled {
-    color: #0c0;
+    color: inherit
 }
 
 #userinfo_major .invites a span:before {
-    content: '(';
+    content: '('
 }
 
 #userinfo_major .invites a span:after {
-    content: ')';
-}
-
-sbook/* Layout (Torrents page) */
-/* We're going to opt for the category icon method for now, tags_* is also available */
-.cats_applications {
-    width: 28px;
-    height: 28px;
-    background: url('images/apps.png') no-repeat center center;
+    content: ')'
 }
 
 .cats_audiobooks {
     width: 28px;
     height: 28px;
-    background: url('images/audiobook.png') no-repeat center center;
+    background: url(images/audiobook.png) no-repeat center center
 }
 
 .cats_comedy {
     width: 28px;
     height: 28px;
-    background: url('images/comedy.png') no-repeat center center;
+    background: url(images/comedy.png) no-repeat center center
 }
 
 .cats_comics {
     width: 28px;
     height: 28px;
-    background: url('images/comics.png') no-repeat center center;
+    background: url(images/comics.png) no-repeat center center
 }
 
 .cats_ebooks {
     width: 28px;
     height: 28px;
-    background: url('images/ebook.png') no-repeat center center;
+    background: url(images/ebook.png) no-repeat center center
 }
 
 .cats_elearningvideos {
     width: 28px;
     height: 28px;
-    background: url('images/elearning.png') no-repeat center center;
+    background: url(images/elearning.png) no-repeat center center
 }
 
 .cats_music {
     width: 28px;
     height: 28px;
-    background: url('images/music.png') no-repeat center center;
+    background: url(images/music.png) no-repeat center center
 }
 
-/* Global */
-* {
-    padding: 0em;
-    margin: 0em;
-}
-
-html {
-    width: 100%;
-}
-
-body {
-    height: 100%;
-    background-color: #383838;
-    color: #444;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    border-left: 1px solid #222;
-    border-right: 1px solid #222;
-    border-bottom: 1px solid #222;
-}
-
-/* Common elements */
-a {
-    text-decoration: none;
-    border: none;
-    color: #444;
-}
-
-a:hover {
+.alertbar a,.tags a:hover,a:hover {
     text-decoration: underline;
-    color: #555;
+    color: #555
 }
 
 h1,h2,h3,h4 {
-    margin: 5px 0px;
-    font-weight: bold;
+    margin: 5px 0;
+    font-weight: 700
+}
+
+div.linkbox,h2 {
+    text-align: center
 }
 
 h2 {
-    text-align: center;
-    font-size: 12pt;
+    font-size: 12pt
 }
 
 h4 {
-    font-size: 8pt;
+    font-size: 8pt
 }
 
-p {
-    margin: 10px 5px;
-}
-
-li {
-    margin: 5px 15px;
-}
-
-input {
-    padding: 2px 3px;
-}
-
-textarea {
-    padding: 2px 3px;
-}
-
-img {
-    border: none;
-}
-
-.bold {
-    font-weight: bold;
+#user .profile .profile_link_count,.bold {
+    font-weight: 700
 }
 
 .italic {
-    font-style: italic;
+    font-style: italic
 }
 
 .global_buffs {
-    filter: opacity(0.9);
+    filter: opacity(.9)
 }
 
-/* Ratio Colors */
 .r00 {
-    color: #FF0000;
+    color: red
 }
 
-.r01 {
-    color: #FF1300;
-}
-
-.r02 {
-    color: #FF1300;
+.r01,.r02 {
+    color: #ff1300
 }
 
 .r03 {
-    color: #FF2600;
+    color: #ff2600
 }
 
 .r04 {
-    color: #FF4C00;
+    color: #ff4c00
 }
 
-.r05 {
-    color: #FF5E00;
-}
-
-.r06 {
-    color: #FF5E00;
+.r05,.r06 {
+    color: #ff5e00
 }
 
 .r07 {
-    color: #FF7100;
+    color: #ff7100
 }
 
 .r08 {
-    color: #FF9700;
+    color: #ff9700
 }
 
 .r09 {
-    color: #FFAA00;
+    color: #fa0
 }
 
 .r10 {
-    color: #74C42E;
+    color: #74c42e
 }
 
-.r20 {
-    color: #418B00;
+.r20,.r50,.r99 {
+    color: #418b00
 }
 
-.r50 {
-    color: #418B00;
-}
-
-.r99 {
-    color: #418B00;
-}
-
-/* Styles generated by the BBCode parser */
 span.size1 {
-    font-size: 0.75em;
+    font-size: .75em
 }
 
 span.size2 {
-    font-size: 1em;
+    font-size: 1em
 }
 
 span.size3 {
-    font-size: 1.25em;
+    font-size: 1.25em
 }
 
 span.size4 {
-    font-size: 1.5em;
+    font-size: 1.5em
 }
 
 span.size5 {
-    font-size: 1.75em;
+    font-size: 1.75em
 }
 
 span.size5 img {
-    float: right;
+    float: right
 }
 
 span.size6 {
-    font-size: 2em;
+    font-size: 2em
 }
 
 span.size7 {
-    font-size: 2.25em;
+    font-size: 2.25em
 }
 
 span.size8 {
-    font-size: 2.5em;
+    font-size: 2.5em
 }
 
 span.size9 {
-    font-size: 2.75em;
+    font-size: 2.75em
 }
 
 span.size10 {
-    font-size: 3em;
+    font-size: 3em
 }
 
-ul.thin {
-    margin: 0px 0px 0px 25px;
-    padding: 0px;
+*,ul.thin li {
+    margin: 0;
+    padding: 0
 }
 
-ul.thin li {
-    margin: 0px 0px;
-    padding: 0px;
-}
-
-/* Layout (Every page) */
 #header {
-    width: 100%;
-    padding: 0px 0 0 0;
+    width: 80%;
+    padding: 0;
+    background-color: #f8f8f8
 }
 
 #announcement {
     position: absolute;
-    padding: 1px 3px 1px 3px;
+    padding: 1px 3px;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 976px;
     text-align: center;
     top: 172px;
-    color: #FFF;
-    background-color: rgba(137, 73, 0, 0.8);
-    border: 1px solid rgb(137, 73, 0);
+    color: #fff;
+    background-color: rgba(137,73,0,.8);
+    border: 1px solid #894900;
     border-radius: 3px;
-    box-shadow: 1px 1px 4px #000000;
-    font-weight: bold;
-    font-size: 1.4em;
+    box-shadow: 1px 1px 4px #000;
+    font-weight: 700;
+    font-size: 1.4em
 }
 
 #content {
     margin: auto;
-    margin-top: 100px;
-    width: 90%;
+    width: 80%;
     overflow: hidden;
+    background-color: #f8f8f8
 }
 
 #footer {
     margin-top: 40px;
     width: 100%;
     text-align: center;
-    padding: 1em 0;
+    padding: 1em 0
 }
 
-/* workaround for calendar display issue */
 div.sidebar #event_div {
-    margin-left: -232px;
+    margin-left: -232px
 }
 
 #logo {
     width: 400px;
     height: 100px;
-    background: url('images/gglogo.png') no-repeat top left;
-    background-size: 300px;
-    margin: 0 auto;
-}
-
-#logo a {
-    border: none;
-    width: 330px;
-    height: 197px;
-    display: block;
-}
-
-#logo a:hover {
-    border: none;
-}
-
-body {
-    height: 100%;
-    background-color: #383838;
-    color: #444;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    border-left: 1px solid #222;
-    border-right: 1px solid #222;
-    border-bottom: 1px solid #222;
-}
-
-a {
-    border: 0 none;
-    color: #111;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #444;
-}
-
-h1,h2,h3,h4 {
-    margin: 5px 0 10px;
-}
-
-h3 {
-    margin-top: 8px;
-}
-
-h4 {
-    font-size: 8pt;
-}
-
-p {
-    margin: 10px 5px;
-}
-
-li {
-    margin: 5px 15px;
-}
-
-textarea, input {
-    padding: 2px 3px;
-}
-
-textarea:hover,input[type="text"]:hover,input[type="password"]:hover {
-    border: 1px solid #7CA7ED;
-}
-
-textarea:focus,input[type="text"]:focus,input[type="password"]:focus {
-    border: 1px solid #eee;
-    outline: 1px solid #7CA7ED;
-}
-
-textarea,input[type="text"],input[type="password"] {
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid #ccc;
-    background-color: #fefefe;
-}
-
-textarea {
-    font-size: 12px;
-    max-width: 95%;
-    width: 95%;
-    margin: 10px 0;
-}
-
-span.size1 {
-    font-size: .75em;
-}
-
-span.size2 {
-    font-size: 1em;
-}
-
-span.size3 {
-    font-size: 1.25em;
-}
-
-span.size4 {
-    font-size: 1.5em;
-}
-
-span.size5 {
-    font-size: 1.75em;
-}
-
-span.size6 {
-    font-size: 2em;
-}
-
-span.size7 {
-    font-size: 2.25em;
-}
-
-span.size8 {
-    font-size: 2.5em;
-}
-
-span.size9 {
-    font-size: 2.75em;
-}
-
-span.size10 {
-    font-size: 3em;
-}
-
-ul.thin {
-    margin: 0 0 0 25px;
-    padding: 0;
-}
-
-#header {
-    margin: 0 auto;
-    padding: 0;
-}
-
-#content {
-    margin: auto;
-    margin-top: 100px;
-    width: 90%;
-    overflow: hidden;
-}
-
-#footer {
-    background-color: #171717;
-    color: #555;
-    margin-top: 30px;
-    text-align: center;
-    padding: 5px 10px 10px;
-}
-
-#footer a:hover {
-    border-bottom: 1px dotted #ddd;
-    color: #ddd;
-}
-
-#footer a {
-    color: #a0a0a0;
-}
-
-#logo {
-    background: url(images/gglogo.png) no-repeat scroll left top transparent;
-    position: absolute;
-    margin: 5px 0 0 7px;
-}
-
-#logo a {
-    border: medium none;
-    display: block;
-    height: 58px;
-    margin-left: 11px;
-    margin-top: 6px;
-    width: 245px;
-}
-
-#menu {
-    background: none repeat scroll 0 0 #171717;
-    font-size: 12px;
-    font-weight: 700;
-    height: 40px;
-    padding: 70px 0 0 10px;
-}
-
-#menu ul {
-    /* max-width:350px; */
-    margin-left: 71px;
-}
-
-
-
-#nav_irc {
-    display: none !important;
-}
-
-#nav_staff {
-    display: none !important;
-}
-
-#menu ul li {
-    display: inline;
-    margin: .8em 0 0;
-}
-
-#menu ul li a {
-    color: #FEFEFE;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 2px 5px;
-}
-
-#menu ul li a:hover {
-    text-decoration: underline;
-    color: #FF9A4A;
-}
-
-#menu ul li a:active {
-    outline: medium none;
-}
-
-#userinfo {
-    color: #ddd;
-    float: right;
-    right: 0;
-    text-align: right;
-    padding: 5px 10px 6px 0;
-}
-
-#userinfo_stats {
-    color: #fff;
-}
-
-#userinfo img {
-    margin-top: -5px;
-}
-
-#userinfo ul li {
-    display: inline;
-    line-height: 16px;
-    position: relative;
-    margin: 0 .1em;
-    padding: 0;
-}
-
-#userinfo_username {
-    margin-bottom: 29px;
-}
-
-#userinfo_major {
-    clear: right;
-    display: inline;
-}
-
-#userinfo a:hover {
-    color: #fff;
-}
-
-.r00 {
-    color: red;
-}
-
-.r03 {
-    color: #FF2600;
-}
-
-.r04 {
-    color: #FF4C00;
-}
-
-.r07 {
-    color: #FF7100;
-}
-
-.r08 {
-    color: #FF9700;
-}
-
-.r09 {
-    color: #FA0;
-}
-
-.r10 {
-    color: #74C42E;
-}
-
-#searchbars {
-    background-color: #F0F0F0;
-    border-right: 1px solid #DDD;
-    border-left: 1px solid #DDD;
-    border-bottom: 1px solid #DDD;
-    text-align: center;
-    width: 620px;
-    margin: 0 auto;
-    padding: 5px 0 3px;
-}
-
-#searchbars form {
-    display: inline;
-}
-
-#searchbars input {
-    background-color: #FFF;
-    border: 1px solid #ccc;
-    color: #222;
-    font-size: .9em;
-    width: 90px;
-}
-
-#searchbars ul li {
-    display: inline;
-    margin: 0;
-}
-
-#discog_table {
-    margin-top: 1px;
-}
-
-li.searchbars {
-    float: left;
-    font-size: 11px;
-    margin: 16px 0 12px 25px;
-}
-
-#wrapper {
-    background-color: #383838;
-}
-
-#alerts {
-    margin-top: 85px;
-    margin-bottom: -85px;
-    background: #e2e2e2;
-    padding: 10px 0px;
-}
-
-#cat-selector ul {
-    width: 100%;
-}
-
-#cat-selector ul li {
-    display: inline;
-    width: 12em;
-    height: 1em;
-    float: left;
-}
-
-#vanityhouse td {
-    text-align: center;
-}
-
-#vanityhouse img {
-    max-width: 130px;
-}
-
-.alertbar {
-    border: 1px solid #999;
-    background-color: #d7d7d7;
-    text-align: center;
-    color: #444;
-    font-weight: bold;
-    font-size: 0.95em;
-    width: 350px;
-    margin: 0px auto 0px auto;
-    padding: 10px;
-}
-
-.alertbar a {
-    color: #555;
-    text-decoration: underline;
-}
-
-.alertbar a:hover {
-    color: #777;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none !important
-}
-
-*,ul.thin li,.min_padding {
-    margin: 0;
-    padding: 0;
-}
-
-h2,.center {
-    text-align: center;
-}
-
-img,#logo a:hover,.noborder,.cat_list tr td,.torrent_table a img {
-    border: medium none;
-}
-
-.select_container {
-    margin: 5px;
-}
-
-#userinfo_minor a {
-    margin-left: 7px;
-}
-
-tbody tr.rowa, tr.torrent:nth-child(2n) {
-    background-color: #e0e0e0;
-}
-
-.username {
-    font-weight: 700;
-    font-size: 12px;
-    color: #FF9A4A !important;
-}
-
-#userinfo a,#userinfo a:visited,#userinfo_major a,#userinfo_major a:visited,#userinfo_minor a,#userinfo_minor a:visited {
-    color: #ddd;
-}
-
-.r01,.r02 {
-    color: #FF1300;
-}
-
-.r05,.r06 {
-    color: #FF5E00;
-}
-
-.r20,.r50,.r99 {
-    color: #418B00;
-}
-
-#userinfo_username .brackets:before,#userinfo_major .brackets:before {
-    content: "";
-}
-
-#userinfo_username .brackets:after,#userinfo_major .brackets:after {
-    content: "";
-}
-
-#userinfo_major .invites a {
-    color: inherit;
-}
-
-#userinfo_major .invites.enabled {
-    color: #0c0;
-}
-
-#userinfo_major .invites a span:before {
-    content: '(';
-}
-
-#userinfo_major .invites a span:after {
-    content: ')';
-}
-
-sbook/* Layout (Torrents page) */
-/* We're going to opt for the category icon method for now, tags_* is also available */
-.cats_applications {
-    width: 28px;
-    height: 28px;
-    background: url('images/apps.png') no-repeat center center;
-}
-
-.cats_audiobooks {
-    width: 28px;
-    height: 28px;
-    background: url('images/audiobook.png') no-repeat center center;
-}
-
-.cats_comedy {
-    width: 28px;
-    height: 28px;
-    background: url('images/comedy.png') no-repeat center center;
-}
-
-.cats_comics {
-    width: 28px;
-    height: 28px;
-    background: url('images/comics.png') no-repeat center center;
-}
-
-.cats_ebooks {
-    width: 28px;
-    height: 28px;
-    background: url('images/ebook.png') no-repeat center center;
-}
-
-.cats_elearningvideos {
-    width: 28px;
-    height: 28px;
-    background: url('images/elearning.png') no-repeat center center;
-}
-
-.cats_music {
-    width: 28px;
-    height: 28px;
-    background: url('images/music.png') no-repeat center center;
-}
-
-/* Global */
-* {
-    padding: 0em;
-    margin: 0em;
-}
-
-html {
-    width: 100%;
-}
-
-body {
-    height: 100%;
-    background-color: #383838;
-    color: #444;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    border-left: 1px solid #222;
-    border-right: 1px solid #222;
-    border-bottom: 1px solid #222;
-}
-
-/* Common elements */
-a {
-    text-decoration: none;
-    border: none;
-    color: #444;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #555;
-}
-
-h1,h2,h3,h4 {
-    margin: 5px 0px;
-    font-weight: bold;
-}
-
-h2 {
-    text-align: center;
-    font-size: 12pt;
-}
-
-h4 {
-    font-size: 8pt;
-}
-
-p {
-    margin: 10px 5px;
-}
-
-li {
-    margin: 5px 15px;
-}
-
-input {
-    padding: 2px 3px;
-}
-
-textarea {
-    padding: 2px 3px;
-}
-
-img {
-    border: none;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.global_buffs {
-    filter: opacity(0.9);
-}
-
-/* Ratio Colors */
-.r00 {
-    color: #FF0000;
-}
-
-.r01 {
-    color: #FF1300;
-}
-
-.r02 {
-    color: #FF1300;
-}
-
-.r03 {
-    color: #FF2600;
-}
-
-.r04 {
-    color: #FF4C00;
-}
-
-.r05 {
-    color: #FF5E00;
-}
-
-.r06 {
-    color: #FF5E00;
-}
-
-.r07 {
-    color: #FF7100;
-}
-
-.r08 {
-    color: #FF9700;
-}
-
-.r09 {
-    color: #FFAA00;
-}
-
-.r10 {
-    color: #74C42E;
-}
-
-.r20 {
-    color: #418B00;
-}
-
-.r50 {
-    color: #418B00;
-}
-
-.r99 {
-    color: #418B00;
-}
-
-/* Styles generated by the BBCode parser */
-span.size1 {
-    font-size: 0.75em;
-}
-
-span.size2 {
-    font-size: 1em;
-}
-
-span.size3 {
-    font-size: 1.25em;
-}
-
-span.size4 {
-    font-size: 1.5em;
-}
-
-span.size5 {
-    font-size: 1.75em;
-}
-
-span.size5 img {
-    float: right;
-}
-
-span.size6 {
-    font-size: 2em;
-}
-
-span.size7 {
-    font-size: 2.25em;
-}
-
-span.size8 {
-    font-size: 2.5em;
-}
-
-span.size9 {
-    font-size: 2.75em;
-}
-
-span.size10 {
-    font-size: 3em;
-}
-
-ul.thin {
-    margin: 0px 0px 0px 25px;
-    padding: 0px;
-}
-
-ul.thin li {
-    margin: 0px 0px;
-    padding: 0px;
-}
-
-/* Layout (Every page) */
-#header {
-    width: 80%;
-    padding: 0px 0 0 0;
-    background-color: #f8f8f8;
-}
-
-#announcement {
-    position: absolute;
-    padding: 1px 3px 1px 3px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 976px;
-    text-align: center;
-    top: 172px;
-    color: #FFF;
-    background-color: rgba(137, 73, 0, 0.8);
-    border: 1px solid rgb(137, 73, 0);
-    border-radius: 3px;
-    box-shadow: 1px 1px 4px #000000;
-    font-weight: bold;
-    font-size: 1.4em;
-}
-
-#content {
-    margin: auto;
-    /* padding-top: 30px; */
-    width: 80%;
-    overflow: hidden;
-    background-color: #f8f8f8;
-}
-
-#footer {
-    margin-top: 40px;
-    width: 100%;
-    text-align: center;
-    padding: 1em 0;
-}
-
-/* workaround for calendar display issue */
-div.sidebar #event_div {
-    margin-left: -232px;
-}
-
-#logo {
-    width: 400px;
-    height: 100px;
-    background: url('images/gglogo.png') no-repeat top left;
+    background: url(images/gglogo.png) no-repeat top left;
     background-size: 223px;
-    margin: 0 auto;
-    margin-left: 20px;
+    margin: 0 auto 0 20px
 }
 
-#logo a {
-    border: none;
-    /* width: 330px; */
-    /* height: 197px; */
-    display: block;
-}
-
-#logo a:hover {
-    border: none;
+#logo a,#logo a:hover,img {
+    border: 0
 }
 
 #menu ul li {
     position: relative;
-    display: inline;
-}
-
-#menu ul li a {
-    padding: 0.6em 1.1%;
-    color: #ccc;
+    display: inline
 }
 
 #menu ul li a.active {
-    background-color: #565656;
+    background-color: #565656
 }
 
 #menu ul li div {
-    display: inline-block;
+    display: inline-block
 }
 
 #menu ul li a:hover {
-    text-decoration: none;
+    text-decoration: none
 }
 
-/* IE doesn't appear to like a simple display:none in our header. Random things start fucking up pretty badly. */
 input.hidden {
     position: absolute;
-    display: none;
+    display: none
 }
 
-/* Layout (Any page) */
 .thin {
     width: 850px;
-    margin: 0px auto;
+    margin: 0 auto
 }
 
-#userinfo_username .brackets:before {
-    content: "";
+#userinfo_username .brackets:after,#userinfo_username .brackets:before {
+    content: ""
 }
 
-#userinfo_username .brackets:after {
-    content: "";
-}
-
-#userinfo_major .brackets:before {
-    font-weight: bold;
-    content: "";
-}
-
-#userinfo_major .brackets:after {
-    font-weight: bold;
-    content: "";
+#userinfo_major .brackets:after,#userinfo_major .brackets:before {
+    font-weight: 700;
+    content: ""
 }
 
 #user #content #itemsdiv table td {
-    width: 25%;
+    width: 25%
 }
 
 #user #content #itemsdiv table td div {
     display: inline-block;
     text-align: center;
-    margin: auto;
+    margin: auto
 }
 
 #user #content #itemsdiv table td div img {
     max-width: 75px;
-    padding: 2px;
+    padding: 2px
 }
 
 #user .profile .box_stats li.online {
-    font-weight: bold;
-    color: #418B00;
-}
-
-#user .profile .profile_link_count {
-    font-weight: bold;
+    font-weight: 700;
+    color: #418b00
 }
 
 #user .profile .profile_link_count:after {
-    content: ")";
+    content: ")"
 }
 
 #user .profile .profile_link_count:before {
-    content: "(";
+    content: "("
 }
 
 .profile .head {
-    overflow: auto;
+    overflow: auto
 }
 
 .profile .box_community #community_stats {
     display: block;
     overflow: auto;
-    margin: -5px 0px 0px -10px;
+    margin: -5px 0 0 -10px
 }
 
 .profile .box_community #community_stats ul {
     float: left;
     width: 25%;
-    list-style: none;
+    list-style: none
 }
 
 .profile .box_community .space {
-    height: 10px;
+    height: 10px
 }
 
 .box_review_hover .review {
-    color: black;
+    color: #000
 }
 
-/****Image Gallery****/
 .profile .box_art_gallery .gallery {
-    display: inline-block;
+    display: inline-block
 }
 
 .profile .box_art_gallery .gallery_slot {
-    overflow: hidden;
+    overflow: hidden
 }
 
 .profile .box_art_gallery .gallery_main_slot {
     float: left;
     width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: 600px
 }
 
 .profile .box_art_gallery .gallery_row {
@@ -1575,266 +621,249 @@ input.hidden {
     width: 100%;
     max-height: 150px;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .profile .box_art_gallery .gallery_small_slot {
     display: inline-block;
     max-height: 150px;
-    margin: 1px;
+    margin: 1px
 }
 
 .profile .box_art_gallery .large_row .gallery_small_slot {
-    width: 23%;
+    width: 23%
 }
 
 .profile .box_art_gallery .small_row .gallery_small_slot {
     width: 24%;
-    margin: 3px;
+    margin: 3px
 }
 
-.profile .gallery_small_slot img {
-    display: block;
+#logo a,.profile .gallery_small_slot img {
+    display: block
 }
 
 .profile .box_art_gallery .gallery_small_slot.selected {
-    border: 2px solid black;
+    border: 2px solid #000
 }
 
 div.linkbox {
-    text-align: center;
-    padding: 5px;
-    padding-bottom: 10px;
-    clear: both;
+    padding: 5px 5px 10px;
+    clear: both
 }
 
 div.breadcrumbs {
-    float: right;
+    float: right
 }
 
 .center {
-    text-align: center;
+    text-align: center
 }
 
-.right {
-    text-align: right;
+#achievements td.achlabel,.right {
+    text-align: right
 }
 
 .min_padding {
-    padding: 0px;
-    margin: 0px 0px;
+    padding: 0;
+    margin: 0
 }
 
 p.min_padding {
-    margin: 2px 0px;
+    margin: 2px 0
 }
 
 .pad {
-    padding: 1em;
+    padding: 1em
 }
 
 .vertical_space {
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .box {
     font-size: 8pt;
-    background-color: #EAEAEA;
-    border: 1px solid #666666;
+    background-color: #eaeaea;
+    border: 1px solid #666
 }
 
-.pad h3, .pad h4, .padbox h3, .padbox h4 {
-    margin-top: 0px;
-    padding-top: 0px;
+.pad h3,.pad h4,.padbox h3,.padbox h4 {
+    margin-top: 0;
+    padding-top: 0
 }
 
 .sidebar {
     float: right;
     width: 250px;
-    height: 100%;
+    height: 100%
 }
 
 .sidebar .box {
-    margin: 0px 5px 10px 5px;
-    width: 100%;
+    margin: 0 5px 10px;
+    width: 100%
 }
 
 .sidebar img {
     margin: 10px;
-    width: 170px;
+    width: 170px
 }
 
 #dailygazelle #gazelletitle {
     display: block;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 #dailygazelle img {
     position: relative;
     text-align: center;
     top: 5%;
-    left: 5%;
+    left: 5%
 }
 
 .head {
     padding: 4px;
     border-bottom: 1px solid #666;
-    background: #E1E1E1;
-    color: #333;
+    background: #e1e1e1;
+    color: #333
 }
 
 .body {
-    padding: 3px 10px 10px 10px;
+    padding: 3px 10px 10px
 }
 
 .main_column {
-    margin: 0px 255px 10px 0px;
-    width: 590px;
+    margin: 0 255px 10px 0;
+    width: 590px
 }
 
-.main_column .box, .main_column table {
-    margin-bottom: 10px;
+.main_column .box,.main_column table {
+    margin-bottom: 10px
 }
 
 .rating_container {
     display: inline-block;
     padding: 1px 4px;
-    margin: 2px 3px 0px 4px;
-    background-color: #EEEEEE;
+    margin: 2px 3px 0 4px;
+    background-color: #eee
 }
 
 .tags {
-    padding: 0px 0px 0px 10px;
-    font-style: italic;
-}
-
-.tags a {
-    color: #222;
+    padding: 0 0 0 10px;
+    font-style: italic
 }
 
 .tags a:hover {
-    color: #444;
-    text-decoration: underline;
+    color: #444
 }
 
-.noborder {
-    border: none;
+#allreviews tr,#torrents #content .thin .userreviews td,.cat_list tr td,.noborder {
+    border: 0
 }
 
 ul.nobullet {
-    list-style-type: none;
+    list-style-type: none
+}
+
+.sub span,table,tr {
+    border: 1px solid #666
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #666666;
+    border-collapse: collapse
 }
 
-tr {
-    border: 1px solid #666666;
-    background-color: #EEE;
+.sub span,tr {
+    background-color: #eee
 }
 
 tr.rowa {
-    background-color: #DDD;
+    background-color: #ddd
 }
 
 td {
     border: 1px solid #ccc;
     text-align: left;
-    padding: 5px;
+    padding: 5px
 }
 
 .colhead {
-    background: #BBB;
-    font-weight: bold;
-    color: #ffffff;
+    background: #bbb;
+    font-weight: 700
 }
 
-td.colhead, .colhead td {
+.colhead td,td.colhead {
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px
 }
 
-.colhead .sign, .colhead_dark .sign {
-    padding: 0px 8px 0px 8px;
+.colhead .sign,.colhead_dark .sign {
     vertical-align: middle;
-    text-align: center;
-    font-size: 12pt;
-    font-weight: bold;
+    text-align: center
 }
 
-/* Recolours torrent table to look nicer. */
-.colhead, .colhead a {
+.colhead,.colhead a,.colhead_dark {
     background: #3e3e3e;
-    color: #eee;
+    color: #eee
 }
-
 
 div.box.pad {
-    background: #eee;
+    background: #eee
 }
 
 div.box.pad table {
     border: solid #666;
-    border-width: 1px 0px
+    border-width: 1px 0
 }
 
-.colhead .sign {
-    padding: 0px 8px 0px 8px;
+.colhead .sign,.colhead_dark .sign {
+    padding: 0 8px;
     font-size: 12pt;
-    font-weight: bold;
+    font-weight: 700
 }
 
 #torrent_table #upvote {
-    color: #087F19;
+    color: #087f19
 }
 
 #torrent_table #downvote {
-    color: #FF0000;
+    color: red
 }
 
 .colhead_dark {
-    background: #3e3e3e;
-    color: #fff;
+    color: #fff
 }
 
 td.label {
-    font-weight: bold;
     text-align: right;
-    width: 180px;
+    width: 180px
 }
 
 table.slice {
-    margin-top: -1px;
+    margin-top: -1px
 }
 
-.error_message {
+.error_message,.save_message {
     border: 1px solid #666;
-    padding: 3px 0px 3px 0px;
-    background-color: #AF2525;
+    padding: 3px 0;
+    background-color: #af2525;
     text-align: center;
-    color: white;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 700
 }
 
 .save_message {
-    border: 1px solid #666;
-    padding: 3px 0px 3px 0px;
-    background-color: #F4E649;
-    text-align: center;
-    color: #492802;
-    font-weight: bold;
+    background-color: #f4e649;
+    color: #492802
 }
 
 .elem_error {
-    border: 3px solid #B00D0D;
+    border: 3px solid #b00d0d
 }
 
 .hidden {
-    display: none;
+    display: none
 }
 
 .sub {
@@ -1844,162 +873,147 @@ table.slice {
     position: relative;
     top: 38px;
     visibility: hidden;
-    width: 15%;
+    width: 15%
 }
 
 #header .sub {
     left: 300px;
     top: 20px;
-    /* width: 5%; */
-    z-index: 99;
+    z-index: 99
 }
 
 .sub span {
     background-color: #171717;
-    border: 1px solid #666666;
     display: block;
-    padding: 5px;
+    padding: 5px
 }
 
 .sub a {
-    color: #444;
+    color: #444
 }
 
-/* Layout (home page) */
 ul.stats li {
-    padding: 0px 0px 1px 0px;
+    padding: 0 0 1px
 }
 
 ul.poll li {
-    padding: 0px 0px 0px 10px;
-    margin: 0px;
+    padding: 0 0 0 10px;
+    margin: 0
 }
 
 ul.poll li.graph {
     margin-bottom: 3px;
-    padding-left: 20px;
+    padding-left: 20px
 }
 
-/* Layout (Torrents page) */
 .show_torrents {
     width: 28px;
     height: 28px;
-    background: url('images/show.png') no-repeat center center;
+    background: url(images/show.png) no-repeat center center
 }
 
 .hide_torrents {
     width: 28px;
     height: 28px;
-    background: url('images/hide.png') no-repeat center center;
+    background: url(images/hide.png) no-repeat center center
 }
 
 .show_torrents_link {
-    border: none;
+    border: 0;
     width: 28px;
     height: 28px;
-    display: block;
+    display: block
 }
 
 .filter_torrents {
     width: 750px;
     margin: auto;
-    padding-bottom: 10px;
+    padding-bottom: 10px
 }
 
 .filter_torrents .submit {
     text-align: right;
-    padding-top: 5px;
+    padding-top: 5px
 }
 
-.cat_list tr td {
-    border: none;
+#torrents #content .thin .userreviews table td,.torrent_table tr {
+    vertical-align: top
 }
 
-.torrent_table tr {
-    vertical-align: top;
-}
-
-#groupplatform, #groupname, #groupyear {
-    font-weight: bold;
+#groupname,#groupplatform,#groupyear,td.label {
+    font-weight: 700
 }
 
 .tags a {
     color: #777;
     padding-top: 2px;
-    text-decoration: none;
-    font-weight: normal
+    text-decoration: none
 }
 
 .torrent_table tr.group_torrent {
-    background-color: #fafafa;
+    background-color: #fafafa
 }
 
 .torrent_table tr.torrent {
-    background-color: #ddd;
+    background-color: #ddd
 }
 
-.torrent_table div.tags {
-    font-weight: normal;
+.tags a,.torrent_table div.tags {
+    font-weight: 400
 }
 
-.torrent_table tr .center {
+#torrents #content .box .vote,.torrent_table tr .center {
     vertical-align: middle;
-    text-align: center;
+    text-align: center
 }
 
-.group_torrent span {
-    float: right;
+#torrents #content .userratingdiv #reviewrow input,.group_torrent span {
+    float: right
 }
 
 .torrent span {
-    font-weight: normal;
-    float: right;
+    font-weight: 400;
+    float: right
 }
 
 .nobr {
-    white-space: nowrap;
+    white-space: nowrap
 }
 
 #torrents #content .main_column .body .screenshots img {
     width: 150px;
     margin: 5px;
-    border: black 1px solid;
-    vertical-align: top;
+    border: #000 1px solid;
+    vertical-align: top
 }
 
 #requests #gold_donation {
-    width: 115px;
+    width: 115px
 }
 
-.box_game_info .body {
+.box_game_info .body,.box_pack .body {
     padding-top: 6px;
-    padding-bottom: 6px !important;
-}
-
-.box_pack .body {
-    padding-top: 6px;
-    padding-bottom: 6px !important;
+    padding-bottom: 6px!important
 }
 
 .box_series .body ul {
-    margin-left: 5px !important;
+    margin-left: 5px!important
 }
 
 .box_series .body li {
-    padding-bottom: 4px;
+    padding-bottom: 4px
 }
 
 .box_series .body {
-    padding-top : 6px;
+    padding-top: 6px;
     padding-bottom: -6px;
-    margin-bottom: -14px;
+    margin-bottom: -14px
 }
 
 #torrents #autocomplete {
-    /* Browse page auto complete */
     position: absolute;
     margin-top: -96px;
-    width: 309px;
+    width: 309px
 }
 
 #torrents #torrentsbrowsecomplete {
@@ -2007,75 +1021,71 @@ ul.poll li.graph {
     left: 692px;
     display: block;
     width: 100%;
-    border: 1px solid #666666;
-    z-index: 1000;
+    border: 1px solid #666;
+    z-index: 1000
 }
 
 #torrents #torrentsbrowsecomplete li {
     display: block;
-    background-color: #D7D7D7;
+    background-color: #d7d7d7;
     margin: 0;
     padding: 5px 10px;
     text-align: left;
     line-height: 15px;
     cursor: pointer;
-    border-bottom: 1px solid #666666;
+    border-bottom: 1px solid #666
 }
 
 #torrents #torrentsbrowsecomplete li:hover {
-    /*Hover of drop down search menu*/
-    background-color: #999999;
+    background-color: #999
 }
 
-/* Torrent Colouring */
-#color_leeching, #color_leeching .torrent_info_tags, #color_leeching a {
-    color: #169B0E;
+#color_leeching,#color_leeching .torrent_info_tags,#color_leeching a {
+    color: #169b0e
 }
 
-#color_seeding, #color_seeding .torrent_info_tags, #color_seeding a {
-    color: #D2D700;
+#color_seeding,#color_seeding .torrent_info_tags,#color_seeding a {
+    color: #d2d700
 }
 
-#color_uploaded, #color_uploaded .torrent_info_tags, #color_uploaded a {
-    color: #ae83cc;
+#color_uploaded,#color_uploaded .torrent_info_tags,#color_uploaded a {
+    color: #ae83cc
 }
 
-#color_snatched, #color_snatched .torrent_info_tags, #color_snatched a {
-    color: #F00009;
+#color_snatched,#color_snatched .torrent_info_tags,#color_snatched a {
+    color: #f00009
 }
 
-#color_downloaded, #color_downloaded .torrent_info_tags, #color_downloaded a {
-    color: #ff7400;
+#color_downloaded,#color_downloaded .torrent_info_tags,#color_downloaded a {
+    color: #ff7400
 }
 
-/*  Web Links  */
 #weblinks_edit .weblinks {
     width: 400px;
-    height: 15px;
+    height: 15px
 }
 
-.sidebar .box {
-    float: left;
+.sidebar .box,.weblinks {
+    float: left
 }
 
 .sidebar .box #weblinksdiv a {
     float: left;
-    padding: 5px;
+    padding: 5px
 }
 
 .weblinks {
     width: 40px;
     height: 40px;
-    float: left;
-    margin: 5px;
+    margin: 5px
 }
 
 .tilt {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease
 }
 
 .tilt:hover {
@@ -2083,296 +1093,268 @@ ul.poll li.graph {
     -moz-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+    transform: rotate(-10deg)
 }
 
-.Amazon, .BoardGameGeek, .DriveThruRPG, .GameFAQs, .GamesWebsite, .Giantbomb, .GOG, .GooglePlay, .HowLongToBeat, .HumbleBundle, .Itch, .iTunes, .MobyGames, .NexusMods, .Origin, .Ouya, .PSN, .RPGGeek, .RPGnet, .Steam, .Wikipedia, .XboxStore, .PCGamingWiki {
-    background-size: contain;
+.Amazon,.BoardGameGeek,.DriveThruRPG,.GOG,.GameFAQs,.GamesWebsite,.Giantbomb,.GooglePlay,.HowLongToBeat,.HumbleBundle,.Itch,.MobyGames,.NexusMods,.Origin,.Ouya,.PCGamingWiki,.PSN,.RPGGeek,.RPGnet,.Steam,.Wikipedia,.XboxStore,.iTunes {
+    background-size: contain
 }
 
 .Amazon {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Amazon.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/Amazon.png)
 }
 
 .BoardGameGeek {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/BoardGameGeek.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/BoardGameGeek.png)
 }
 
 .DriveThruRPG {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/DriveThruRPG.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/DriveThruRPG.png)
 }
 
 .GameFAQs {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/GameFAQs.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/GameFAQs.png)
 }
 
 .GamesWebsite {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/GamesWebsite.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/GamesWebsite.png)
 }
 
 .Giantbomb {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Giantbomb.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/Giantbomb.png)
 }
 
 .GOG {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/GOG.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/GOG.png)
 }
 
 .GooglePlay {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/GooglePlay.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/GooglePlay.png)
 }
 
 .HowLongToBeat {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/HowLongToBeat.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/HowLongToBeat.png)
 }
 
 .HumbleBundle {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/HumbleBundle.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/HumbleBundle.png)
 }
 
 .Itch {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Itch.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/Itch.png)
 }
 
 .iTunes {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/iTunes.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/iTunes.png)
 }
 
 .MobyGames {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/MobyGames.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/MobyGames.png)
 }
 
 .NexusMods {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/NexusMods.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/NexusMods.png)
 }
 
 .Origin {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Origin.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/Origin.png)
 }
 
 .Ouya {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Ouya.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/Ouya.png)
 }
 
 .PCGamingWiki {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/PCGamingWiki.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/PCGamingWiki.png)
 }
 
 .PSN {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/PSN.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/PSN.png)
 }
 
 .RPGGeek {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/RPGGeek.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/RPGGeek.png)
 }
 
 .RPGnet {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/RPGnet.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/RPGnet.png)
 }
 
 .Steam {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Steam.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/Steam.png)
 }
 
 .VNDB {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/VNDB.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/VNDB.png)
 }
 
 .Wikipedia {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/Wikipedia.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/Wikipedia.png)
 }
 
 .XboxStore {
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/weblinks/XboxStore.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/weblinks/XboxStore.png)
 }
 
-/* User Ratings and Reviews */
 #torrents #content .box .vote {
     width: 40px;
-    border: 0px;
-    vertical-align: middle;
-    text-align: center;
+    border: 0
 }
 
 #torrents #content .box img.desaturate {
     -webkit-filter: grayscale(95%);
     filter: grayscale(95%);
-    filter: gray;
-    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale")
 }
 
-#torrents #content .box #thumbsup {
-    color: #62C746;
+#torrents #content .box #thumbsdown,#torrents #content .box #thumbsup {
+    color: #62c746;
     font-size: 30px;
     -webkit-text-stroke: 1px #000;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 2px rgba(0,0,0,.8)
 }
 
 #torrents #content .box #thumbsdown {
-    color: #CC0000;
-    font-size: 30px;
-    -webkit-text-stroke: 1px #000;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    color: #c00
 }
 
 #torrents #content .box #clickable:hover {
-    cursor: pointer;
+    cursor: pointer
 }
 
 #torrents #content .userratingdiv table td {
-    border: 0px #264059 solid !important;
+    border: 0 #264059 solid!important
 }
 
 #torrents #content .userratingdiv table tr {
-    background-color: transparent;
+    background-color: transparent
 }
 
 #torrents #content .userratingdiv table {
-    border: 0px solid #036 !important;
+    border: 0 solid #036!important
 }
 
 #torrents #content .userratingdiv #review {
-    color: black;
+    color: #000;
     border: solid 1px #303030;
     border-radius: 4px;
     width: 95%;
-    padding : 5px;
+    padding: 5px;
     resize: none;
     overflow: hidden;
     box-shadow: inset 1px 1px 2px 0 #000;
-    transition: box-shadow 0.3s;
+    transition: box-shadow .3s
 }
 
 #torrents #content .userratingdiv #review:focus {
-    box-shadow: inset 1px 1px 2px 0 #2b4054;
-}
-
-#torrents #content .userratingdiv #reviewrow input {
-    float: right;
+    box-shadow: inset 1px 1px 2px 0 #2b4054
 }
 
 #torrents #content .userratingdiv #reviewrow input::-moz-focus-inner {
     border: 0;
-    padding: 0;
+    padding: 0
 }
 
 #torrents #content .userratingdiv #review::-webkit-input-placeholder {
-    color: black;
-    opacity: 1;
+    color: #000;
+    opacity: 1
 }
 
-#torrents #content .userratingdiv #review:-moz-placeholder {
-    color: black;
-    opacity: 1;
-}
-
-#torrents #content .userratingdiv #review::-moz-placeholder {
-    color: black;
-    opacity: 1;
+#torrents #content .userratingdiv #review:-moz-placeholder,#torrents #content .userratingdiv #review::-moz-placeholder {
+    color: #000;
+    opacity: 1
 }
 
 #torrents #content .userratingdiv #review:-ms-input-placeholder {
-    color: black;
-    opacity: 1;
+    color: #000;
+    opacity: 1
 }
 
 #torrents #content .userratingdiv #charcounter {
-    font-size: 0.8em;
+    font-size: .8em;
     float: right;
-    padding-top: 7px;
+    padding-top: 7px
 }
 
 #torrents #content .thin .userreviews table {
     width: 100%;
-    border: none;
-    background: none;
-    margin-bottom: -2px;
+    border: 0;
+    background: 0 0;
+    margin-bottom: -2px
 }
 
 #torrents #content .thin .userreviews tr {
-    background-color: transparent !important;
-}
-
-#torrents #content .thin .userreviews td {
-    border: none;
-}
-
-#torrents #content .thin .userreviews table td {
-    vertical-align: top;
+    background-color: transparent!important
 }
 
 #torrents #content .thin .userreviews #usersreviewimage {
-    width: 20px;
+    width: 20px
 }
 
 #torrents #content .thin .userreviews #usersreviewimage img {
     margin-top: 2px;
-    width: 27px;
+    width: 27px
 }
 
 #torrents #content .thin table #reviewdate {
-    font-size: 0.6em;
-    font-style: italic;
+    font-size: .6em;
+    font-style: italic
 }
 
 #torrents #content .thin #allreviewslink {
-    font-size: 0.8em;
+    font-size: .8em;
     font-style: italic;
     text-decoration: underline;
     float: right;
-    padding-top: 10px;
+    padding-top: 10px
 }
 
 #torrents .main_column .forum_post td.avatar {
-    min-height: 150px;
+    min-height: 150px
 }
 
 #torrents .main_column .forum_post .body .content {
-    min-height: 118px;
+    min-height: 118px
 }
 
 #torrents .forum_post .comment_rating {
     width: 100%;
     min-height: 25px;
     margin-top: 5px;
-    padding: 5px 0px 2px 3px;
+    padding: 5px 0 2px 3px;
     overflow-y: auto;
     overflow-x: hidden;
     border-top: 1px solid #666;
-    opacity: 0.8;
+    opacity: .8
 }
 
 #torrents .forum_post .comment_rating .flleft {
     width: 30px;
     margin-top: 5px;
-    margin-right: 5px;
+    margin-right: 5px
 }
 
 #torrents .forum_post .comment_rating img {
     height: 25px;
-    width: 25px;
+    width: 25px
 }
 
 #torrents .forum_post .comment_rating p {
-    font-size: 0.9em;
+    font-size: .9em
 }
 
 #allreviews {
-    margin-left: 12px;
+    margin-left: 12px
 }
 
 #allreviews .box {
-    margin-top: -8px;
+    margin-top: -8px
 }
 
 #allreviews table {
     width: 95%;
     margin: 8px auto;
-    border: none;
-}
-
-#allreviews tr {
-    border: none;
+    border: 0
 }
 
 #allreviews td {
@@ -2380,45 +1362,44 @@ ul.poll li.graph {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 3px;
-    border: none;
+    border: 0;
     vertical-align: top;
-    line-height: 150%;
+    line-height: 150%
 }
 
 #allreviews h2 {
     height: 48px;
     line-height: 48px;
-    color: #555555;
-    padding-left: 15px;
+    color: #555;
+    padding-left: 15px
 }
 
 #allreviews #deletereview {
     padding-left: 5px;
-    font-size: 0.8em;
+    font-size: .8em
 }
 
 #allreviews #usersreviewimage img {
     width: 20px;
-    margin-top: 5px;
+    margin-top: 5px
 }
 
 #allreviews table #reviewdate {
-    font-size: 0.7em;
-    font-style: italic;
+    font-size: .7em;
+    font-style: italic
 }
 
 #torrent_link .label {
-    width: 7%;
+    width: 7%
 }
 
-#torrent_link #specialed {
-    margin-left: 20px;
+#torrent_link #specialed,.items_style #items_navigation ul ul li {
+    margin-left: 20px
 }
 
-/* REVIEW RATINGS */
 #reviews_table {
     width: auto;
-    border: hidden;
+    border: hidden
 }
 
 .ratings {
@@ -2427,77 +1408,76 @@ ul.poll li.graph {
     margin: auto;
     padding: 10px 0 10px 50px;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .ratings.meta {
-    background: URL("https://gazellegames.net/static/styles/layer_cake/images/icons/metacritic.png") no-repeat transparent;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/icons/metacritic.png) no-repeat
 }
 
 .ratings.ign {
-    background: URL("https://gazellegames.net/static/styles/layer_cake/images/icons/ign.png") no-repeat transparent;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/icons/ign.png) no-repeat
 }
 
 .ratings.gamespot {
-    background: URL('images/gamespot.png') no-repeat transparent;
+    background: url(images/gamespot.png) no-repeat
 }
 
 .ratings.cnet {
-    background: URL("https://gazellegames.net/static/styles/layer_cake/images/icons/cnet.png") no-repeat transparent;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/icons/cnet.png) no-repeat
 }
 
 .ratings .green {
-    color: #62C746;
+    color: #62c746
 }
 
 .ratings .yellow {
-    color: #FBB803;
+    color: #fbb803
 }
 
 .ratings .red {
-    color: #CC0000;
+    color: #c00
 }
 
-.ratings .green, .ratings .yellow, .ratings .red {
+.ratings .green,.ratings .red,.ratings .yellow {
     font-size: 25px;
-    font-weight: normal;
+    font-weight: 400
 }
 
-/****Similar Games*****/
-.box.similar_div {
-    padding-bottom: 10px;
+#chat #content,.box.similar_div {
+    padding-bottom: 10px
 }
 
 .similar_div .head .flright {
     margin-top: -5px;
-    margin-right: 10px;
+    margin-right: 10px
 }
 
 .similar .similar_group {
-    width: 170px;
+    width: 170px
 }
 
 .similar ul {
     list-style: none;
     max-height: 270px;
-    margin: 0px;
-    padding: 0px;
-    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto
 }
 
 .similar li.similar_group {
     display: block;
     width: 24%;
-    margin: 0px .5% 5px;
-    padding: 0px !important;
-    float: left;
+    margin: 0 .5% 5px;
+    padding: 0!important;
+    float: left
 }
 
-.similar .similar_group > a img {
+.similar .similar_group>a img {
     width: 100%;
     height: 200px;
-    margin: 1px 0px;
-    padding: 0 1px;
+    margin: 1px 0;
+    padding: 0 1px
 }
 
 .similar .similar_votes {
@@ -2507,339 +1487,319 @@ ul.poll li.graph {
     background-color: rgba(0,0,0,.6);
     border-radius: 0 0 5px 5px;
     font-size: 1.3em;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .similar .similar_votes a {
-    margin-right: 5px;
+    margin-right: 5px
 }
 
 .similar .similar_votes a:hover {
-    border-bottom: 1px solid white;
-    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    text-decoration: none
 }
 
-.main_column .similar img[src*="leechers"] {
-    margin-top: 0px;
+.main_column .similar img[src*=leechers] {
+    margin-top: 0;
     height: 17px;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
-.main_column .similar img[src*="seeders"] {
-    height: 17px;
+.main_column .similar img[src*=seeders] {
+    height: 17px
 }
 
 .similar li#suggested_header {
     clear: left;
     font-size: 1.3em;
-    font-weight: bold;
-    height: 30px;
+    font-weight: 700;
+    height: 30px
 }
 
-/* Layout (Forums) */
 .last_read {
     width: 15px;
     height: 15px;
     background: url(images/go_last_read.png) no-repeat center center;
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 .last_read a {
-    border: none;
+    border: 0;
     width: 100%;
     height: 100%;
-    display: block;
-}
-
-.last_read a:hover {
-    border: none;
+    display: block
 }
 
 .unread_locked_sticky {
-    background: url(images/locked_sticky_unread.png) no-repeat center center;
+    background: url(images/locked_sticky_unread.png) no-repeat center center
 }
 
 .read_locked_sticky {
-    background: url(images/locked_sticky_read.png) no-repeat center center;
+    background: url(images/locked_sticky_read.png) no-repeat center center
 }
 
 .read_sticky {
-    background: url(images/sticky_read.png) no-repeat center center;
+    background: url(images/sticky_read.png) no-repeat center center
 }
 
 .unread_sticky {
-    background: url(images/sticky_unread.png) no-repeat center center;
+    background: url(images/sticky_unread.png) no-repeat center center
 }
 
 .unread_locked {
-    background: url(images/locked_unread.png) no-repeat center center;
+    background: url(images/locked_unread.png) no-repeat center center
 }
 
 .read_locked {
-    background: url(images/locked_read.png) no-repeat center center;
+    background: url(images/locked_read.png) no-repeat center center
 }
 
 .unread {
-    background: url(images/unread.png) no-repeat center center;
+    background: url(images/unread.png) no-repeat center center
 }
 
 .read {
-    background: url(images/read.png) no-repeat center center;
+    background: url(images/read.png) no-repeat center center
 }
 
 table.forum_post {
-    margin: 10px 0px;
+    margin: 10px 0
 }
 
 table.forum_post td {
-    border: 1px solid #666;
+    border: 1px solid #666
 }
 
 table.forum_unread {
-    border: 2px solid #F0BBD6;
+    border: 2px solid #f0bbd6
 }
 
 td.avatar {
     width: 150px;
-    padding: 0px;
+    padding: 0
 }
 
 .avatar .forumstat {
     max-height: 0;
-    -webkit-transition: max-height 0.1s ease-out;
-    -moz-transition: max-height 0.1s ease-out;
-    -o-transition: max-height 0.1s ease-out;
-    transition: max-height 0.1s ease-out;
-    overflow: hidden;
+    -webkit-transition: max-height .1s ease-out;
+    -moz-transition: max-height .1s ease-out;
+    -o-transition: max-height .1s ease-out;
+    transition: max-height .1s ease-out;
+    overflow: hidden
 }
 
-.avatar:hover .forumstat, td[id^=likers]>br {
-    /* Sets hover on avatar stats */
+.avatar:hover .forumstat,td[id^=likers]>br {
     max-height: 500px;
-    -webkit-transition: max-height 0.3s ease-in 0.25s;
-    -moz-transition: max-height 0.3s ease-in 0.25s;
-    -o-transition: max-height 0.3s ease-in 0.25s;
-    transition: max-height 0.3s ease-in 0.25s;
+    -webkit-transition: max-height .3s ease-in .25s;
+    -moz-transition: max-height .3s ease-in .25s;
+    -o-transition: max-height .3s ease-in .25s;
+    transition: max-height .3s ease-in .25s
 }
 
 #achievement_info {
     display: block;
-    margin-top: 6px;
+    margin-top: 6px
 }
 
 table.forum_post td.body {
-    width: 690px;
+    width: 690px
 }
 
 blockquote {
     margin: 10px;
-    padding: 10px;
-    border: 1px dashed #666;
+    border: 1px dashed #666
 }
 
-/* BB CODE BUTTONS */
-#bb_bold, #bb_und, #bb_ita, #bb_img, #bb_link, #bb_strk, #bb_h2, #bb_h3, #bb_h4, #bb_h5, #bb_h6, #bb_h1, #bb_color, #bb_tex, #bb_quote, #bb_list, #bb_spoil, #bb_cent, #bb_lef, #bb_righ, #bb_pre, #bb_youtube {
+#bb_bold,#bb_cent,#bb_color,#bb_h1,#bb_h2,#bb_h3,#bb_h4,#bb_h5,#bb_h6,#bb_img,#bb_ita,#bb_lef,#bb_link,#bb_list,#bb_pre,#bb_quote,#bb_righ,#bb_spoil,#bb_strk,#bb_tex,#bb_und,#bb_youtube {
     display: inline-block;
     height: 16px;
-    width: 16px;
+    width: 16px
 }
 
 #bb_bold {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_bold.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_bold.png)
 }
 
 #bb_und {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_underline.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_underline.png)
 }
 
 #bb_ita {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_italic.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_italic.png)
 }
 
 #bb_img {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/images.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/images.png)
 }
 
 #bb_link {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/link.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/link.png)
 }
 
 #bb_strk {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_strikethrough.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_strikethrough.png)
 }
 
 #bb_h1 {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_1.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_1.png)
 }
 
 #bb_h2 {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_2.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_2.png)
 }
 
 #bb_h3 {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_3.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_3.png)
 }
 
 #bb_h4 {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_4.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_4.png)
 }
 
 #bb_h5 {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_5.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_5.png)
 }
 
 #bb_h6 {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_6.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_heading_6.png)
 }
 
 #bb_color {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/color_wheel.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/color_wheel.png)
 }
 
 #bb_tex {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/font.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/font.png)
 }
 
 #bb_quote {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/user_comment.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/user_comment.png)
 }
 
 #bb_list {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_list_bullets.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_list_bullets.png)
 }
 
 #bb_spoil {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/eye.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/eye.png)
 }
 
 #bb_cent {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_align_center.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_align_center.png)
 }
 
 #bb_lef {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_align_left.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_align_left.png)
 }
 
 #bb_righ {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/text_align_right.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/text_align_right.png)
 }
 
 #bb_pre {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/page_white_text.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/page_white_text.png)
 }
 
 #bb_youtube {
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/icons/monitor.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/monitor.png)
 }
 
 .bbbutt {
-    background-color: #EEEEEE;
-    border: medium solid #365C80;
+    background-color: #eee;
+    border: medium solid #365c80;
     padding: 5px;
     margin: 5px;
     list-style: none;
     display: inline-block;
-    cursor: default;
+    cursor: default
 }
 
 .bbbutt li {
     display: inline;
-    margin-right: 2px;
+    margin-right: 2px
 }
 
 .bbbutt li a {
-    border: none;
+    border: 0;
     display: inline-block;
-    margin-bottom: -2px;
+    margin-bottom: -2px
 }
 
 .bbbutt li select {
     height: 16px
 }
 
-/* END BB CODE BUTTONS */
-/* Layout (Inbox) */
 tr.unreadpm {
-    background-color: #ECC;
+    background-color: #ecc
 }
 
-/* Layout (Permission Page) */
-.permission_head {
+.permission_head,.permissions {
     width: 400px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
 }
 
 .permissions {
-    width: 930px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 930px
 }
 
 .permission_container {
     float: left;
     width: 300px;
-    padding: 5px;
+    padding: 5px
 }
 
 .permission_container input {
-    margin: 0px 3px 5px 0px;
-    vertical-align: top;
+    margin: 0 3px 5px 0;
+    vertical-align: top
 }
 
 .submit_container {
     clear: both;
-    text-align: right;
+    text-align: right
 }
 
-/* Layout (Invite tree) */
 ul .invitetree {
-    margin: 0px 0px 0px 25px;
+    margin: 0 0 0 25px
 }
 
 .invitetree li {
     list-style: none;
-    margin: 10px 2px;
+    margin: 10px 2px
 }
 
-/* Layout (MISC) */
 #left_poll {
     width: 2px;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/bar_left.gif) no-repeat center center
+}
+
+#center_poll,#left_poll,#right_poll {
     height: 9px;
-    background: url('https://gazellegames.net/static/styles/layer_cake/images/bar_left.gif') no-repeat center center;
     float: left;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 #center_poll {
-    height: 9px;
-    background: url('https://gazellegames.net/static/styles/layer_cake/images/bar.gif') repeat;
-    float: left;
-    margin: 0px;
-    padding: 0px;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/bar.gif)
 }
 
 #right_poll {
     width: 2px;
-    height: 9px;
-    background: url('https://gazellegames.net/static/styles/layer_cake/images/bar_right.gif') no-repeat center center;
-    float: left;
-    margin: 0px;
-    padding: 0px;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/bar_right.gif) no-repeat center center
 }
 
 .curtain {
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #000;
     z-index: 1001;
-    -moz-opacity: 0.8;
-    opacity: .80;
-    filter: alpha(opacity=80);
+    -moz-opacity: .8;
+    opacity: .8;
+    filter: alpha(opacity=80)
 }
 
 .lightbox {
@@ -2849,9 +1809,9 @@ ul .invitetree {
     left: 5%;
     width: 90%;
     height: 90%;
-    padding: 0px;
+    padding: 0;
     z-index: 1002;
-    overflow: auto;
+    overflow: auto
 }
 
 .lightbox img {
@@ -2859,85 +1819,70 @@ ul .invitetree {
     max-width: 98%
 }
 
-/* Levelling Areas */
 #achievements {
-    border: medium solid black;
-    background-color: #1c1c1c;
+    border: medium solid #000;
+    background-color: #1c1c1c
 }
 
-#achievements tr {
-    background: none;
-    border-bottom: white 1px solid;
-    color: #fff;
+#achievements tr,#achievements tr.colhead {
+    background: 0 0;
+    border-bottom: #fff 1px solid;
+    color: #fff
 }
 
 #achievements tr.colhead {
-    color: #fff;
-    background: none;
-    border-bottom: white 1px solid;
-    border-top: white 1px solid;
+    border-top: #fff 1px solid
 }
 
 #achievements td {
-    border: none;
+    border: 0;
     vertical-align: middle;
-    text-align: center;
-}
-
-#achievements td.achlabel {
-    text-align: right;
+    text-align: center
 }
 
 #achievements td .levelcont {
-    margin: 0pt auto;
-    width: 78px;
+    margin: 0 auto;
+    width: 78px
 }
 
 #achievements td .levelcont .bubble {
-    display: inline-block;
     vertical-align: top;
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/userbubble.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/userbubble.png);
     background-repeat: none;
-    height: 15px;
-    width: 15px;
-    float: right;
+    height: 15px
 }
 
-#achievements td .levelcont .spacer {
+#achievements td .levelcont .bubble,#achievements td .levelcont .complete,#achievements td .levelcont .spacer {
     width: 15px;
     display: inline-block;
-    float: right;
+    float: right
 }
 
 #achievements td .italic {
     font-size: 10px;
     font-style: italic;
-    font-weight: normal;
+    font-weight: 400
 }
 
 #achievements td .levelcont .complete {
-    display: inline-block;
     vertical-align: top;
-    background-image: URL('https://gazellegames.net/static/styles/layer_cake/images/usercheck.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/usercheck.png);
     background-repeat: none;
-    height: 15px;
-    width: 15px;
-    float: right;
+    height: 15px
 }
 
-#achievements img {
-    border: none;
-    vertical-align: middle;
+#achievements img,.last_read a:hover {
+    border: 0
 }
 
 #achievements .levelcont img {
     margin-left: 15px;
     width: 48px;
-    float: left;
+    float: left
 }
 
 #achievements img:hover {
-    opacity: 1 !important;
+    opacity: 1!important
 }
 
 #progress_bar {
@@ -2945,84 +1890,66 @@ ul .invitetree {
     padding: 6px;
     width: 950px;
     height: 9px;
-    background-color: #666666;
+    background-color: #666;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    -moz-border-radius: 10px
 }
 
 .flright {
-    float: right;
+    float: right
 }
 
 .flleft {
-    float: left;
+    float: left
 }
 
-/* End Levelling Areas */
-/* IRC */
 #chat #wrapper #content {
-    background-color: #D4E7EF;
+    background-color: #d4e7ef;
     color: #333;
-    border: solid skyblue 3px;
+    border: solid #87ceeb 3px
 }
 
-h3#irc, h3#general, h3#jump, h3#forums {
-    padding: 10px;
+#chat #content .thin .pad ul,blockquote,h3#forums,h3#general,h3#irc,h3#jump {
+    padding: 10px
 }
 
 #chat #wrapper #content .thin .box {
-    background-color: #B1C7E6;
+    background-color: #b1c7e6;
     margin: 0 20px;
-    border: solid #aaa 1px;
+    border: solid #aaa 1px
 }
 
 #chat #content .thin {
-    margin-bottom: 20px;
-}
-
-#chat #content .thin .pad ul {
-    padding: 10px;
-}
-
-#chat #content {
-    padding-bottom: 10px;
+    margin-bottom: 20px
 }
 
 #chat #wrapper #content .thin .box a {
     color: #333;
-    border-bottom-color: #888;
+    border-bottom-color: #888
 }
 
 #chat #wrapper #content .thin .box a:hover {
-    color: black;
-    border-bottom-color: #444;
+    color: #000;
+    border-bottom-color: #444
 }
 
-#loginpaste {
+#loginpaste,#qwebcontainer {
     width: 770px;
-    margin: 0 auto;
-}
-
-#qwebcontainer {
-    width: 770px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 #qwebframe {
     width: 770px;
-    height: 620px;
+    height: 620px
 }
 
-/* END IRC */
-.owner, .owner:hover {
-    background: #BBBBBB;
+.owner,.owner:hover {
+    background: #bbb
 }
 
-/* NEWS UNREAD ICON */
 #markread {
-    /*Code to mark new news items as read*/
-    background-image: url("https://gazellegames.net/static/styles/layer_cake/images/newscheckbox.png");
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/newscheckbox.png);
     background-repeat: no-repeat;
     border-bottom: medium none;
     float: left;
@@ -3030,32 +1957,26 @@ h3#irc, h3#general, h3#jump, h3#forums {
     margin-left: 5px;
     padding-right: 8px;
     margin-top: 3px;
-    width: 18px;
+    width: 18px
 }
 
 .main_column .box .head#unread {
-    /*Probably related to new items*/
-    background-position: left bottom;
+    background-position: left bottom
 }
 
-/* END NEWS UNREAD ICON */
-/* TM STATS */
 #platform_name {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
-/* END TM STATS */
-/* COLLECTIONS */
-/* Browse */
-.collections_art_display td {
-    border: none;
+.collections_art_display td,.gazelles_art_display td {
+    border: 0;
     padding: 2px;
-    width: 25%;
+    width: 25%
 }
 
 .collections_art_display .collection_art {
     height: 100px;
-    background-size: 208px 100px;
+    background-size: 208px 100px
 }
 
 .hovereffect {
@@ -3065,7 +1986,7 @@ h3#irc, h3#general, h3#jump, h3#forums {
     overflow: hidden;
     position: relative;
     text-align: center;
-    cursor: default;
+    cursor: default
 }
 
 .hovereffect .overlay {
@@ -3074,38 +1995,38 @@ h3#irc, h3#general, h3#jump, h3#forums {
     position: absolute;
     overflow: hidden;
     top: 5%;
-    left: 0;
+    left: 0
 }
 
 .hovereffect .img_responsive {
     display: block;
     position: relative;
-    width: 100%;
+    width: 100%
 }
 
 .hovereffect h2 {
     text-align: left;
     position: relative;
     font-size: 15px;
-    line-height: 18px !important;
+    line-height: 18px!important;
     height: 80px;
     padding: 5px;
     border-bottom: none;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0,0,0,.7);
     font-family: arial;
-    -webkit-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7);
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    -webkit-transform: scale(.7);
+    -ms-transform: scale(.7);
+    transform: scale(.7);
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
     opacity: 0;
     filter: alpha(opacity=0);
-    color: #fff;
+    color: #fff
 }
 
 .hovereffect h2 div {
     font-size: 11px;
-    font-style: italic;
+    font-style: italic
 }
 
 .hovereffect:hover h2 {
@@ -3113,181 +2034,165 @@ h3#irc, h3#general, h3#jump, h3#forums {
     filter: alpha(opacity=100);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);
+    transform: scale(1)
 }
 
 .overlay a {
-    color: white !important;
+    color: #fff!important
 }
 
 .overlay h2 a:hover {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0
 }
 
 .overlay div {
-    padding-top: 5px;
+    padding-top: 5px
 }
 
 .overlay div a:hover {
-    color: #C7D6F1;
+    color: #c7d6f1;
     text-decoration: underline;
     top: 1px;
-    left: 1px;
+    left: 1px
 }
 
 .overlay span {
     line-height: 14px;
-    font-style: normal;
+    font-style: normal
 }
 
-/* Collection Pages */
-#collections .collage_images li {
-    vertical-align: middle;
+#achievements img,#collections .collage_images li {
+    vertical-align: middle
 }
 
 #collections .sidebar .box_description img {
     width: auto;
-    border: 0px;
-    margin: 0px;
+    border: 0;
+    margin: 0
 }
 
 #collections .sidebar .box_albumart img {
     width: 180;
-    border: 0px;
-    margin: 0px;
+    border: 0;
+    margin: 0
 }
 
 #collections .sidebar .subhead {
     padding-top: 1px;
-    text-align: center;
+    text-align: center
 }
 
 #collections .box_description div {
-    word-wrap: break-word;
+    word-wrap: break-word
 }
 
 #collections ul.collage_images {
-    padding: 0px;
+    padding: 0;
     width: 760px;
-    margin: auto;
-    margin-left: 55px;
-    border-collapse: collapse;
+    margin: auto auto auto 55px;
+    border-collapse: collapse
 }
 
 #collections ul.collage_images li {
     padding: 5px;
-    border: none;
+    border: 0;
     float: left;
-    margin: 0px;
+    margin: 0;
     width: 158px;
     height: 162px;
     list-style: none;
-    list-style-type: none;
+    list-style-type: none
 }
 
 #collections ul.collage_images li a {
     display: block;
     height: 162px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 #collections ul.collage_images img {
     width: 142px;
-    height: 162px;
+    height: 162px
 }
 
 .collections .linkbox .selected .pageslink {
-    color: #000;
+    color: #000
 }
 
 #collections .box_comment .pad img {
     height: initial;
     width: initial;
-    border: 0px;
+    border: 0;
     padding: 1px;
-    margin: 0px;
+    margin: 0
 }
 
 #sort_table {
-    border: 0px !important;
+    border: 0!important;
     margin-top: -15px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
-#sort_table td, #sort_table tr {
-    border: 0px;
-}
-
-/* END COLLECTIONS */
-/* GAZELLE VIEWER */
-.gazelles_art_display td {
-    border: none;
-    padding: 2px;
-    width: 25%;
+#sort_table td,#sort_table tr {
+    border: 0
 }
 
 .gazelles_art_display .gazelle_art {
     height: 180px;
     background-size: 210px 180px;
-    background-color: white;
+    background-color: #fff
 }
 
-#gazelleview .gazellepic tbody, #gazelleview .gazellepic tr, #gazelleview .gazellepic td {
+#gazelleview .gazellepic tbody,#gazelleview .gazellepic td,#gazelleview .gazellepic tr {
     width: 100%;
-    border: 0px;
+    border: 0
 }
 
 #gazelleview .gazellepic img {
     display: block;
     margin: 0 auto;
-    width: 100%;
+    width: 100%
 }
 
 #gazelleview #titlerow p {
     font-size: 2em;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
-    padding: 5px;
+    padding: 5px
 }
 
 #gazelleview .gazelleinfo .rowtitle {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 #gazelleview #gazelletags {
-    margin-left: 4px;
+    margin-left: 4px
 }
 
 #gazelleview #usertagsrow #tags {
-    width: 25%;
+    width: 25%
 }
 
 #gazelleview #usertagsrow #newtag {
-    width: 120px;
+    width: 120px
 }
 
-/* END GAZELLE VIEWER */
-/* DONATE */
 #donate #donation_rewards ul {
-    margin-left: 35px;
+    margin-left: 35px
 }
 
-/* END DONATE */
-/* ******************************** */
-/* ********* Share Score ********** */
-/* ******************************** */
 #share_score .linkbox {
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: 700;
+    font-size: 1.2em
 }
 
 #share_score .colhead td {
-    text-align: center;
+    text-align: center
 }
 
 #share_score_breakdown td.label {
-    height: 5.5em;
+    height: 5.5em
 }
 
 #share_score #progress_bar {
@@ -3297,14 +2202,14 @@ h3#irc, h3#general, h3#jump, h3#forums {
     background: #bbb;
     border-radius: 25px;
     padding: 5px;
-    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    box-shadow: inset 0 -1px 1px rgba(255,255,255,.3)
 }
 
-#share_score #progress_bar > span {
+#share_score #progress_bar>span {
     display: block;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 0
 }
 
 #share_score #progress_bar .main_bar {
@@ -3313,84 +2218,74 @@ h3#irc, h3#general, h3#jump, h3#forums {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: #d4f423;
-    background-image: linear-gradient(to bottom, #89a740, #d4f423, #698c11);
-    box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
+    background-image: linear-gradient(to bottom,#89a740,#d4f423,#698c11);
+    box-shadow: inset 0 2px 9px rgba(255,255,255,.3),inset 0 -2px 6px rgba(0,0,0,.4);
     position: relative;
-    z-index: 5;
+    z-index: 5
 }
 
 #share_score #progress_bar .main_bar.complete {
     border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px
 }
 
 #share_score #progress_bar .points {
-    font-weight: bold;
+    font-weight: 700;
     margin-left: 48.5%;
     padding-top: 7px;
     text-align: center;
     z-index: 10;
-    color: black;
-    text-shadow: -1px -1px 0 #eee, 1px -1px 0 #eee, -1px 1px 0 #eee, 1px 1px 0 #eee;
+    color: #000;
+    text-shadow: -1px -1px 0 #eee,1px -1px 0 #eee,-1px 1px 0 #eee,1px 1px 0 #eee
 }
 
 #share_score #progress_bar .five_marker {
     top: -17px;
-    right: 0;
+    right: 0
 }
 
 #share_score #progress_bar .fifteen_marker {
     top: 32px;
-    right: 0;
+    right: 0
 }
 
 #share_score #progress_bar .main_section {
-    border-right: 2px solid white;
+    border-right: 2px solid #fff
 }
 
 #share_score #progress_bar .bonus_section {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: rgba(177,232,0,0.2);
-    right: 0;
+    background-color: rgba(177,232,0,.2);
+    right: 0
 }
 
 #seed_snatch_breakdown #progress_bar .main_bar {
-    background-color: rgb(123,255,158);
-    background-image: linear-gradient(to bottom, rgb(123,255,158), rgb(6,162,6));
+    background-color: #7bff9e;
+    background-image: linear-gradient(to bottom,#7bff9e ,#06a206)
 }
 
 #seed_time_breakdown #progress_bar .main_bar {
-    background-color: rgb(99, 228, 255);
-    background-image: linear-gradient(to bottom, rgb(99,228,255), rgb(0,115,150));
+    background-color: #63e4ff;
+    background-image: linear-gradient(to bottom,#63e4ff ,#007396)
 }
 
 #seed_size_breakdown #progress_bar .main_bar {
     background-color: #e8a3f0;
-    background-image: linear-gradient(to bottom, #e8a3f0, #ad23f4);
+    background-image: linear-gradient(to bottom,#e8a3f0,#ad23f4)
 }
 
 #share_score #progress_bar .main_bar {
-    animation: expandWidth 2s;
+    animation: expandWidth 2s
 }
 
-@keyframes expandWidth {
-    0% {
-        width: 0;
-    }
-}
-
-/*****************************************************
-******************* ALL ITEM PAGES *******************
-*****************************************************/
-/*Left Navigation Menu*/
 .items_style #items_navigation {
     width: 200px;
     float: left;
-    background: url('https://gazellegames.net/static/styles/game_room/images/shop/menubkg.png');
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/menubkg.png);
     padding-bottom: 25px;
     border-radius: 10px;
-    text-align: left;
+    text-align: left
 }
 
 .items_style #items_navigation h3 {
@@ -3399,73 +2294,65 @@ h3#irc, h3#general, h3#jump, h3#forums {
     display: block;
     font-size: 1.5em;
     border-bottom: 1px solid #c7c7c7;
-    font-weight: bold;
+    font-weight: 700;
     color: #fff;
-    margin: 0;
+    margin: 0
 }
 
 .items_style #items_navigation h3:nth-of-type(2) {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .items_style #items_navigation li {
     list-style: none;
     font-family: Roboto;
     font-size: 1.1em;
-    padding: 5px 0;
+    padding: 5px 0
 }
 
 .items_style #items_navigation li a {
-    color: rgba(255,255,255,0.8);
-    outline: 1px black;
-    border-bottom: none;
+    color: rgba(255,255,255,.8);
+    outline: 1px #000;
+    border-bottom: none
 }
 
 .items_style #items_navigation li#selected a {
-    font-weight: bold;
-    color: #b49629;
+    font-weight: 700;
+    color: #b49629
 }
 
 .items_style #items_navigation li a:hover {
     color: #b49629;
-    text-decoration: none;
-}
-
-.items_style #items_navigation ul ul li {
-    margin-left: 20px;
+    text-decoration: none
 }
 
 .items_style #items_navigation ul ul ul li {
-    margin-left: 30px;
+    margin-left: 30px
 }
 
-.items_style #items_list input, .items_style #items_list select, .items_style #items_list button {
-    background: url("https://gazellegames.net/static/styles/blue_ambrose/images/BlueGradBtn.png") repeat-x scroll 0 0 #2B2B2B;
+.items_style #items_list button,.items_style #items_list input,.items_style #items_list select {
+    background: url(https://gazellegames.net/static/styles/blue_ambrose/images/BlueGradBtn.png) repeat-x 0 0 #2b2b2b;
     border: 1px solid #888;
-    color: #FDFDFD;
-    padding: 2px 3px;
+    color: #fdfdfd;
+    padding: 2px 3px
 }
 
-/**********************************************
-******************SHOP*************************
-**********************************************/
-#shop #content li.no_items, #loading {
+#loading,#shop #content li.no_items {
     list-style: none;
     font-size: 2em;
     text-align: left;
     padding: 10px;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000
 }
 
 #loading {
-    margin-left: 220px;
+    margin-left: 220px
 }
 
 #shop #items_navigation {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0
 }
 
-/***Shop Items***/
 #shop #items_list {
     margin: 20px 0 0;
     width: calc(100% - 230px);
@@ -3473,7 +2360,7 @@ h3#irc, h3#general, h3#jump, h3#forums {
     padding: 0;
     float: right;
     display: block;
-    height: 100%;
+    height: 100%
 }
 
 #shop li.item_li {
@@ -3485,28 +2372,30 @@ h3#irc, h3#general, h3#jump, h3#forums {
     float: left;
     height: 360px;
     border-radius: 10px;
-    color: #fff;
+    color: #fff
 }
 
-#shop #stock_info, #shop h4, #shop .item_description, #shop #extended_info, #shop #spacer_2, #shop #requirements, #shop #upload_info, #shop #gold_info, #shop #life_info, #shop #slot_info, #shop #item_type {
+#shop #extended_info,#shop #gold_info,#shop #item_type,#shop #life_info,#shop #requirements,#shop #slot_info,#shop #spacer_2,#shop #stock_info,#shop #upload_info,#shop .item_description,#shop h4 {
     visibility: hidden;
     height: 0;
     padding: 0;
-    margin: 0;
+    margin: 0
 }
 
 #shop h2 {
-    display: none;
+    display: none
+}
+
+#shop h3.center,.inventory h3.center {
+    vertical-align: middle;
+    line-height: 1.2em;
+    height: 40px
 }
 
 #shop h3.center {
-    vertical-align: middle;
-    font-size: 1.2em;
-    margin: 0 5%;
-    line-height: 1.2em;
-    height: 40px;
     width: 90%;
-    margin-top: -50px;
+    margin: -50px 5% 0;
+    font-size: 1.2em
 }
 
 #shop .item_image_div {
@@ -3516,7 +2405,7 @@ h3#irc, h3#general, h3#jump, h3#forums {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 #shop .item_center.item_image {
@@ -3524,103 +2413,99 @@ h3#irc, h3#general, h3#jump, h3#forums {
     max-height: 150px;
     margin-top: 15px;
     vertical-align: middle;
-    display: block;
+    display: block
 }
 
 #shop #clickable {
     height: 225px;
-    padding: 10px 0;
+    padding: 10px 0
 }
 
-#shop li[class*="item_type_"] #clickable {
+#shop li[class*=item_type_] #clickable {
     width: 195px;
-    margin: 40px auto 0;
+    margin: 40px auto 0
 }
 
 #shop li.item_type_0 #clickable {
-    background: url(https://gazellegames.net/static/styles/game_room/images/shop/redbkg.png) center left no-repeat;
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/redbkg.png) center left no-repeat
 }
 
 #shop li.item_type_1 #clickable {
-    background: url(https://gazellegames.net/static/styles/game_room/images/shop/bluebkg.png) center left no-repeat;
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/bluebkg.png) center left no-repeat
 }
 
 #shop li.item_type_2 #clickable {
-    background: url(https://gazellegames.net/static/styles/game_room/images/shop/greenbkg.png) center left no-repeat;
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/greenbkg.png) center left no-repeat
 }
 
 #shop li.item_type_3 #clickable {
-    background: url(https://gazellegames.net/static/styles/game_room/images/shop/yellowbkg.png) center left no-repeat;
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/yellowbkg.png) center left no-repeat
 }
 
 #shop li.item_type_4 #clickable {
-    background: url(https://gazellegames.net/static/styles/game_room/images/shop/greybkg.png) center left no-repeat;
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/greybkg.png) center left no-repeat
 }
 
 #shop li.item_type_5 #clickable {
-    background: url(https://gazellegames.net/static/styles/game_room/images/shop/lightbluebkg.png) left center no-repeat;
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/lightbluebkg.png) left center no-repeat
 }
 
 #shop .submit_section {
     width: auto;
-    margin-top: -35px;
+    margin-top: -35px
 }
 
-#shop .submit_section input, #shop .submit_section button {
-    padding: 4px;
+#shop .submit_section button,#shop .submit_section input {
+    padding: 4px
 }
 
 #shop .item_description {
     opacity: 0;
     -moz-transition: opacity .5s;
     -webkit-transition: opacity .5s;
-    transition: opacity .5s;
+    transition: opacity .5s
+}
+
+#shop #clickable:hover .item_description,#shop #cost_info {
+    visibility: visible;
+    position: relative;
+    display: block;
+    margin: 0 auto
 }
 
 #shop #clickable:hover .item_description {
-    visibility: visible;
     opacity: 1;
-    position: relative;
-    top: -152px;
     background-color: rgba(0,0,0,.8);
+    height: 130px;
+    z-index: 2;
+    overflow: hidden;
+    top: -152px;
     color: #fff;
     padding: 10px;
-    height: 130px;
-    text-align: left;
-    z-index: 2;
-    display: block;
-    margin: 0 auto;
-    overflow: hidden;
+    text-align: left
 }
 
 #shop #cost_info {
-    visibility: visible;
-    position: relative;
     top: -65px;
     width: 200px;
     text-align: center;
-    display: block;
-    padding: 5px 0px;
+    padding: 5px 0;
     color: #69c077;
     font-size: 2em;
     text-shadow: 2px 2px 5px #000;
-    font-weight: bold;
-    margin: 0 auto;
+    font-weight: 700
 }
 
-/***Confirmation Box***/
 .alertable-buttons button {
-    line-height: 5px;
+    line-height: 5px
 }
 
-/***Avatar Preview***/
 #contentpreview {
-    padding: 5px 10px;
+    padding: 5px 10px
 }
 
-/***New, Featured Items***/
 #shop .thin {
-    width: 950px;
+    width: 950px
 }
 
 #shop .new_purchase_icon {
@@ -3630,36 +2515,33 @@ h3#irc, h3#general, h3#jump, h3#forums {
     padding: 0;
     font-size: 35px;
     font-family: "Comic Sans MS",helvetica,sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     text-shadow: 2px 2px 2px #000;
     color: #19ea19;
     text-align: left;
     vertical-align: top;
-    position: absolute;
+    position: absolute
 }
 
 #shop li.new {
-    background: rgba(0,0,0,0.6) url('https://gazellegames.net/static/styles/game_room/images/shop/new.png') top left no-repeat;
+    background: rgba(0,0,0,.6) url(https://gazellegames.net/static/styles/game_room/images/shop/new.png) top left no-repeat
 }
 
 #shop li.featured {
     display: block;
     width: 340px;
-    float: left;
+    float: left
 }
 
 #shop .featured {
-    background: rgba(0,0,0,.6) url('https://gazellegames.net/static/styles/game_room/images/shop/featured.png') top left no-repeat !important;
-}
-
-#shop .featured {
+    background: rgba(0,0,0,.6) url(https://gazellegames.net/static/styles/game_room/images/shop/featured.png) top left no-repeat!important;
     visibility: visible;
-    height: auto;
+    height: auto
 }
 
 #shop li.featured #clickable {
     width: 100%;
-    margin: 25px auto 0;
+    margin: 25px auto 0
 }
 
 #shop .featured h3.center {
@@ -3668,44 +2550,43 @@ h3#irc, h3#general, h3#jump, h3#forums {
     height: auto;
     margin-left: 20px;
     margin-top: -35px;
-    color: #fff;
+    color: #fff
 }
 
-#shop .featured .item_description, #shop .featured #clickable:hover .item_description {
+#shop .featured #clickable:hover .item_description,#shop .featured .item_description {
     opacity: 1;
     visibility: visible;
     margin-left: 205px;
     text-align: left;
     margin-top: -240px;
-    top: 0px;
+    top: 0;
     display: block;
     height: 220px;
     padding: 0;
     background-color: transparent;
-    color: #fff;
+    color: #fff
 }
 
 #shop .featured #cost_info {
-    margin: 0;
+    margin: 0
 }
 
 #shop .featured .submit_section {
     margin: -30px 0 0;
-    text-align: left;
+    text-align: left
 }
 
-#shop .featured #stock_info, #shop .featured #upload_info, #shop .featured #life_info, #shop .featured #stock_info, #shop .featured #item_type, #shop .featured #slot_info, #shop .featured #extended_info {
-    display: none;
+#shop .featured #extended_info,#shop .featured #item_type,#shop .featured #life_info,#shop .featured #slot_info,#shop .featured #stock_info,#shop .featured #upload_info,.inventory div.center form {
+    display: none
 }
 
-#shop .more_info p.center, #shop .more_info #stock_info, #shop .more_info p, #shop .more_info #extended_info, #shop .more_info #spacer_2 {
+#shop .more_info #extended_info,#shop .more_info #spacer_2,#shop .more_info #stock_info,#shop .more_info p,#shop .more_info p.center {
     visibility: visible;
-    height: auto;
+    height: auto
 }
 
-/***More Info Popup***/
 .more_info {
-    width: 100%;
+    width: 100%
 }
 
 .more_info .col_1 {
@@ -3713,7 +2594,7 @@ h3#irc, h3#general, h3#jump, h3#forums {
     top: 0;
     left: 0;
     width: 200px;
-    padding: 10px 0 0 20px;
+    padding: 10px 0 0 20px
 }
 
 .more_info .col_2 {
@@ -3721,12 +2602,12 @@ h3#irc, h3#general, h3#jump, h3#forums {
     top: 0;
     right: 0;
     left: 200px;
-    padding: 0 10px 0 60px;
+    padding: 0 10px 0 60px
 }
 
 .more_info .info_box {
     min-height: auto;
-    height: auto;
+    height: auto
 }
 
 .more_info .info_box span.label {
@@ -3734,107 +2615,95 @@ h3#irc, h3#general, h3#jump, h3#forums {
     font-size: 1.1em;
     color: #b49629;
     width: 100%;
-    border-bottom: 1px solid rgba(180, 150, 41,.5);
+    border-bottom: 1px solid rgba(180,150,41,.5);
     text-align: left;
     height: auto;
     min-height: auto;
-    padding-top: 15px;
+    padding-top: 15px
 }
 
-.more_info .info_cost {
-    text-align: center;
+#equipment,.more_info .info_cost {
+    text-align: center
 }
 
 .more_info .info_cost #cost {
     font-size: 2em;
     text-shadow: 2px 2px 5px #000;
-    font-weight: bold;
-}
-
-.more_info .info_cost #cost {
-    color: #69c077;
+    font-weight: 700;
+    color: #69c077
 }
 
 .more_info .info_sub_basic {
-    padding-bottom: 6px;
+    padding-bottom: 6px
 }
 
 .more_info p {
-    padding-top: 0px;
+    padding-top: 0
 }
 
 .more_info #img_box img {
     max-width: 200px;
     width: 200px;
-    height: auto;
+    height: auto
 }
 
 .ui-dialog {
-    padding: 0px;
+    padding: 0;
     box-shadow: 2px 2px 10px #000;
-    font-family: Roboto;
+    font-family: Roboto
 }
 
 .ui-widget-header {
-    background: #0E1720;
-    border: none;
+    background: #0e1720;
+    border: 0;
     color: #c6e6f6;
-    border-radius: 0px;
-    border-bottom: 1px #2b4e66 solid;
+    border-radius: 0;
+    border-bottom: 1px #2b4e66 solid
 }
 
 .ui-widget-content {
     color: #fff;
-    background: rgba(39,65,90,1);
-    border: none;
+    background: #27415a;
+    border: 0
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close {
+.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close,.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
     background: #1c3145;
     border: 1px solid #1c3145;
-    color: #ccc;
+    color: #ccc
 }
 
-.ui-widget-content a {
-    color: #b49629;
+#content li.item_li a,.ui-widget-content a {
+    color: #b49629
 }
 
 .ui-dialog table {
-    background: none;
+    background: 0 0
 }
 
-#shop #footer {
-    position: relative;
+#shop #footer,.box_gold table {
+    position: relative
 }
 
-
-/**********************************
-************INVENTORY**************
-**********************************/
-.inventory h2 {
-    visibility: hidden;
-}
-
-.inventory div.center form {
-    display: none;
+#crafting_panel h2,#equipment h2,.inventory h2 {
+    visibility: hidden
 }
 
 #user .inventory .center {
-    padding: 0;
+    padding: 0
 }
 
 .inventory #items_navigation {
-    margin-top: 10px;
+    margin-top: 10px
 }
 
-/***Inventory Items***/
 .inventory #items_list {
     width: calc(100% - 230px);
     padding: 0;
     float: right;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    height: 100%
 }
 
 .inventory #content li.item_li {
@@ -3846,24 +2715,20 @@ h3#irc, h3#general, h3#jump, h3#forums {
     border-radius: 10px;
     float: left;
     display: block;
-    color: #fff;
+    color: #fff
 }
 
 .inventory h3.center {
-    vertical-align: middle;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    height: 40px;
     overflow: hidden;
     font-size: 1.4em;
     text-align: left;
-    margin-left: 120px;
+    margin-left: 120px
 }
 
-.inventory .item_image_div {
+#equipment .item,.inventory .item_image_div {
     height: 100px;
     width: 100px;
-    float: left;
+    float: left
 }
 
 .inventory .item_center.item_image {
@@ -3873,83 +2738,77 @@ h3#irc, h3#general, h3#jump, h3#forums {
     margin-left: 10px;
     margin-top: -45px;
     vertical-align: top;
-    display: block;
+    display: block
 }
 
-.inventory #content li.item_li p, .inventory #content li.item_li #life_info, .inventory #content li.item_li h4 {
+.inventory #content li.item_li #life_info,.inventory #content li.item_li h4,.inventory #content li.item_li p {
     text-align: left;
     padding: 0;
-    margin: 0 0 0 120px;
+    margin: 0 0 0 120px
 }
 
 .inventory h4 {
     font-size: 1.1em;
-    color: #b49629;
+    color: #b49629
 }
 
 .inventory #content li.item_li .item_description {
-    margin: -20px 5px 15px 120px !important;
+    margin: -20px 5px 15px 120px!important;
     display: block;
     padding: 0;
     background-color: transparent;
-    text-align: left;
-}
-
-#content li.item_li a {
-    color: #b49629;
+    text-align: left
 }
 
 .inventory #one_time_inputs input {
     width: 150px;
     margin-left: 120px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .inventory .submit_section {
     width: auto;
-    margin: 0 0 0 120px;
+    margin: 0 0 0 120px
 }
 
-.inventory .submit_section input, .inventory .submit_section button {
+.inventory .submit_section button,.inventory .submit_section input {
     padding: 2px;
-    height: auto;
+    height: auto
 }
 
 .inventory #one_time_inputs .title_preview {
     width: 60px;
-    margin: 5px;
     padding: 2px;
     height: 24px;
-    margin-left: 120px;
+    margin: 5px 5px 5px 120px
 }
 
 .inventory .top_linkbox {
-    display: none;
+    display: none
 }
 
 .inventory .bottom_linkbox {
     clear: both;
     color: #fff;
-    margin-left: 220px;
+    margin-left: 220px
 }
 
 .inventory .trash_icon {
-    padding: 3px;
+    padding: 3px
 }
 
 .inventory .save_message {
     display: block;
     width: 400px;
     line-height: 1.7em;
-    margin: 0px auto;
-    background: rgb(102,102,102);
-    padding: 5px;
+    margin: 0 auto;
+    background: #666;
     border-radius: 10px;
     filter: drop-shadow(2px 2px 10px #000);
     text-align: center;
-    padding-bottom: 10px;
+    padding: 5px 5px 10px;
     color: #fff;
-    border: none;
+    border: 0
 }
 
 .inventory .save_message span {
@@ -3957,13 +2816,12 @@ h3#irc, h3#general, h3#jump, h3#forums {
     display: block;
     font-size: 1.8em;
     border-bottom: 1px solid #c7c7c7;
-    font-weight: bold;
+    font-weight: 700;
     color: #fff;
     margin: 0 auto 10px;
-    width: 100%;
+    width: 100%
 }
 
-/***Books***/
 .book_dialog {
     color: #fff
 }
@@ -3971,45 +2829,37 @@ h3#irc, h3#general, h3#jump, h3#forums {
 .book {
     margin: 10px;
     padding: 25px 75px;
-    filter: drop-shadow(2px 2px 5px #000);
+    filter: drop-shadow(2px 2px 5px #000)
 }
 
 .book .book_content {
     padding: 25px;
-    box-shadow: 0px 0px 5px #000;
-    background-color: #2b4e66;
+    box-shadow: 0 0 5px #000
 }
 
-.book .page {
-    background-color: #2b4e66;
+.book .book_content,.book .page {
+    background-color: #2b4e66
 }
 
 .book span.size7 {
     border-bottom: 2px solid #fff;
     width: 100%;
-    display: block;
+    display: block
 }
 
 .book blockquote {
-    background-color: #1c3145;
+    background-color: #1c3145
 }
 
 .page_break {
     margin-bottom: 20px;
     border-top: #fff solid 1px;
     display: block;
-    width: 100%;
+    width: 100%
 }
 
 .page_break::after {
-    content: attr(id);
-}
-
-/**************************************************
-**************** Equipment Panel ******************
-**************************************************/
-#equipment h2 {
-    visibility: hidden;
+    content: attr(id)
 }
 
 #equipment #items {
@@ -4017,128 +2867,123 @@ h3#irc, h3#general, h3#jump, h3#forums {
     float: left;
     margin: 0 10px;
     position: relative;
-    padding: 3px 0px 3px 3px;
+    padding: 3px 0 3px 3px;
     height: 800px;
     background-color: rgba(0,0,0,.7);
     text-align: center;
-    overflow: hidden;
+    overflow: hidden
 }
 
-/* For top and bottom highlights when hovering over item slot */
 #equipment #items_inner {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
 #equipment .top_highlight #items_inner {
     -moz-box-shadow: inset 0 10px 10px -6px #a07307;
     -webkit-box-shadow: inset 0 10px 10px -6px #a07307;
-    box-shadow: inset 0 10px 10px -6px #a07307;
+    box-shadow: inset 0 10px 10px -6px #a07307
 }
 
 #equipment .bottom_highlight #items_inner {
     -moz-box-shadow: inset 0 -10px 10px -6px #a07307;
     -webkit-box-shadow: inset 0 -10px 10px -6px #a07307;
-    box-shadow: inset 0 -10px 10px -6px #a07307;
+    box-shadow: inset 0 -10px 10px -6px #a07307
 }
 
 #equipment .top_highlight.bottom_highlight #items_inner {
-    -moz-box-shadow: inset 0 10px 10px -6px #a07307, inset 0 -10px 10px -6px #a07307;
-    -webkit-box-shadow: inset 0 10px 10px -6px #a07307, inset 0 -10px 10px -6px #a07307;
-    box-shadow: inset 0 10px 10px -6px #a07307, inset 0 -10px 10px -6px #a07307;
+    -moz-box-shadow: inset 0 10px 10px -6px #a07307,inset 0 -10px 10px -6px #a07307;
+    -webkit-box-shadow: inset 0 10px 10px -6px #a07307,inset 0 -10px 10px -6px #a07307;
+    box-shadow: inset 0 10px 10px -6px #a07307,inset 0 -10px 10px -6px #a07307
 }
 
 #equipment #purchase {
-    margin-top: 35px;
+    margin-top: 35px
 }
 
-#equipment #items div {
+#crafting_panel #items div,#equipment #items div {
     display: inline-block;
-    text-align: center;
+    text-align: center
 }
 
-#equipment #items #items-wrapper {
+#crafting_panel #items #items-wrapper,#equipment #items #items-wrapper {
     margin-top: 0;
     text-align: center;
     height: 100%;
     width: 100%;
     float: left;
-    padding: 0;
+    padding: 0
 }
 
 #equipment .item {
     list-style-type: none;
     margin: 4px;
     padding: 4px;
-    float: left;
-    width: 100px;
-    height: 100px;
     overflow: hidden;
-    background: url('https://gazellegames.net/static/styles/game_room/images/shop/itempattern.png') repeat 0 0 #1b1b1d;
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/itempattern.png) 0 0 #1b1b1d;
     background-color: #1c1c1c;
     text-align: center;
     position: relative;
-    font-weight: bold;
+    font-weight: 700;
     color: #999;
     border: 3px solid #000;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    -moz-box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
-    -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+    -moz-box-shadow: 3px 3px 8px rgba(0,0,0,.7);
+    -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,.7);
+    box-shadow: 3px 3px 8px rgba(0,0,0,.7)
 }
 
-#equipment .item h3 {
+#crafting_panel .item h3,#equipment .item h3 {
     position: absolute;
     bottom: 2px;
     width: 100px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px #000;
+    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 6px #000
 }
 
 #equipment .item img {
-    max-width: 94px;
-    max-height: 94px;
-    padding: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
-    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,.7);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.7);
+    box-shadow: 0 0 3px rgba(0,0,0,.7)
 }
 
 #equipment .item:hover {
     cursor: grab;
     cursor: -webkit-grab;
-    cursor: -moz-grab;
+    cursor: -moz-grab
 }
 
 #equipment #equip_panel {
-    background: url('https://gazellegames.net/static/styles/game_room/images/shop/equipment_panel.jpg');
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/equipment_panel.jpg);
     height: 800px;
     width: 550px;
-    -moz-box-shadow: 0px 0px 10px 3px black;
-    -webkit-box-shadow: 0px 0px 10px 3px black;
-    box-shadow: 0px 0px 10px 3px black;
-    margin-top: 0px;
+    -moz-box-shadow: 0 0 10px 3px #000;
+    -webkit-box-shadow: 0 0 10px 3px #000;
+    box-shadow: 0 0 10px 3px #000;
+    margin-top: 0;
+    float: none;
+    display: inline-block
 }
 
 #equipment .itemslot {
     width: 106px;
     height: 106px;
-    position: absolute;
+    position: absolute
 }
 
 #equipment .ui-widget-content {
-    background: transparent;
+    background: 0 0
 }
 
 #equipment .itemslot.inactive {
-    background: rgba(117,117,117,0.8);
+    background: rgba(117,117,117,.8)
 }
 
 #equipment .itemslot .item {
@@ -4146,294 +2991,241 @@ h3#irc, h3#general, h3#jump, h3#forums {
     height: 91px;
     border-width: 2px;
     margin: 1px;
-    top: 5px;
+    top: 5px
 }
 
-#equipment .itemslot .item img {
+#crafting_panel .itemslot .item img,#equipment .itemslot .item img {
     max-width: 87px;
     max-height: 87px;
-    padding: 2px;
+    padding: 2px
 }
 
-#equipment .itemslot .item h3 {
+#crafting_panel .itemslot .item h3,#equipment .itemslot .item h3 {
     width: 89px;
-    bottom: -6px;
+    bottom: -6px
 }
 
 #equipment {
-    margin: 0 auto;
-    text-align: center;
-}
-
-#equipment #equip_panel {
-    float: none;
-    display: inline-block;
+    margin: 0 auto
 }
 
 #equipment div.itemslot.highlight {
-    -moz-box-shadow: 0px 0px 15px rgba(196, 157, 51, 0.8);
-    -webkit-box-shadow: 0px 0px 15px rgba(196, 157, 51, 0.8);
-    box-shadow: 0px 0px 15px rgba(196, 157, 51, 0.8);
+    -moz-box-shadow: 0 0 15px rgba(196,157,51,.8);
+    -webkit-box-shadow: 0 0 15px rgba(196,157,51,.8);
+    box-shadow: 0 0 15px rgba(196,157,51,.8)
 }
 
 #equipment .item.highlight {
     border-color: #5e4819;
-    -moz-box-shadow: 0px 0px 3px 1px #aa7e16;
-    -webkit-box-shadow: 0px 0px 3px 1px #aa7e16;
-    box-shadow: 0px 0px 3px 1px #aa7e16;
+    -moz-box-shadow: 0 0 3px 1px #aa7e16;
+    -webkit-box-shadow: 0 0 3px 1px #aa7e16;
+    box-shadow: 0 0 3px 1px #aa7e16
 }
 
 #equipment #avatar_preview {
     margin-top: 15px;
-    filter: drop-shadow(0px 0px 10px black);
+    filter: drop-shadow(0 0 10px #000)
 }
 
-/* Position item slots */
 #equipment .itemslot#slot_1 {
-    margin: 108px 0 0 217px;
+    margin: 108px 0 0 217px
 }
 
 #equipment .itemslot#slot_9 {
-    margin: 227px 0 0 217px;
+    margin: 227px 0 0 217px
 }
 
 #equipment .itemslot#slot_2 {
-    margin: 346px 0 0 217px;
+    margin: 346px 0 0 217px
 }
 
 #equipment .itemslot#slot_4 {
-    margin: 465px 0 0 217px;
+    margin: 465px 0 0 217px
 }
 
 #equipment .itemslot#slot_6 {
-    margin: 584px 0 0 217px;
+    margin: 584px 0 0 217px
 }
 
 #equipment .itemslot#slot_5 {
-    margin: 333px 0 0 98px;
+    margin: 333px 0 0 98px
 }
 
 #equipment .itemslot#slot_3 {
-    margin: 333px 0 0 336px;
+    margin: 333px 0 0 336px
 }
 
 #equipment .itemslot#slot_11 {
-    margin: 215px 0 0 61px;
+    margin: 215px 0 0 61px
 }
 
 #equipment .itemslot#slot_10 {
-    margin: 215px 0 0 373px;
+    margin: 215px 0 0 373px
 }
 
 #equipment .itemslot#slot_8 {
-    margin: 451px 0 0 61px;
+    margin: 451px 0 0 61px
 }
 
 #equipment .itemslot#slot_7 {
-    margin: 451px 0 0 373px;
+    margin: 451px 0 0 373px
 }
 
 #equipment .itemslot#slot_13 {
-    margin: 57px 0 0 23px;
+    margin: 57px 0 0 23px
 }
 
 #equipment .itemslot#slot_12 {
-    margin: 56px 0 0 389px;
+    margin: 56px 0 0 389px
 }
 
 #equipment .itemslot#slot_14 {
-    margin: 637px 0 0 20px;
+    margin: 637px 0 0 20px
 }
 
 #equipment .itemslot#slot_15 {
-    margin: 637px 0 0 414px;
+    margin: 637px 0 0 414px
 }
 
-/***************************************
-************ Crafting Panel ************
-***************************************/
-#crafting_panel h2 {
-    visibility: hidden;
-}
-
-/* Crafting Panel (the panel with all your staff) */
-#crafting_panel #items {
-    width: 120px;
+#crafting_panel #items,#crafting_panel .item {
     float: left;
-    margin: 25px 40px;
-    position: relative;
-    padding: 3px 0px 3px 3px;
-    height: 310px;
-    background-color: rgba(0,0,0,.7);
-    text-align: center;
     overflow: hidden;
+    text-align: center;
+    position: relative
 }
 
-#crafting_panel #items #items-wrapper {
-    margin-top: 0;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    float: left;
-    padding: 0;
+#crafting_panel #items {
+    background-color: rgba(0,0,0,.7);
+    width: 120px;
+    margin: 25px 40px;
+    padding: 3px 0 3px 3px;
+    height: 310px
 }
 
 #crafting_panel .item {
     list-style-type: none;
     margin: 4px;
     padding: 4px;
-    float: left;
     width: 100px;
     height: 100px;
-    overflow: hidden;
-    background: url('https://gazellegames.net/static/styles/game_room/images/shop/itempattern.png') repeat 0 0 #1b1b1d;
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/itempattern.png) 0 0 #1b1b1d;
     background-color: #1c1c1c;
-    text-align: center;
-    position: relative;
-    font-weight: bold;
+    font-weight: 700;
     color: #999;
     border: 3px solid #000;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    -moz-box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
-    -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+    -moz-box-shadow: 3px 3px 8px rgba(0,0,0,.7);
+    -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,.7);
+    box-shadow: 3px 3px 8px rgba(0,0,0,.7)
 }
 
-#crafting_panel #items div {
-    display: inline-block;
-    text-align: center;
-}
-
-#crafting_panel .item h3 {
-    position: absolute;
-    bottom: 2px;
-    width: 100px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px #000;
-}
-
-#crafting_panel .item img {
+#crafting_panel .item img,#equipment .item img {
     max-width: 94px;
     max-height: 94px;
-    padding: 3px;
+    padding: 3px
 }
 
 #crafting_panel .item:hover {
     cursor: grab;
     cursor: -webkit-grab;
-    cursor: -moz-grab;
+    cursor: -moz-grab
 }
 
-/* The combining panel */
 #crafting_panel #slots_panel {
-    background: url('https://gazellegames.net/static/styles/game_room/images/shop/crafting_panel.jpg');
+    background: url(https://gazellegames.net/static/styles/game_room/images/shop/crafting_panel.jpg);
     height: 370px;
     width: 550px;
-    margin: 0;
     padding: 0;
-    -moz-box-shadow: 0px 0px 10px 3px black;
-    -webkit-box-shadow: 0px 0px 10px 3px black;
-    box-shadow: 0px 0px 10px 3px black;
-    margin-bottom: 50px;
+    -moz-box-shadow: 0 0 10px 3px #000;
+    -webkit-box-shadow: 0 0 10px 3px #000;
+    box-shadow: 0 0 10px 3px #000;
+    margin: 0 0 50px
 }
 
 #crafting_panel .itemslot {
     width: 106px;
     height: 106px;
-    position: absolute;
+    position: absolute
 }
 
 #crafting_panel .ui-widget-content {
-    background: transparent;
+    background: 0 0
 }
 
 #crafting_panel .itemslot .item {
     width: 91px;
     height: 91px;
     border-width: 2px;
-    margin: 1px;
+    margin: 1px
 }
 
-#crafting_panel .itemslot .item img {
-    max-width: 87px;
-    max-height: 87px;
-    padding: 2px;
-}
-
-#crafting_panel .itemslot .item h3 {
-    width: 89px;
-    bottom: -6px;
-}
-
-/* Position item slots */
 #crafting_panel .itemslot#slot_0 {
-    margin: 13px 0 0 13px;
+    margin: 13px 0 0 13px
 }
 
 #crafting_panel .itemslot#slot_1 {
-    margin: 13px 0 0 132px;
+    margin: 13px 0 0 132px
 }
 
 #crafting_panel .itemslot#slot_2 {
-    margin: 13px 0 0 251px;
+    margin: 13px 0 0 251px
 }
 
 #crafting_panel .itemslot#slot_3 {
-    margin: 132px 0 0 13px;
+    margin: 132px 0 0 13px
 }
 
 #crafting_panel .itemslot#slot_4 {
-    margin: 132px 0 0 132px;
+    margin: 132px 0 0 132px
 }
 
 #crafting_panel .itemslot#slot_5 {
-    margin: 132px 0 0 251px;
+    margin: 132px 0 0 251px
 }
 
 #crafting_panel .itemslot#slot_6 {
-    margin: 251px 0 0 13px;
+    margin: 251px 0 0 13px
 }
 
 #crafting_panel .itemslot#slot_7 {
-    margin: 251px 0 0 132px;
+    margin: 251px 0 0 132px
 }
 
 #crafting_panel .itemslot#slot_8 {
-    margin: 251px 0 0 251px;
+    margin: 251px 0 0 251px
 }
 
 #crafting_panel .itemslot#CraftingResult {
-    margin: 131px 0 0 431px;
+    margin: 131px 0 0 431px
 }
 
-/* Ability icons */
 #crafting_panel ul#abilities li {
     float: left;
     width: 64px;
     height: 64px;
     padding: 0;
-    margin: 0;
+    margin: 0
 }
 
 #crafting_panel li#forge {
-    background: url('https://gazellegames.net/static/styles/layer_cake/images/icons/forge.png') no-repeat left;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/icons/forge.png) no-repeat left
 }
 
 #crafting_panel li#forge.active {
-    background: url('https://gazellegames.net/static/styles/layer_cake/images/icons/forge_activated.png') no-repeat left;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/icons/forge_activated.png) no-repeat left
 }
 
 #crafting_panel li#enchanting {
-    background: url('https://gazellegames.net/static/styles/layer_cake/images/icons/enchant.png') no-repeat left;
+    background: url(https://gazellegames.net/static/styles/layer_cake/images/icons/enchant.png) no-repeat left
 }
 
 #crafting_panel li#enchanting.active {
-    background-image: url('https://gazellegames.net/static/styles/layer_cake/images/icons/enchant_activated.png');
+    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/enchant_activated.png)
 }
 
-/***Out of Stock Items**/
-#shop li.item_li.nostock #clickable .item_description {
+#shop li.item_li.featured.nostock #clickable .item_description,#shop li.item_li.nostock #clickable .item_description {
     visibility: visible;
     opacity: 1;
     position: relative;
@@ -4448,63 +3240,22 @@ h3#irc, h3#general, h3#jump, h3#forums {
     margin: 0 auto;
     overflow: hidden;
     left: 2px;
-    width: 166px;
+    width: 166px
 }
 
 #shop li.item_li.nostock .submit_section {
-    margin-top: -50px;
+    margin-top: -50px
 }
 
 #shop li.item_li.featured.nostock #clickable .item_description {
-    visibility: visible;
-    opacity: 1;
-    position: relative;
-    top: -102px;
-    background: url(https://gazellegames.net/static/styles/layer_cake/images/soldout.png) no-repeat;
-    background-size: contain;
-    padding: 10px;
-    height: 130px;
-    text-indent: -1000px;
-    z-index: 2;
-    display: block;
-    margin: 0 auto;
-    overflow: hidden;
     left: 100px;
-    width: 110px;
+    width: 110px
 }
 
 #shop li.item_li.featured.nostock .submit_section {
-    margin-top: -30px;
+    margin-top: -30px
 }
 
-.sticky #groupplatform:before {
-    content: "";
-    background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/sticky2.png);
-    background-size: cover;
-    height: 20px;
-    width: 20px;
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-marquee {
-    max-width: 60%;
-}
-
-#forums .forum_post .colhead_dark div[style="float:left;"] {
-    width: 80%;
-}
-
-#forums .forum_post .colhead_dark marquee {
-    max-width: 30%;
-}
-
-#forums .forum_post .colhead_dark td {
-    text-align: left;
-}
-
-/* Stickies */
 .sticky #groupplatform:before {
     content: "";
     background-image: url(https://gazellegames.net/static/styles/layer_cake/images/icons/sticky1.png);
@@ -4512,74 +3263,88 @@ marquee {
     height: 14px;
     width: 15px;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 5px
+}
+
+marquee {
+    max-width: 60%
+}
+
+#forums .forum_post .colhead_dark div[style="float:left;"] {
+    width: 80%
+}
+
+#forums .forum_post .colhead_dark marquee {
+    max-width: 30%
+}
+
+#forums .forum_post .colhead_dark td {
+    text-align: left
 }
 
 .sticky td {
-    background-color: #fff;
+    background-color: #fff
 }
 
-#torrents #content .box_main_pack .center, #torrents #content .box_pack .center {
-    padding: 0;
+#torrents #content .box_main_pack .center,#torrents #content .box_pack .center {
+    padding: 0
 }
 
 #torrents .hovereffect {
-    height: 100px !important;
+    height: 100px!important
 }
 
 #torrents .hovereffect .img_responsive {
     display: block;
     position: relative;
     width: 207px;
-    max-width: 207px !important;
+    max-width: 207px!important;
     height: 100%;
-    background-size: cover;
+    background-size: cover
 }
 
 #shop .owned {
-    background: rgba(0,0,0,0.6) url('https://gazellegames.net/static/styles/game_room/images/shop/owned.png') top left no-repeat !important;
+    background: rgba(0,0,0,.6) url(https://gazellegames.net/static/styles/game_room/images/shop/owned.png) top left no-repeat!important
 }
 
-/*Gold Generation Box*/
 .box_gold td {
     text-align: center;
-    padding: 10px 5px;
+    padding: 10px 5px
 }
 
 #user .box_gold .colhead td.label {
-    background-color: inherit;
+    background-color: inherit
 }
 
 #user .box_gold .colhead {
-    border-radius: 0px;
+    border-radius: 0
 }
 
 #user .box_gold .colhead td {
-    padding: 5px;
+    padding: 5px
 }
 
 #torrentbrowse {
-    margin: 25px 25px 50px;
+    margin: 25px 25px 50px
 }
 
 .box_gold table {
     height: 176px;
-    position: relative;
     overflow-x: hidden;
     display: block;
-    border: none !important;
+    border: 0!important
 }
 
 .box_gold tr.total td {
-    border-top: 2px solid dimgray !important;
+    border-top: 2px solid #696969!important
 }
 
 .box_gold tr.total td.label {
-    border-top: none;
+    border-top: none
 }
 
 .sidebar #freeleech .group_torrent:hover {
-    background-color: transparent;
+    background-color: transparent
 }
 
 .sidebar #freeleech li.group_torrent {
@@ -4587,398 +3352,471 @@ marquee {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 .sidebar #freeleech .group_torrent span {
-    float: none;
+    float: none
 }
 
 #rules .required_ratio td {
     width: 23%;
-    text-align: center;
+    text-align: center
 }
 
 #rules .required_ratio td:first-of-type {
     width: 30%;
-    text-align: left;
+    text-align: left
 }
 
 #rules .required_ratio #ratio_free {
-    font-size: 2em;
+    font-size: 2em
 }
 
-.amstradcpc, .android, .apps, .atari2600, .atari5200, .atari7800, .atarijaguar, .atarilynx, .boardgame, .cardgame, .colecovision, .dos, .dreamcast, .dsiware, .dvd, .interactivedvd, .ebook, .fairchildchannelf, .gameboy, .gameboyadvance, .gameboycolor, .gamegear, .intellivision, .ios, .linux, .mac, .mastersystem, .megadrive, .memotechmtx, .msx, .msx2, .music, .necturbografx-16, .neogeopocket, .nes, .newnintendo3ds, .nintendo3ds, .nintendo64, .nintendods, .nintendogamecube, .windows, .pc95, .pcxp, .penandpaperrpg, .phonepda, .playstation1, .playstation2, .playstation3, .playstation4, .playstationonpsp, .playstationportable, .playstationvita, .retro-other, .samcoupe, .saturn, .supernes, .snes, .taitotypex, .tandycolor, .tangerineoric, .thomsonm05, .turbografx, .vectrex, .virtualboy, .watarasupervision, .wii, .wiiu, .wiivc, .wiiware, .wonderswan, .xbla, .xbox, .xbox360, .xboxon360 , .ex-bgfullsets, .psonpsp, .ex-bgcollections, .bandaiwonderswancolor, .generalcomputervectrex {
+.amstradcpc,.android,.apps,.atari2600,.atari5200,.atari7800,.atarijaguar,.atarilynx,.boardgame,.cardgame,.colecovision,.dos,.dreamcast,.dsiware,.dvd,.ebook,.fairchildchannelf,.gameboy,.gameboyadvance,.gameboycolor,.gamegear,.intellivision,.interactivedvd,.ios,.linux,.mac,.mastersystem,.megadrive,.memotechmtx,.msx,.msx2,.music {
     height: 28px;
     width: 28px;
-    background: url('images/caticons_sprite.png') no-repeat scroll top left transparent;
+    background: url(images/caticons_sprite.png) no-repeat top left;
     position: absolute;
-    margin-top: -12px;
+    margin-top: -12px
+}
+
+.necturbografx-16 {
+    background: url(images/caticons_sprite.png) no-repeat top left;
+    position: absolute;
+    margin-top: -12px
+}
+
+.neogeopocket,.nes {
+    height: 28px;
+    width: 28px
+}
+
+.neogeopocket,.nes,.newnintendo3ds {
+    background: url(images/caticons_sprite.png) no-repeat top left;
+    position: absolute;
+    margin-top: -12px
+}
+
+.nintendo3ds,.nintendo64,.nintendods,.nintendogamecube,.pc95,.pcxp,.windows {
+    height: 28px;
+    width: 28px
+}
+
+.nintendo3ds,.nintendo64,.nintendods,.nintendogamecube,.pc95,.pcxp,.penandpaperrpg,.windows {
+    background: url(images/caticons_sprite.png) no-repeat top left;
+    position: absolute;
+    margin-top: -12px
+}
+
+.phonepda,.playstation1,.playstation2,.playstation3 {
+    height: 28px;
+    width: 28px
+}
+
+.phonepda,.playstation1,.playstation2,.playstation3,.playstation4 {
+    background: url(images/caticons_sprite.png) no-repeat top left;
+    position: absolute;
+    margin-top: -12px
+}
+
+.playstationonpsp,.playstationportable,.playstationvita {
+    height: 28px;
+    width: 28px
+}
+
+.playstationonpsp,.playstationportable,.playstationvita,.retro-other {
+    background: url(images/caticons_sprite.png) no-repeat top left;
+    position: absolute;
+    margin-top: -12px
+}
+
+.samcoupe,.saturn,.supernes {
+    height: 28px;
+    width: 28px
+}
+
+.samcoupe,.saturn,.snes,.supernes {
+    background: url(images/caticons_sprite.png) no-repeat top left;
+    position: absolute;
+    margin-top: -12px
+}
+
+.taitotypex,.tandycolor,.tangerineoric,.thomsonm05,.turbografx,.vectrex,.virtualboy,.watarasupervision,.wii {
+    height: 28px;
+    width: 28px;
+    background: url(images/caticons_sprite.png) no-repeat top left;
+    position: absolute;
+    margin-top: -12px
+}
+
+.wiiu {
+    background: url(images/caticons_sprite.png) no-repeat top left;
+    position: absolute;
+    margin-top: -12px
+}
+
+.bandaiwonderswancolor,.ex-bgcollections,.ex-bgfullsets,.generalcomputervectrex,.psonpsp,.wiivc,.wiiware,.wonderswan,.xbla,.xbox,.xbox360,.xboxon360 {
+    height: 28px;
+    width: 28px;
+    background: url(images/caticons_sprite.png) no-repeat top left;
+    position: absolute;
+    margin-top: -12px
 }
 
 .amstradcpc {
-    background-position: 0 0;
+    background-position: 0 0
 }
 
 .android {
-    background-position: 0 -29px;
+    background-position: 0 -29px
 }
 
 .apps {
-    background-position: 0 -58px;
+    background-position: 0 -58px
 }
 
 .atari2600 {
-    background-position: 0 -87px;
+    background-position: 0 -87px
 }
 
 .atari5200 {
-    background-position: 0 -116px;
+    background-position: 0 -116px
 }
 
 .atari7800 {
-    background-position: 0 -145px;
+    background-position: 0 -145px
 }
 
 .atarijaguar {
-    background-position: 0 -174px;
+    background-position: 0 -174px
 }
 
 .atarilynx {
-    background-position: 0 -203px;
+    background-position: 0 -203px
 }
 
 .boardgame {
-    background-position: 0 -232px;
+    background-position: 0 -232px
 }
 
 .cardgame {
-    background-position: 0 -261px;
+    background-position: 0 -261px
 }
 
 .colecovision {
-    background-position: 0 -290px;
+    background-position: 0 -290px
 }
 
 .dos {
-    background-position: 0 -319px;
+    background-position: 0 -319px
 }
 
 .dreamcast {
-    background-position: 0 -348px;
+    background-position: 0 -348px
 }
 
 .dsiware {
-    background-position: 0 -377px;
+    background-position: 0 -377px
 }
 
 .dvd {
-    background-position: 0 -406px;
+    background-position: 0 -406px
 }
 
 .interactivedvd {
     background-image: url(images/idvd.png);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .ebook {
-    background-position: 0 -435px;
+    background-position: 0 -435px
 }
 
 .fairchildchannelf {
-    background-position: 0 -464px;
+    background-position: 0 -464px
 }
 
 .gameboy {
-    background-position: 0 -493px;
+    background-position: 0 -493px
 }
 
 .gameboyadvance {
-    background-position: 0 -522px;
+    background-position: 0 -522px
 }
 
 .gameboycolor {
-    background-position: 0 -551px;
+    background-position: 0 -551px
 }
 
 .gamegear {
-    background-position: 0 -580px;
+    background-position: 0 -580px
 }
 
 .intellivision {
-    background-position: 0 -609px;
+    background-position: 0 -609px
 }
 
 .ios {
-    background-position: 0 -638px;
+    background-position: 0 -638px
 }
 
 .linux {
-    background-position: 0 -667px;
+    background-position: 0 -667px
 }
 
 .mac {
-    background-position: 0 -696px;
+    background-position: 0 -696px
 }
 
 .mastersystem {
-    background-position: 0 -725px;
+    background-position: 0 -725px
 }
 
 .megadrive {
-    background-position: 0 -754px;
+    background-position: 0 -754px
 }
 
 .memotechmtx {
-    background-position: 0 -783px;
+    background-position: 0 -783px
 }
 
 .msx {
-    background-position: 0 -812px;
+    background-position: 0 -812px
 }
 
 .msx2 {
-    background-position: 0 -841px;
+    background-position: 0 -841px
 }
 
 .music {
-    background-position: 0 -870px;
+    background-position: 0 -870px
 }
 
 .neogeopocket {
-    background-position: 0 -899px;
+    background-position: 0 -899px
 }
 
 .nes {
-    background-position: 0 -928px;
+    background-position: 0 -928px
 }
 
 .nintendo3ds {
-    background-position: 0 -957px;
+    background-position: 0 -957px
 }
 
 .nintendo64 {
-    background-position: 0 -986px;
+    background-position: 0 -986px
 }
 
 .nintendods {
-    background-position: 0 -1015px;
+    background-position: 0 -1015px
 }
 
 .nintendogamecube {
-    background-position: 0 -1044px;
+    background-position: 0 -1044px
 }
 
 .windows {
-    background-position: 0 -1073px;
+    background-position: 0 -1073px
 }
 
 .pc95 {
-    background-position: 0 -1102px;
+    background-position: 0 -1102px
 }
 
 .pcxp {
-    background-position: 0 -1131px;
+    background-position: 0 -1131px
 }
 
 .phonepda {
-    background-position: 0 -1160px;
+    background-position: 0 -1160px
 }
 
 .playstation1 {
-    background-position: 0 -1189px;
+    background-position: 0 -1189px
 }
 
 .playstation2 {
-    background-position: 0 -1218px;
+    background-position: 0 -1218px
 }
 
 .playstation3 {
-    background-position: 0 -1247px;
+    background-position: 0 -1247px
 }
 
 .playstationonpsp {
-    background-position: 0 -1276px;
+    background-position: 0 -1276px
 }
 
 .playstationportable {
-    background-position: 0 -1305px;
+    background-position: 0 -1305px
 }
 
 .playstationvita {
-    background-position: 0 -1334px;
+    background-position: 0 -1334px
 }
 
 .samcoupe {
-    background-position: 0 -1363px;
+    background-position: 0 -1363px
 }
 
 .saturn {
-    background-position: 0 -1392px;
+    background-position: 0 -1392px
 }
 
 .supernes {
-    background-position: 0 -1421px;
+    background-position: 0 -1421px
 }
 
 .taitotypex {
-    background-position: 0 -1450px;
+    background-position: 0 -1450px
 }
 
 .tandycolor {
-    background-position: 0 -1479px;
+    background-position: 0 -1479px
 }
 
 .tangerineoric {
-    background-position: 0 -1508px;
+    background-position: 0 -1508px
 }
 
 .thomsonm05 {
-    background-position: 0 -1537px;
+    background-position: 0 -1537px
 }
 
 .turbografx {
-    background-position: 0 -1566px;
+    background-position: 0 -1566px
 }
 
 .vectrex {
-    background-position: 0 -1595px;
+    background-position: 0 -1595px
 }
 
 .virtualboy {
-    background-position: 0 -1624px;
+    background-position: 0 -1624px
 }
 
 .watarasupervision {
-    background-position: 0 -1653px;
+    background-position: 0 -1653px
 }
 
 .wii {
-    background-position: 0 -1682px;
+    background-position: 0 -1682px
 }
 
 .wiivc {
-    background-position: 0 -1711px;
+    background-position: 0 -1711px
 }
 
 .wiiware {
-    background-position: 0 -1740px;
+    background-position: 0 -1740px
 }
 
 .wonderswan {
-    background-position: 0 -1769px;
+    background-position: 0 -1769px
 }
 
 .xbla {
-    background-position: 0 -1798px;
+    background-position: 0 -1798px
 }
 
 .xbox {
-    background-position: 0 -1827px;
+    background-position: 0 -1827px
 }
 
 .xbox360 {
-    background-position: 0 -1856px;
+    background-position: 0 -1856px
 }
 
 .xboxon360 {
-    background-position: 0 -1885px;
+    background-position: 0 -1885px
 }
 
 .ex-bgfullsets {
-    background-position: 0 -1968px;
+    background-position: 0 -1968px
 }
 
 .psonpsp {
-    background-position: 0 -1912px;
+    background-position: 0 -1912px
 }
 
 .ex-bgcollections {
-    background-position: 0 -1941px;
+    background-position: 0 -1941px
 }
 
 .bandaiwonderswancolor {
-    background-position: 0 -2055px;
+    background-position: 0 -2055px
 }
 
 .generalcomputervectrex {
-    background-position: 0 -1996px;
+    background-position: 0 -1996px
 }
 
 .psponps3 {
-    background-position: 0 -2081px;
+    background-position: 0 -2081px
 }
 
 .wiiu {
+    background: url(images/wiiu.png)
+}
+
+.playstation4,.snes,.wiiu {
     height: 28px;
-    width: 28px;
-    /* display: inline-block; */
-    background: url(images/wiiu.png);
+    width: 28px
 }
 
 .snes {
-    height: 28px;
-    width: 28px;
-    /* display: inline-block; */
-    background: url(images/supernes.png);
+    background: url(images/supernes.png)
 }
 
 .playstation4 {
-    height: 28px;
-    width: 28px;
-    /* display: inline-block; */
-    background: url(images/playstation4-invert.png);
+    background: url(images/playstation4-invert.png)
 }
 
 .penandpaperrpg {
     height: 28px;
     width: 28px;
-    /* display: inline-block; */
-    background: url(images/penandpaperRPGS.png);
+    background: url(images/penandpaperRPGS.png)
 }
 
 .newnintendo3ds {
     height: 28px;
     width: 28px;
-    /* display: inline-block; */
-    background: url(images/new3ds-invert.png);
+    background: url(images/new3ds-invert.png)
 }
 
 .retro-other {
     height: 28px;
     width: 28px;
-    /* display: inline-block; */
-    background: url(images/retroother.png);
+    background: url(images/retroother.png)
 }
 
 .necturbografx-16 {
     height: 28px;
     width: 28px;
-    /* display: inline-block; */
-    background: url(images/turbografx16.png);
+    background: url(images/turbografx16.png)
 }
 
 td.cats_col {
     min-width: 28px;
     width: 28px;
-    padding: 3px;
-    /* padding-right: 31px; */
+    padding: 3px
 }
 
-
-/*Platform linking cleanup*/
 #grouplinks {
     margin-top: 10px;
-    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+    box-shadow: 0 0 30px rgba(153,153,153,.7);
     z-index: 2;
-    position: relative;}
+    position: relative
+}
 
 #grouplinks td {
     float: left;
     padding-right: 25px;
     padding-left: 25px;
     padding-top: 18px;
-    min-height: 15px;
+    min-height: 15px
 }
 
 #linkedgroup:hover {
@@ -4988,78 +3826,68 @@ td.cats_col {
     -ms-filter: grayscale(0);
     -o-filter: grayscale(0);
     filter: grayscale(0%);
-    -webkit-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -moz-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -ms-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -o-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+    -webkit-filter: drop-shadow(.5px .5px 5px #80bf6d);
+    -moz-filter: drop-shadow(.5px .5px 5px #80bf6d);
+    -ms-filter: drop-shadow(.5px .5px 5px #80bf6d);
+    -o-filter: drop-shadow(.5px .5px 5px #80bf6d);
+    filter: drop-shadow(.5px .5px 5px #80bf6d)
 }
 
-#curlinkedgroup {
-    margin-left: -14px;
+#curlinkedgroup,#linkedgroup {
+    margin-left: -14px
 }
 
 #linkedgroup {
-    opacity: 0.4;
+    opacity: .4;
     -webkit-filter: grayscale(50%);
     -moz-filter: grayscale(50%);
     -ms-filter: grayscale(50%);
     -o-filter: grayscale(50%);
-    filter: grayscale(50%);
-    margin-left: -14px;
-    /*-webkit-filter: drop-shadow(2px 2px 15px black);
-    -moz-filter: drop-shadow(2px 2px 15px black);
-    -ms-filter: drop-shadow(2px 2px 15px black);
-    -o-filter: drop-shadow(2px 2px 15px black);
-    filter: drop-shadow(2px 2px 15px black);*/
+    filter: grayscale(50%)
 }
 
-
 #torrentscomplete {
-	position: absolute;
-	width: 130px;
-	left: 50%;
-	margin-top: 10px;
-	margin-left: -350px;
-	border: 1px solid #e5e5e5;
-	background-color: white;
-	z-index: 999999999999999;
-	-webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
-	-ms-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
-	-o-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
-	box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
-	padding-left: 0px;
+    position: absolute;
+    width: 130px;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -350px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    z-index: 999999999999999;
+    -webkit-box-shadow: 0 3px 5px rgba(50,50,50,.75);
+    -moz-box-shadow: 0 3px 5px rgba(50,50,50,.75);
+    -ms-box-shadow: 0 3px 5px rgba(50,50,50,.75);
+    -o-box-shadow: 0 3px 5px rgba(50,50,50,.75);
+    box-shadow: 0 3px 5px rgba(50,50,50,.75);
+    padding-left: 0
 }
 
 #torrentscomplete li {
-    display: block !important;
-	text-align: center;
-	font-family: whitney, sans-serif !important;
-	height: 23px;
-	clear: both;
-	width: 100%;
-	padding-top: 7px;
-	padding-bottom: 4px;
-	font-weight: normal;
+    display: block!important;
+    text-align: center;
+    font-family: whitney,sans-serif!important;
+    height: 23px;
+    clear: both;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    font-weight: 400
 }
 
 #torrentscomplete li:nth-child(even) {
-	background-color: white;
+    background-color: #fff
 }
 
 #torrentscomplete li:nth-child(odd) {
-	background-color: #e7e7e7;
+    background-color: #e7e7e7
 }
 
 #torrentscomplete .highlight {
-	background-color: #ef5165 !important;
-	cursor: pointer;
+    background-color: #ef5165!important;
+    cursor: pointer
 }
 
-.torrent.rowa{
-    display:none;
-}
-.torrent.rowb{
-     display:none;
+.torrent.rowa,.torrent.rowb {
+    display: none
 }
