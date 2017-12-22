@@ -5056,3 +5056,10 @@ td.cats_col {
 	background-color: #ef5165 !important;
 	cursor: pointer;
 }
+
+.torrent.rowa{
+    display:none;
+}
+.torrent.rowb{
+     display:none;
+}
